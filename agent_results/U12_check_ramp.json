@@ -1,0 +1,413 @@
+{
+ "id": "U12_check_ramp",
+ "job": {
+  "id": "U12_check_ramp",
+  "kind": "check",
+  "design": "agent_designs/U12.json",
+  "bench": "ramp"
+ },
+ "result": {
+  "accepted": true,
+  "review_critical": [],
+  "plain": {
+   "crossed": true,
+   "failure": null,
+   "max_progress": 1.418,
+   "max_progress_m": 0.9237,
+   "time_s": 5.349,
+   "broken_joints": [],
+   "valid": true,
+   "motor_program_log": [
+    "0.04 s motfL: 7",
+    "0.04 s motfR: 7",
+    "4.89 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "4.92 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+   ],
+   "gear_meshes": {
+    "gfL-igaL": {
+     "slips": 0,
+     "peak_n": 3.57,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "grL-igbL": {
+     "slips": 0,
+     "peak_n": 0.56,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "gfR-igaR": {
+     "slips": 0,
+     "peak_n": 3.68,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "grR-igbR": {
+     "slips": 0,
+     "peak_n": 0.5,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "rgfL-igaL": {
+     "slips": 0,
+     "peak_n": 0.39,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "rgfR-igaR": {
+     "slips": 0,
+     "peak_n": 0.46,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "rgrL-igbL": {
+     "slips": 0,
+     "peak_n": 0.45,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "h8gL-igaL": {
+     "slips": 0,
+     "peak_n": 1.86,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "hcgL-h8gL": {
+     "slips": 0,
+     "peak_n": 1.4,
+     "engaged": 0.96,
+     "state": "locked"
+    },
+    "hhgL-hcgL": {
+     "slips": 0,
+     "peak_n": 0.98,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "h8gR-igaR": {
+     "slips": 0,
+     "peak_n": 1.86,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "hcgR-h8gR": {
+     "slips": 0,
+     "peak_n": 1.4,
+     "engaged": 0.96,
+     "state": "locked"
+    },
+    "hhgR-hcgR": {
+     "slips": 0,
+     "peak_n": 0.98,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "spfL-sprL": {
+     "slips": 1,
+     "peak_n": 10.0,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "spfR-sprR": {
+     "slips": 0,
+     "peak_n": 9.79,
+     "engaged": 1.0,
+     "state": "locked"
+    }
+   },
+   "leads": [
+    {
+     "dev": "motfL",
+     "to": "receiver",
+     "peak_n": 0.0,
+     "unplugged": false
+    },
+    {
+     "dev": "motfR",
+     "to": "receiver",
+     "peak_n": 0.0,
+     "unplugged": false
+    },
+    {
+     "dev": "receiver",
+     "to": "battery",
+     "peak_n": 0.0,
+     "unplugged": false
+    }
+   ],
+   "diverged": false,
+   "passed": true,
+   "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_run_c4c6d29f",
+   "videos": [
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_run_c4c6d29f\\video\\follow.mp4",
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_run_c4c6d29f\\video\\overview.mp4"
+   ],
+   "contact_sheets": [
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_run_c4c6d29f\\contact_follow.jpg",
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_run_c4c6d29f\\contact_overview.jpg"
+   ]
+  },
+  "nudges": {
+   "offset_1mm": {
+    "crossed": true,
+    "failure": null,
+    "max_progress": 1.416,
+    "max_progress_m": 0.9225,
+    "time_s": 5.359,
+    "broken_joints": [],
+    "valid": true,
+    "motor_program_log": [
+     "0.04 s motfL: 7",
+     "0.04 s motfR: 7",
+     "4.90 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "4.93 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+    ],
+    "gear_meshes": {
+     "gfL-igaL": {
+      "slips": 0,
+      "peak_n": 3.57,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grL-igbL": {
+      "slips": 0,
+      "peak_n": 0.55,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "gfR-igaR": {
+      "slips": 0,
+      "peak_n": 3.66,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grR-igbR": {
+      "slips": 0,
+      "peak_n": 0.56,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfL-igaL": {
+      "slips": 0,
+      "peak_n": 0.44,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfR-igaR": {
+      "slips": 0,
+      "peak_n": 0.54,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgrL-igbL": {
+      "slips": 0,
+      "peak_n": 0.44,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gL-igaL": {
+      "slips": 0,
+      "peak_n": 1.86,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgL-h8gL": {
+      "slips": 0,
+      "peak_n": 1.41,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgL-hcgL": {
+      "slips": 0,
+      "peak_n": 0.98,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gR-igaR": {
+      "slips": 0,
+      "peak_n": 1.86,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgR-h8gR": {
+      "slips": 0,
+      "peak_n": 1.4,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgR-hcgR": {
+      "slips": 0,
+      "peak_n": 0.97,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfL-sprL": {
+      "slips": 1,
+      "peak_n": 9.99,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfR-sprR": {
+      "slips": 0,
+      "peak_n": 9.76,
+      "engaged": 1.0,
+      "state": "locked"
+     }
+    },
+    "leads": [
+     {
+      "dev": "motfL",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "motfR",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "receiver",
+      "to": "battery",
+      "peak_n": 0.0,
+      "unplugged": false
+     }
+    ],
+    "diverged": false,
+    "passed": true,
+    "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_offset_1mm_c4c6d29f"
+   },
+   "commands_50ms_late": {
+    "crossed": true,
+    "failure": null,
+    "max_progress": 1.418,
+    "max_progress_m": 0.9237,
+    "time_s": 5.349,
+    "broken_joints": [],
+    "valid": true,
+    "motor_program_log": [
+     "0.04 s motfL: 7",
+     "0.04 s motfR: 7",
+     "4.89 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "4.92 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+    ],
+    "gear_meshes": {
+     "gfL-igaL": {
+      "slips": 0,
+      "peak_n": 3.57,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grL-igbL": {
+      "slips": 0,
+      "peak_n": 0.56,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "gfR-igaR": {
+      "slips": 0,
+      "peak_n": 3.68,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grR-igbR": {
+      "slips": 0,
+      "peak_n": 0.5,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfL-igaL": {
+      "slips": 0,
+      "peak_n": 0.39,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfR-igaR": {
+      "slips": 0,
+      "peak_n": 0.46,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgrL-igbL": {
+      "slips": 0,
+      "peak_n": 0.45,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gL-igaL": {
+      "slips": 0,
+      "peak_n": 1.86,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgL-h8gL": {
+      "slips": 0,
+      "peak_n": 1.4,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgL-hcgL": {
+      "slips": 0,
+      "peak_n": 0.98,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gR-igaR": {
+      "slips": 0,
+      "peak_n": 1.86,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgR-h8gR": {
+      "slips": 0,
+      "peak_n": 1.4,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgR-hcgR": {
+      "slips": 0,
+      "peak_n": 0.98,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfL-sprL": {
+      "slips": 1,
+      "peak_n": 10.0,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfR-sprR": {
+      "slips": 0,
+      "peak_n": 9.79,
+      "engaged": 1.0,
+      "state": "locked"
+     }
+    },
+    "leads": [
+     {
+      "dev": "motfL",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "motfR",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "receiver",
+      "to": "battery",
+      "peak_n": 0.0,
+      "unplugged": false
+     }
+    ],
+    "diverged": false,
+    "passed": true,
+    "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_ramp_commands_50ms_late_c4c6d29f"
+   }
+  }
+ }
+}

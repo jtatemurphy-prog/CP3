@@ -1,0 +1,171 @@
+{
+ "id": "R20_ramp_plain_rec",
+ "job": {
+  "id": "R20_ramp_plain_rec",
+  "kind": "sim",
+  "design": "agent_designs/R20.json",
+  "bench": "ramp",
+  "nudge": "plain",
+  "video": true,
+  "record": true,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "ramp",
+  "level": 1,
+  "crossed": false,
+  "time_s": 17.34,
+  "reached_goal_s": null,
+  "max_progress": 0.283,
+  "max_progress_m": 0.1754,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.34,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 3.49,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 1.27,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 3.6,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.51,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 0.52,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 1.35,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 1.11,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfL-sprL": {
+    "slips": 0,
+    "peak_n": 8.32,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfR-sprR": {
+    "slips": 0,
+    "peak_n": 9.11,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "chL",
+    "sprockets": [
+     "spfL",
+     "sprL"
+    ],
+    "peak_n": 8.32,
+    "gap_min_mm": -2.16,
+    "gap_max_mm": 0.01,
+    "axial_max_mm": 0.98,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "chR",
+    "sprockets": [
+     "spfR",
+     "sprR"
+    ],
+    "peak_n": 9.11,
+    "gap_min_mm": -2.41,
+    "gap_max_mm": 0.01,
+    "axial_max_mm": 1.21,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.25,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7"
+  ],
+  "valid": true,
+  "wall_s": 913.1,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R20_ramp_plain_rec",
+  "wall": 914.2,
+  "review": {
+   "critical": [
+    "battery2, bplR (112 g) can be pulled off bbrR +z: the only things holding it are 4 studs, all pulling apart the same way, with nothing interlocking across the joint. Under its own weight with the vehicle picked up by the chassis (x3) the joint is loaded to 1.3 x its strength (tipping about its edge towards -y, 10.0 N total pull-off), so it comes apart. Clamp it from the other side, pin through both groups, or spread the joint.",
+    "battery, bplL (112 g) can be pulled off bbrL +z: the only things holding it are 4 studs, all pulling apart the same way, with nothing interlocking across the joint. Under its own weight with the vehicle picked up by the chassis (x3) the joint is loaded to 1.3 x its strength (tipping about its edge towards +y, 10.0 N total pull-off), so it comes apart. Clamp it from the other side, pin through both groups, or spread the joint."
+   ],
+   "warnings": []
+  },
+  "stats": {
+   "n_parts": 210,
+   "mass_g": 685.89,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R20_ramp_plain_rec\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R20_ramp_plain_rec\\contact_overview.jpg"
+  ]
+ }
+}

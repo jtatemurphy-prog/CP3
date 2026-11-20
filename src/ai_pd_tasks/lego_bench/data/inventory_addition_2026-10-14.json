@@ -1,0 +1,6 @@
+{
+ "note": "Inventory addition (user, 2026-10-14): a second genuine LEGO 8884 PF IR receiver is on hand. Added by parts.owned_inventory() unless LEGO_BENCH_NO_PURCHASE=1.",
+ "parts": {
+  "58123c01": 1
+ }
+}

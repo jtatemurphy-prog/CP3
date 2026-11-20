@@ -1,0 +1,2331 @@
+{
+ "source": "bricklink_inventory.xlsx",
+ "imported": "2026-10-06",
+ "authority": "sheet 'Summary by part' (counts); 'Parts' (unit weight, LDraw id, category, match confidence)",
+ "distinct_ids": 131,
+ "summary_rows": 132,
+ "total_pieces": 2964,
+ "parts": {
+  "10928": {
+   "name": "Technic, Gear 8 Tooth with Dual Face",
+   "count": 39,
+   "colours": {
+    "Dark Bluish Gray": 39
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 0.22,
+   "ldraw_id": "10928",
+   "category": "Technic, Gear",
+   "match_confidence": 0.801,
+   "photos": [
+    "part_2026-10-05_20-50-02_0163.jpg"
+   ]
+  },
+  "12787c01": {
+   "name": "Pullback Motor 6 x 5 x 3",
+   "count": 2,
+   "colours": {
+    "Dark Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 31.0,
+   "ldraw_id": null,
+   "category": "Motor, Non-Electric",
+   "match_confidence": 0.864,
+   "photos": [
+    "part_2026-10-05_22-06-16_bee6.jpg"
+   ]
+  },
+  "15100": {
+   "name": "Technic, Pin with Friction Ridges and Pin Hole",
+   "count": 7,
+   "colours": {
+    "Dark Azure": 7
+   },
+   "colour_ids": {
+    "Dark Azure": 153
+   },
+   "weight_g": 0.4,
+   "ldraw_id": "15100",
+   "category": "Technic, Pin",
+   "match_confidence": 0.832,
+   "photos": [
+    "part_2026-10-05_21-44-48_6bb1.jpg"
+   ]
+  },
+  "15462": {
+   "name": "Technic, Axle  5L with Stop",
+   "count": 8,
+   "colours": {
+    "Dark Tan": 8
+   },
+   "colour_ids": {
+    "Dark Tan": 69
+   },
+   "weight_g": 0.73,
+   "ldraw_id": "15462",
+   "category": "Technic, Axle",
+   "match_confidence": 0.702,
+   "photos": [
+    "part_2026-10-05_21-47-39_5f90.jpg"
+   ]
+  },
+  "18946": {
+   "name": "Technic, Gear 16 Tooth with Clutch on Both Sides",
+   "count": 10,
+   "colours": {
+    "Red": 10
+   },
+   "colour_ids": {
+    "Red": 5
+   },
+   "weight_g": 0.84,
+   "ldraw_id": "18946",
+   "category": "Technic, Gear",
+   "match_confidence": 0.872,
+   "photos": [
+    "part_2026-10-05_20-53-26_412e.jpg"
+   ]
+  },
+  "23948": {
+   "name": "Technic, Axle 11L",
+   "count": 8,
+   "colours": {
+    "Light Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.65,
+   "ldraw_id": "23948",
+   "category": "Technic, Axle",
+   "photos": [
+    "part_2026-10-05_21-28-26_7a98.jpg"
+   ]
+  },
+  "24316": {
+   "name": "Technic, Axle  3L with Stop",
+   "count": 8,
+   "colours": {
+    "Reddish Brown": 8
+   },
+   "colour_ids": {
+    "Reddish Brown": 88
+   },
+   "weight_g": 0.45,
+   "ldraw_id": "24316",
+   "category": "Technic, Axle",
+   "match_confidence": 0.65,
+   "photos": [
+    "part_2026-10-05_21-34-13_71fb.jpg"
+   ]
+  },
+  "2730": {
+   "name": "Technic, Brick 1 x 10 with Holes",
+   "count": 5,
+   "colours": {
+    "White": 5
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 3.67,
+   "ldraw_id": "2730",
+   "category": "Technic, Brick",
+   "match_confidence": 0.909,
+   "photos": [
+    "part_2026-10-05_22-10-00_f86c.jpg"
+   ]
+  },
+  "2780": {
+   "name": "Technic, Pin with Short Friction Ridges",
+   "count": 121,
+   "colours": {
+    "Black": 121
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.2,
+   "ldraw_id": "2780",
+   "category": "Technic, Pin",
+   "match_confidence": 0.753,
+   "photos": [
+    "part_2026-10-05_21-39-13_988e.jpg"
+   ]
+  },
+  "2815": {
+   "name": "Tire Technic Wedge Belt Wheel",
+   "count": 4,
+   "colours": {
+    "Medium Azure": 4
+   },
+   "colour_ids": {
+    "Medium Azure": 156
+   },
+   "weight_g": 0.75,
+   "ldraw_id": "2815",
+   "category": "Wheel, Tire & Tread",
+   "match_confidence": 0.865,
+   "photos": [
+    "part_2026-10-05_22-00-46_2b48.jpg"
+   ]
+  },
+  "2909c03": {
+   "name": "Technic, Shock Absorber 9.5L (Soft Spring)",
+   "count": 2,
+   "colours": {
+    "Black": 2
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 4.0,
+   "ldraw_id": null,
+   "category": "Technic, Shock Absorber",
+   "match_confidence": 0.762,
+   "photos": [
+    "part_2026-10-05_21-59-54_0ad7.jpg"
+   ]
+  },
+  "3001": {
+   "name": "Brick 2 x 4",
+   "count": 500,
+   "colours": {
+    "Black": 500
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 2.32,
+   "ldraw_id": "3001",
+   "category": "Brick",
+   "match_confidence": 0.928,
+   "photos": [
+    "part_2026-10-05_23-04-01_b217.jpg"
+   ]
+  },
+  "3020": {
+   "name": "Plate 2 x 4",
+   "count": 55,
+   "colours": {
+    "White": 55
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 1.2,
+   "ldraw_id": "3020",
+   "category": "Plate",
+   "match_confidence": 0.842,
+   "photos": [
+    "part_2026-10-05_21-37-34_6a6a.jpg"
+   ]
+  },
+  "3021": {
+   "name": "Plate 2 x 3",
+   "count": 40,
+   "colours": {
+    "White": 40
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.93,
+   "ldraw_id": "3021",
+   "category": "Plate",
+   "match_confidence": 0.939,
+   "photos": [
+    "part_2026-10-05_20-59-26_ebbf.jpg"
+   ]
+  },
+  "3022": {
+   "name": "Plate 2 x 2",
+   "count": 45,
+   "colours": {
+    "White": 45
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.64,
+   "ldraw_id": "3022",
+   "category": "Plate",
+   "match_confidence": 0.904,
+   "photos": [
+    "part_2026-10-05_21-25-31_877c.jpg"
+   ]
+  },
+  "3023": {
+   "name": "Plate 1 x 2",
+   "count": 44,
+   "colours": {
+    "White": 44
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.36,
+   "ldraw_id": "3023",
+   "category": "Plate",
+   "match_confidence": 0.904,
+   "photos": [
+    "part_2026-10-05_21-26-18_bb55.jpg"
+   ]
+  },
+  "3028": {
+   "name": "Plate 6 x 12",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 9.47,
+   "ldraw_id": "3028",
+   "category": "Plate",
+   "match_confidence": 0.9,
+   "photos": [
+    "part_2026-10-05_22-05-12_5d13.jpg"
+   ]
+  },
+  "3030": {
+   "name": "Plate 4 x 10",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 5.55,
+   "ldraw_id": "3030",
+   "category": "Plate",
+   "match_confidence": 0.919,
+   "photos": [
+    "part_2026-10-05_22-10-17_aba6.jpg"
+   ]
+  },
+  "3031": {
+   "name": "Plate 4 x 4",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 2.22,
+   "ldraw_id": "3031",
+   "category": "Plate",
+   "match_confidence": 0.884,
+   "photos": [
+    "part_2026-10-05_22-04-49_d014.jpg"
+   ]
+  },
+  "3032": {
+   "name": "Plate 4 x 6",
+   "count": 10,
+   "colours": {
+    "Light Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 3.3,
+   "ldraw_id": "3032",
+   "category": "Plate",
+   "match_confidence": 0.915,
+   "photos": [
+    "part_2026-10-05_22-09-07_c6f8.jpg"
+   ]
+  },
+  "3033": {
+   "name": "Plate 6 x 10",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 7.95,
+   "ldraw_id": "3033",
+   "category": "Plate",
+   "match_confidence": 0.916,
+   "photos": [
+    "part_2026-10-05_22-10-11_9c9c.jpg"
+   ]
+  },
+  "3034": {
+   "name": "Plate 2 x 8",
+   "count": 51,
+   "colours": {
+    "White": 51
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 2.27,
+   "ldraw_id": "3034",
+   "category": "Plate",
+   "match_confidence": 0.829,
+   "photos": [
+    "part_2026-10-05_22-03-37_42e8.jpg"
+   ]
+  },
+  "3035": {
+   "name": "Plate 4 x 8",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 4.7,
+   "ldraw_id": "3035",
+   "category": "Plate",
+   "match_confidence": 0.892,
+   "photos": [
+    "part_2026-10-05_22-08-52_927d.jpg"
+   ]
+  },
+  "3036": {
+   "name": "Plate 6 x 8",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 6.4,
+   "ldraw_id": "3036",
+   "category": "Plate",
+   "match_confidence": 0.905,
+   "photos": [
+    "part_2026-10-05_22-08-45_a832.jpg"
+   ]
+  },
+  "32000": {
+   "name": "Technic, Brick 1 x 2 with Holes",
+   "count": 20,
+   "colours": {
+    "Light Bluish Gray": 20
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.73,
+   "ldraw_id": "32000",
+   "category": "Technic, Brick",
+   "match_confidence": 0.906,
+   "photos": [
+    "part_2026-10-05_21-27-09_d5c3.jpg"
+   ]
+  },
+  "32009": {
+   "name": "Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double",
+   "count": 8,
+   "colours": {
+    "Light Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 3.46,
+   "ldraw_id": "32009",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.893,
+   "photos": [
+    "part_2026-10-05_21-40-53_4a86.jpg"
+   ]
+  },
+  "32013": {
+   "name": "Technic, Axle and Pin Connector Angled #1",
+   "count": 11,
+   "colours": {
+    "White": 11
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.46,
+   "ldraw_id": "32013",
+   "category": "Technic, Connector",
+   "match_confidence": 0.896,
+   "photos": [
+    "part_2026-10-05_21-43-06_27cb.jpg"
+   ]
+  },
+  "32015": {
+   "name": "Technic, Axle and Pin Connector Angled #5 - 112.5 degrees",
+   "count": 11,
+   "colours": {
+    "Light Bluish Gray": 11
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.69,
+   "ldraw_id": "32015",
+   "category": "Technic, Connector",
+   "match_confidence": 0.852,
+   "photos": [
+    "part_2026-10-05_20-45-49_5177.jpg"
+   ]
+  },
+  "32018": {
+   "name": "Technic, Brick 1 x 14 with Holes",
+   "count": 5,
+   "colours": {
+    "Light Bluish Gray": 5
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 4.92,
+   "ldraw_id": "32018",
+   "category": "Technic, Brick",
+   "match_confidence": 0.897,
+   "photos": [
+    "part_2026-10-05_22-08-32_d4b0.jpg"
+   ]
+  },
+  "32020c01": {
+   "name": "Wheel 43.2mm D. x 18mm - Extended Axle Stem with Black Tire 62.4 x 20 S (32020 / 32019)",
+   "count": 4,
+   "colours": {
+    "Light Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 33.0,
+   "ldraw_id": "32020c01",
+   "category": "Wheel & Tire Assembly",
+   "match_confidence": 0.79,
+   "photos": [
+    "part_2026-10-05_22-09-35_aea3.jpg"
+   ]
+  },
+  "32034": {
+   "name": "Technic, Axle and Pin Connector Angled #2 - 180 degrees",
+   "count": 11,
+   "colours": {
+    "Black": 11
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.68,
+   "ldraw_id": "32034",
+   "category": "Technic, Connector",
+   "match_confidence": 0.904,
+   "photos": [
+    "part_2026-10-05_21-59-13_d7ad.jpg"
+   ]
+  },
+  "32054": {
+   "name": "Technic, Pin 3L with Friction Ridges and Stop Bush",
+   "count": 102,
+   "colours": {
+    "Light Bluish Gray": 102
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.33,
+   "ldraw_id": "32054",
+   "category": "Technic, Pin",
+   "match_confidence": 0.847,
+   "photos": [
+    "part_2026-10-05_20-41-09_52e5.jpg"
+   ]
+  },
+  "32056": {
+   "name": "Technic, Liftarm, Modified Bent Thin L-Shape 3 x 3",
+   "count": 11,
+   "colours": {
+    "Light Bluish Gray": 11
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.73,
+   "ldraw_id": "32056",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.912,
+   "photos": [
+    "part_2026-10-05_21-33-53_4140.jpg"
+   ]
+  },
+  "32062": {
+   "name": "Technic, Axle  2L Notched",
+   "count": 50,
+   "colours": {
+    "Red": 50
+   },
+   "colour_ids": {
+    "Red": 5
+   },
+   "weight_g": 0.26,
+   "ldraw_id": "32062",
+   "category": "Technic, Axle",
+   "match_confidence": 0.895,
+   "photos": [
+    "part_2026-10-05_21-34-52_7d09.jpg"
+   ]
+  },
+  "32072": {
+   "name": "Technic, Gear Knob Cog Wheel with Axle Hole (+ Orientation)",
+   "count": 26,
+   "colours": {
+    "Yellow": 26
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 0.87,
+   "ldraw_id": "32072",
+   "category": "Technic, Gear",
+   "match_confidence": 0.912,
+   "photos": [
+    "part_2026-10-05_20-55-54_945f.jpg"
+   ]
+  },
+  "32073": {
+   "name": "Technic, Axle  5L",
+   "count": 20,
+   "colours": {
+    "Light Bluish Gray": 20
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.66,
+   "ldraw_id": "32073",
+   "category": "Technic, Axle",
+   "match_confidence": 0.914,
+   "photos": [
+    "part_2026-10-05_21-36-13_af7c.jpg"
+   ]
+  },
+  "32140": {
+   "name": "Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4",
+   "count": 10,
+   "colours": {
+    "Black": 10
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.43,
+   "ldraw_id": "32140",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.863,
+   "photos": [
+    "part_2026-10-05_21-42-55_9141.jpg"
+   ]
+  },
+  "32184": {
+   "name": "Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole",
+   "count": 21,
+   "colours": {
+    "Light Bluish Gray": 21
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.64,
+   "ldraw_id": "32184",
+   "category": "Technic, Connector",
+   "match_confidence": 0.853,
+   "photos": [
+    "part_2026-10-05_20-49-15_026f.jpg"
+   ]
+  },
+  "32198": {
+   "name": "Technic, Gear 20 Tooth Bevel",
+   "count": 33,
+   "colours": {
+    "Tan": 33
+   },
+   "colour_ids": {
+    "Tan": 2
+   },
+   "weight_g": 0.75,
+   "ldraw_id": "32198",
+   "category": "Technic, Gear",
+   "match_confidence": 0.86,
+   "photos": [
+    "part_2026-10-05_20-46-26_3b32.jpg"
+   ]
+  },
+  "32269": {
+   "name": "Technic, Gear 20 Tooth Double Bevel",
+   "count": 44,
+   "colours": {
+    "Black": 44
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.4,
+   "ldraw_id": "32269",
+   "category": "Technic, Gear",
+   "match_confidence": 0.884,
+   "photos": [
+    "part_2026-10-05_20-51-33_f6a5.jpg"
+   ]
+  },
+  "32270": {
+   "name": "Technic, Gear 12 Tooth Double Bevel",
+   "count": 45,
+   "colours": {
+    "Light Bluish Gray": 45
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.58,
+   "ldraw_id": "32270",
+   "category": "Technic, Gear",
+   "match_confidence": 0.88,
+   "photos": [
+    "part_2026-10-05_20-46-06_cef5.jpg"
+   ]
+  },
+  "32271": {
+   "name": "Technic, Liftarm, Modified Bent Thick 1 x 9 (7 - 3)",
+   "count": 10,
+   "colours": {
+    "Light Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 2.63,
+   "ldraw_id": "32271",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.88,
+   "photos": [
+    "part_2026-10-05_22-05-51_4b0b.jpg"
+   ]
+  },
+  "32278": {
+   "name": "Technic, Liftarm Thick 1 x 15",
+   "count": 6,
+   "colours": {
+    "Light Bluish Gray": 6
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 4.0,
+   "ldraw_id": "32278",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.805,
+   "photos": [
+    "part_2026-10-05_21-33-09_ae92.jpg"
+   ]
+  },
+  "32316": {
+   "name": "Technic, Liftarm Thick 1 x 5",
+   "count": 10,
+   "colours": {
+    "Black": 10
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.25,
+   "ldraw_id": "32316",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.833,
+   "photos": [
+    "part_2026-10-05_20-54-34_8a98.jpg"
+   ]
+  },
+  "32348": {
+   "name": "Technic, Liftarm, Modified Bent Thick 1 x 7 (4 - 4)",
+   "count": 10,
+   "colours": {
+    "Black": 10
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 2.0,
+   "ldraw_id": "32348",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.852,
+   "photos": [
+    "part_2026-10-05_21-59-21_8455.jpg"
+   ]
+  },
+  "32494": {
+   "name": "Technic, Steering CV Joint",
+   "count": 4,
+   "colours": {
+    "Light Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.55,
+   "ldraw_id": "32494",
+   "category": "Technic, Steering",
+   "match_confidence": 0.901,
+   "photos": [
+    "part_2026-10-05_22-00-28_f60d.jpg"
+   ]
+  },
+  "32498": {
+   "name": "Technic, Gear 36 Tooth Double Bevel",
+   "count": 6,
+   "colours": {
+    "Black": 6
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 3.5,
+   "ldraw_id": "32498",
+   "category": "Technic, Gear",
+   "match_confidence": 0.897,
+   "photos": [
+    "part_2026-10-05_20-40-44_497f.jpg"
+   ]
+  },
+  "32523": {
+   "name": "Technic, Liftarm Thick 1 x 3",
+   "count": 11,
+   "colours": {
+    "White": 11
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.7,
+   "ldraw_id": "32523",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.911,
+   "photos": [
+    "part_2026-10-05_20-54-15_e0ff.jpg"
+   ]
+  },
+  "32524": {
+   "name": "Technic, Liftarm Thick 1 x 7",
+   "count": 10,
+   "colours": {
+    "Light Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.74,
+   "ldraw_id": "32524",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.9,
+   "photos": [
+    "part_2026-10-05_20-54-44_3c64.jpg"
+   ]
+  },
+  "32525": {
+   "name": "Technic, Liftarm Thick 1 x 11",
+   "count": 10,
+   "colours": {
+    "Black": 10
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 2.8,
+   "ldraw_id": "32525",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.894,
+   "photos": [
+    "part_2026-10-05_22-09-26_974c.jpg"
+   ]
+  },
+  "32526": {
+   "name": "Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5",
+   "count": 10,
+   "colours": {
+    "Dark Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 1.77,
+   "ldraw_id": "32526",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.89,
+   "photos": [
+    "part_2026-10-05_22-11-40_b1a3.jpg"
+   ]
+  },
+  "35188": {
+   "name": "Technic Changeover Rotary Catch",
+   "count": 2,
+   "colours": {
+    "Orange": 2
+   },
+   "colour_ids": {
+    "Orange": 4
+   },
+   "weight_g": 1.08,
+   "ldraw_id": "35188",
+   "category": "Technic",
+   "match_confidence": 0.769,
+   "photos": [
+    "part_2026-10-05_21-44-04_18dd.jpg"
+   ]
+  },
+  "3623": {
+   "name": "Plate 1 x 3",
+   "count": 40,
+   "colours": {
+    "White": 40
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.53,
+   "ldraw_id": "3623",
+   "category": "Plate",
+   "match_confidence": 0.864,
+   "photos": [
+    "part_2026-10-05_21-25-54_f19b.jpg"
+   ]
+  },
+  "3648": {
+   "name": "Technic, Gear 24 Tooth with 1 Axle Hole",
+   "count": 10,
+   "colours": {
+    "Light Gray": 10
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 1.17,
+   "ldraw_id": "3648",
+   "category": "Technic, Gear",
+   "match_confidence": 0.85,
+   "photos": [
+    "part_2026-10-05_20-49-41_f8f2.jpg"
+   ]
+  },
+  "3649": {
+   "name": "Technic, Gear 40 Tooth",
+   "count": 18,
+   "colours": {
+    "White": 18
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 3.76,
+   "ldraw_id": "3649",
+   "category": "Technic, Gear",
+   "match_confidence": 0.878,
+   "photos": [
+    "part_2026-10-05_20-27-39_7297.jpg"
+   ]
+  },
+  "3673": {
+   "name": "Technic, Pin without Friction Ridges",
+   "count": 143,
+   "colours": {
+    "Light Bluish Gray": 143
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.16,
+   "ldraw_id": "3673",
+   "category": "Technic, Pin",
+   "match_confidence": 0.893,
+   "photos": [
+    "part_2026-10-05_21-45-51_9e16.jpg"
+   ]
+  },
+  "3700": {
+   "name": "Technic, Brick 1 x 2 with Hole",
+   "count": 20,
+   "colours": {
+    "White": 20
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.82,
+   "ldraw_id": "3700",
+   "category": "Technic, Brick",
+   "match_confidence": 0.917,
+   "photos": [
+    "part_2026-10-05_21-27-17_6093.jpg"
+   ]
+  },
+  "3701": {
+   "name": "Technic, Brick 1 x 4 with Holes",
+   "count": 21,
+   "colours": {
+    "Black": 21
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.46,
+   "ldraw_id": "3701",
+   "category": "Technic, Brick",
+   "match_confidence": 0.856,
+   "photos": [
+    "part_2026-10-05_21-43-38_a0dd.jpg"
+   ]
+  },
+  "3702": {
+   "name": "Technic, Brick 1 x 8 with Holes",
+   "count": 10,
+   "colours": {
+    "Light Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 2.85,
+   "ldraw_id": "3702",
+   "category": "Technic, Brick",
+   "match_confidence": 0.889,
+   "photos": [
+    "part_2026-10-05_20-45-20_02d2.jpg"
+   ]
+  },
+  "3703": {
+   "name": "Technic, Brick 1 x 16 with Holes",
+   "count": 5,
+   "colours": {
+    "Light Bluish Gray": 5
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 5.87,
+   "ldraw_id": "3703",
+   "category": "Technic, Brick",
+   "match_confidence": 0.893,
+   "photos": [
+    "part_2026-10-05_22-08-24_472f.jpg"
+   ]
+  },
+  "3705": {
+   "name": "Technic, Axle  4L",
+   "count": 20,
+   "colours": {
+    "Black": 20
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.59,
+   "ldraw_id": "3705",
+   "category": "Technic, Axle",
+   "match_confidence": 0.873,
+   "photos": [
+    "part_2026-10-05_21-20-56_7f28.jpg"
+   ]
+  },
+  "3706": {
+   "name": "Technic, Axle  6L",
+   "count": 44,
+   "colours": {
+    "Light Gray": 20,
+    "Black": 24
+   },
+   "colour_ids": {
+    "Light Gray": 9,
+    "Black": 11
+   },
+   "weight_g": 0.86,
+   "ldraw_id": "3706",
+   "category": "Technic, Axle",
+   "photos": [
+    "part_2026-10-05_21-17-13_3904.jpg",
+    "part_2026-10-05_21-35-43_bf84.jpg"
+   ],
+   "match_confidence": 0.645
+  },
+  "3707": {
+   "name": "Technic, Axle  8L",
+   "count": 16,
+   "colours": {
+    "Light Gray": 16
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 1.18,
+   "ldraw_id": "3707",
+   "category": "Technic, Axle",
+   "match_confidence": 0.607,
+   "photos": [
+    "part_2026-10-05_21-31-48_bd45.jpg"
+   ]
+  },
+  "3710": {
+   "name": "Plate 1 x 4",
+   "count": 36,
+   "colours": {
+    "Light Bluish Gray": 36
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.71,
+   "ldraw_id": "3710",
+   "category": "Plate",
+   "match_confidence": 0.861,
+   "photos": [
+    "part_2026-10-05_21-26-42_ff93.jpg"
+   ]
+  },
+  "3711": {
+   "name": "Technic, Link Chain",
+   "count": 100,
+   "colours": {
+    "Black": 100
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.09,
+   "ldraw_id": "3711",
+   "category": "Technic, Link",
+   "match_confidence": 0.813,
+   "photos": [
+    "part_2026-10-05_22-07-44_f5b1.jpg"
+   ]
+  },
+  "3713": {
+   "name": "Technic Bush",
+   "count": 10,
+   "colours": {
+    "Light Gray": 10
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 0.14,
+   "ldraw_id": "3713",
+   "category": "Technic",
+   "match_confidence": 0.753,
+   "photos": [
+    "part_2026-10-05_21-43-53_5127.jpg"
+   ]
+  },
+  "3743": {
+   "name": "Technic, Gear Rack 1 x 4",
+   "count": 22,
+   "colours": {
+    "Black": 22
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.79,
+   "ldraw_id": "3743",
+   "category": "Technic, Gear",
+   "match_confidence": 0.889,
+   "photos": [
+    "part_2026-10-05_20-47-03_aea5.jpg"
+   ]
+  },
+  "3795": {
+   "name": "Plate 2 x 6",
+   "count": 35,
+   "colours": {
+    "Light Bluish Gray": 35
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.74,
+   "ldraw_id": "3795",
+   "category": "Plate",
+   "match_confidence": 0.859,
+   "photos": [
+    "part_2026-10-05_21-18-27_339f.jpg"
+   ]
+  },
+  "3873": {
+   "name": "Technic, Link Tread",
+   "count": 50,
+   "colours": {
+    "Light Bluish Gray": 50
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.19,
+   "ldraw_id": "3873",
+   "category": "Technic, Link",
+   "match_confidence": 0.804,
+   "photos": [
+    "part_2026-10-05_22-07-35_8891.jpg"
+   ]
+  },
+  "3894": {
+   "name": "Technic, Brick 1 x 6 with Holes",
+   "count": 10,
+   "colours": {
+    "Light Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 2.2,
+   "ldraw_id": "3894",
+   "category": "Technic, Brick",
+   "match_confidence": 0.876,
+   "photos": [
+    "part_2026-10-05_21-43-30_61a5.jpg"
+   ]
+  },
+  "3895": {
+   "name": "Technic, Brick 1 x 12 with Holes",
+   "count": 5,
+   "colours": {
+    "Dark Bluish Gray": 5
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 4.2,
+   "ldraw_id": "3895",
+   "category": "Technic, Brick",
+   "match_confidence": 0.92,
+   "photos": [
+    "part_2026-10-05_22-09-49_0f10.jpg"
+   ]
+  },
+  "3958": {
+   "name": "Plate 6 x 6",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 4.71,
+   "ldraw_id": "3958",
+   "category": "Plate",
+   "match_confidence": 0.893,
+   "photos": [
+    "part_2026-10-05_22-04-05_f6fd.jpg"
+   ]
+  },
+  "4019": {
+   "name": "Technic, Gear 16 Tooth - Axle Hole with Open Sides",
+   "count": 1,
+   "colours": {
+    "Light Gray": 1
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 0.7,
+   "ldraw_id": "4019",
+   "category": "Technic, Gear",
+   "match_confidence": 0.869,
+   "photos": [
+    "part_2026-10-05_22-01-06_fd78.jpg"
+   ]
+  },
+  "40490": {
+   "name": "Technic, Liftarm Thick 1 x 9",
+   "count": 10,
+   "colours": {
+    "Dark Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 2.59,
+   "ldraw_id": "40490",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.545,
+   "photos": [
+    "part_2026-10-05_22-09-20_f415.jpg"
+   ]
+  },
+  "41239": {
+   "name": "Technic, Liftarm Thick 1 x 13",
+   "count": 6,
+   "colours": {
+    "Light Bluish Gray": 6
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 3.3,
+   "ldraw_id": "41239",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.881,
+   "photos": [
+    "part_2026-10-05_21-20-35_65b4.jpg"
+   ]
+  },
+  "41539": {
+   "name": "Plate 8 x 8",
+   "count": 10,
+   "colours": {
+    "White": 10
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 9.4,
+   "ldraw_id": "41539",
+   "category": "Plate",
+   "match_confidence": 0.914,
+   "photos": [
+    "part_2026-10-05_22-09-01_17c0.jpg"
+   ]
+  },
+  "4185": {
+   "name": "Technic Wedge Belt Wheel (Pulley)",
+   "count": 4,
+   "colours": {
+    "Yellow": 4
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 0.97,
+   "ldraw_id": "4185",
+   "category": "Wheel",
+   "match_confidence": 0.908,
+   "photos": [
+    "part_2026-10-05_21-38-49_caaa.jpg"
+   ]
+  },
+  "42003": {
+   "name": "Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+   "count": 21,
+   "colours": {
+    "Light Bluish Gray": 21
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.77,
+   "ldraw_id": "42003",
+   "category": "Technic, Connector",
+   "match_confidence": 0.922,
+   "photos": [
+    "part_2026-10-05_20-55-38_0676.jpg"
+   ]
+  },
+  "4265c": {
+   "name": "Technic Bush 1/2 Smooth",
+   "count": 66,
+   "colours": {
+    "White": 66
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.1,
+   "ldraw_id": "4265c",
+   "category": "Technic",
+   "match_confidence": 0.88,
+   "photos": [
+    "part_2026-10-05_21-27-43_cd0f.jpg"
+   ]
+  },
+  "43093": {
+   "name": "Technic, Axle  1L with Pin with Friction Ridges",
+   "count": 153,
+   "colours": {
+    "Blue": 153
+   },
+   "colour_ids": {
+    "Blue": 7
+   },
+   "weight_g": 0.26,
+   "ldraw_id": "43093",
+   "category": "Technic, Axle",
+   "match_confidence": 0.879,
+   "photos": [
+    "part_2026-10-05_21-40-31_3ee6.jpg"
+   ]
+  },
+  "44294": {
+   "name": "Technic, Axle  7L",
+   "count": 20,
+   "colours": {
+    "Light Bluish Gray": 20
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.05,
+   "ldraw_id": "44294",
+   "category": "Technic, Axle",
+   "match_confidence": 0.756,
+   "photos": [
+    "part_2026-10-05_21-15-48_1f53.jpg"
+   ]
+  },
+  "4477": {
+   "name": "Plate 1 x 10",
+   "count": 15,
+   "colours": {
+    "White": 15
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 1.61,
+   "ldraw_id": "4477",
+   "category": "Plate",
+   "match_confidence": 0.876,
+   "photos": [
+    "part_2026-10-05_22-03-55_e759.jpg"
+   ]
+  },
+  "4519": {
+   "name": "Technic, Axle  3L",
+   "count": 33,
+   "colours": {
+    "Light Bluish Gray": 33
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.43,
+   "ldraw_id": "4519",
+   "category": "Technic, Axle",
+   "match_confidence": 0.847,
+   "photos": [
+    "part_2026-10-05_21-21-13_c987.jpg"
+   ]
+  },
+  "4716": {
+   "name": "Technic, Gear Worm Screw, Long",
+   "count": 11,
+   "colours": {
+    "Black": 11
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.6,
+   "ldraw_id": "4716",
+   "category": "Technic, Gear",
+   "match_confidence": 0.795,
+   "photos": [
+    "part_2026-10-05_21-27-32_5dfd.jpg"
+   ]
+  },
+  "48989": {
+   "name": "Technic, Pin Connector Perpendicular 3L with 4 Pins",
+   "count": 5,
+   "colours": {
+    "Light Bluish Gray": 5
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.22,
+   "ldraw_id": "48989",
+   "category": "Technic, Connector",
+   "match_confidence": 0.753,
+   "photos": [
+    "part_2026-10-05_20-39-30_e243.jpg"
+   ]
+  },
+  "50451": {
+   "name": "Technic, Axle 16L",
+   "count": 8,
+   "colours": {
+    "White": 8
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 2.37,
+   "ldraw_id": "50451",
+   "category": "Technic, Axle",
+   "photos": [
+    "part_2026-10-05_21-46-18_9832.jpg"
+   ]
+  },
+  "55423c01": {
+   "name": "Train Wheel RC, Spoked with Technic Axle Hole and Rubber Friction Band",
+   "count": 8,
+   "colours": {
+    "Black": 8
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.1,
+   "ldraw_id": null,
+   "category": "Wheel",
+   "match_confidence": 0.765,
+   "photos": [
+    "part_2026-10-05_21-42-21_3d55.jpg"
+   ]
+  },
+  "55615": {
+   "name": "Technic, Pin Connector Perpendicular 3 x 3 Bent with 4 Pins",
+   "count": 5,
+   "colours": {
+    "Light Bluish Gray": 5
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.9,
+   "ldraw_id": "55615",
+   "category": "Technic, Connector",
+   "match_confidence": 0.895,
+   "photos": [
+    "part_2026-10-05_20-46-50_f589.jpg"
+   ]
+  },
+  "55982c01": {
+   "name": "Wheel 18mm D. x 14mm with Axle Hole, Fake Bolts and Shallow Spokes with Black Tire 30.4 x 14 Offset Tread (55982 / 30391)",
+   "count": 4,
+   "colours": {
+    "Light Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 8.37,
+   "ldraw_id": null,
+   "category": "Wheel & Tire Assembly",
+   "match_confidence": 0.85,
+   "photos": [
+    "part_2026-10-05_22-05-33_82d9.jpg"
+   ]
+  },
+  "56145c01": {
+   "name": "Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim with Black Tire 43.2 x 22 ZR (56145 / 44309)",
+   "count": 8,
+   "colours": {
+    "Black": 8
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 15.1,
+   "ldraw_id": "56145c01",
+   "category": "Wheel & Tire Assembly",
+   "match_confidence": 0.709,
+   "photos": [
+    "part_2026-10-05_22-05-25_6055.jpg"
+   ]
+  },
+  "57515": {
+   "name": "Technic, Steering Arm 6 x 2 with Tow Ball Socket Rounded, Chamfered",
+   "count": 4,
+   "colours": {
+    "Dark Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 1.52,
+   "ldraw_id": "57515",
+   "category": "Technic, Steering",
+   "match_confidence": 0.863,
+   "photos": [
+    "part_2026-10-05_20-48-16_9f5e.jpg"
+   ]
+  },
+  "57518": {
+   "name": "Technic, Link Tread Wide with 2 Pin Holes",
+   "count": 52,
+   "colours": {
+    "Black": 52
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.4,
+   "ldraw_id": "57518",
+   "category": "Technic, Link",
+   "match_confidence": 0.909,
+   "photos": [
+    "part_2026-10-05_20-24-42_1cf9.jpg"
+   ]
+  },
+  "57519": {
+   "name": "Technic Tread Sprocket Wheel Large",
+   "count": 4,
+   "colours": {
+    "Yellow": 4
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 5.1,
+   "ldraw_id": "57519",
+   "category": "Wheel",
+   "match_confidence": 0.856,
+   "photos": [
+    "part_2026-10-05_20-26-03_b037.jpg"
+   ]
+  },
+  "57520": {
+   "name": "Technic Tread Sprocket Wheel Small",
+   "count": 10,
+   "colours": {
+    "Pearl Light Gray": 10
+   },
+   "colour_ids": {
+    "Pearl Light Gray": 66
+   },
+   "weight_g": 1.63,
+   "ldraw_id": "57520",
+   "category": "Wheel",
+   "match_confidence": 0.849,
+   "photos": [
+    "part_2026-10-05_20-40-29_ee95.jpg"
+   ]
+  },
+  "57585": {
+   "name": "Technic, Axle Connector Hub with 3 Axles",
+   "count": 4,
+   "colours": {
+    "Light Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.65,
+   "ldraw_id": "57585",
+   "category": "Technic, Connector",
+   "match_confidence": 0.899,
+   "photos": [
+    "part_2026-10-05_22-00-52_cef7.jpg"
+   ]
+  },
+  "58120c01": {
+   "name": "Electric, Motor 9V Power Functions M with Dark Bluish Gray Bottom",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 33.5,
+   "ldraw_id": "58120c01",
+   "category": "Electric, Motor",
+   "match_confidence": 0.621,
+   "photos": [
+    "part_2026-10-05_22-13-03_bc83.jpg"
+   ]
+  },
+  "58121c01": {
+   "name": "Electric, Motor 9V Power Functions XL with Dark Bluish Gray Bottom",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 72.0,
+   "ldraw_id": "58121c01",
+   "category": "Electric, Motor",
+   "match_confidence": 0.77,
+   "photos": [
+    "part_2026-10-05_22-13-09_e97f.jpg"
+   ]
+  },
+  "58123c01": {
+   "name": "Electric Power Functions Receiver Unit with Dark Bluish Gray Bottom",
+   "count": 1,
+   "colours": {
+    "Light Bluish Gray": 1
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 20.6,
+   "ldraw_id": "58123c01",
+   "category": "Electric",
+   "match_confidence": 0.828,
+   "photos": [
+    "part_2026-10-05_22-13-28_37f7.jpg"
+   ]
+  },
+  "59510c01": {
+   "name": "Electric 9V Battery Box 4 x 11 x 7 PF with Orange Switch and Dark Bluish Gray Covers",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 53.5,
+   "ldraw_id": null,
+   "category": "Electric, Battery Box",
+   "match_confidence": 0.804,
+   "photos": [
+    "part_2026-10-05_22-12-50_1921.jpg"
+   ]
+  },
+  "60484": {
+   "name": "Technic, Liftarm, Modified T-Shape Thick 3 x 3",
+   "count": 10,
+   "colours": {
+    "Black": 10
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.19,
+   "ldraw_id": "60484",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.905,
+   "photos": [
+    "part_2026-10-05_21-39-42_40e6.jpg"
+   ]
+  },
+  "60485": {
+   "name": "Technic, Axle  9L",
+   "count": 8,
+   "colours": {
+    "Light Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 1.3,
+   "ldraw_id": "60485",
+   "category": "Technic, Axle",
+   "photos": [
+    "part_2026-10-05_21-10-58_4fe8.jpg"
+   ]
+  },
+  "62821b": {
+   "name": "Technic, Gear Differential 28 Tooth Bevel - Inner Tabs with Closed Center",
+   "count": 2,
+   "colours": {
+    "Dark Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 2.8,
+   "ldraw_id": null,
+   "category": "Technic, Gear",
+   "match_confidence": 0.839,
+   "photos": [
+    "part_2026-10-05_22-01-41_6134.jpg"
+   ]
+  },
+  "64178": {
+   "name": "Technic, Liftarm, Modified Frame Thick 5 x 11 Open Center",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 7.0,
+   "ldraw_id": "64178",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.927,
+   "photos": [
+    "part_2026-10-05_22-02-43_0382.jpg"
+   ]
+  },
+  "64179": {
+   "name": "Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center",
+   "count": 12,
+   "colours": {
+    "Light Bluish Gray": 12
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 5.3,
+   "ldraw_id": "64179",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.927,
+   "photos": [
+    "part_2026-10-05_22-10-42_6cad.jpg"
+   ]
+  },
+  "65249": {
+   "name": "Technic, Axle  2L with Pin without Friction Ridges",
+   "count": 8,
+   "colours": {
+    "Light Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.3,
+   "ldraw_id": "65249",
+   "category": "Technic, Axle",
+   "match_confidence": 0.825,
+   "photos": [
+    "part_2026-10-05_21-44-19_5c92.jpg"
+   ]
+  },
+  "6536": {
+   "name": "Technic, Axle and Pin Connector Perpendicular",
+   "count": 21,
+   "colours": {
+    "White": 21
+   },
+   "colour_ids": {
+    "White": 1
+   },
+   "weight_g": 0.39,
+   "ldraw_id": "6536",
+   "category": "Technic, Connector",
+   "match_confidence": 0.732,
+   "photos": [
+    "part_2026-10-05_20-36-37_b65c.jpg"
+   ]
+  },
+  "6541": {
+   "name": "Technic, Brick 1 x 1 with Hole",
+   "count": 20,
+   "colours": {
+    "Black": 20
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 0.38,
+   "ldraw_id": "6541",
+   "category": "Technic, Brick",
+   "match_confidence": 0.892,
+   "photos": [
+    "part_2026-10-05_21-45-08_cd86.jpg"
+   ]
+  },
+  "65414": {
+   "name": "Technic, Gear Differential Housing",
+   "count": 3,
+   "colours": {
+    "Light Bluish Gray": 3
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 2.31,
+   "ldraw_id": "65414",
+   "category": "Technic, Gear",
+   "match_confidence": 0.616,
+   "photos": [
+    "part_2026-10-05_22-02-52_0881.jpg"
+   ]
+  },
+  "6542b": {
+   "name": "Technic, Gear 16 Tooth with Clutch, Smooth Center",
+   "count": 8,
+   "colours": {
+    "Dark Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 0.7,
+   "ldraw_id": "6542b",
+   "category": "Technic, Gear",
+   "match_confidence": 0.85,
+   "photos": [
+    "part_2026-10-05_20-52-01_2a93.jpg"
+   ]
+  },
+  "6558": {
+   "name": "Technic, Pin 3L with Friction Ridges",
+   "count": 101,
+   "colours": {
+    "Blue": 101
+   },
+   "colour_ids": {
+    "Blue": 7
+   },
+   "weight_g": 0.37,
+   "ldraw_id": "6558",
+   "category": "Technic, Pin",
+   "match_confidence": 0.86,
+   "photos": [
+    "part_2026-10-05_20-40-03_fd02.jpg"
+   ]
+  },
+  "6575": {
+   "name": "Technic Cam",
+   "count": 2,
+   "colours": {
+    "Yellow": 2
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 0.7,
+   "ldraw_id": "6575",
+   "category": "Technic",
+   "match_confidence": 0.878,
+   "photos": [
+    "part_2026-10-05_22-00-04_81bf.jpg"
+   ]
+  },
+  "6587": {
+   "name": "Technic, Axle  3L with Stud",
+   "count": 8,
+   "colours": {
+    "Dark Tan": 8
+   },
+   "colour_ids": {
+    "Dark Tan": 69
+   },
+   "weight_g": 0.48,
+   "ldraw_id": "6587",
+   "category": "Technic, Axle",
+   "match_confidence": 0.873,
+   "photos": [
+    "part_2026-10-05_21-42-31_eaac.jpg"
+   ]
+  },
+  "6588": {
+   "name": "Technic, Gearbox 2 x 4 x 3 1/3",
+   "count": 1,
+   "colours": {
+    "Light Gray": 1
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 4.5,
+   "ldraw_id": "6588",
+   "category": "Technic, Gear",
+   "match_confidence": 0.759,
+   "photos": [
+    "part_2026-10-05_22-01-53_092e.jpg"
+   ]
+  },
+  "6589": {
+   "name": "Technic, Gear 12 Tooth Bevel",
+   "count": 35,
+   "colours": {
+    "Tan": 35
+   },
+   "colour_ids": {
+    "Tan": 2
+   },
+   "weight_g": 0.29,
+   "ldraw_id": "6589",
+   "category": "Technic, Gear",
+   "match_confidence": 0.836,
+   "photos": [
+    "part_2026-10-05_20-50-22_0fec.jpg"
+   ]
+  },
+  "6629": {
+   "name": "Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4)",
+   "count": 10,
+   "colours": {
+    "Dark Bluish Gray": 10
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 2.6,
+   "ldraw_id": "6629",
+   "category": "Technic, Liftarm",
+   "match_confidence": 0.88,
+   "photos": [
+    "part_2026-10-05_20-52-56_e56e.jpg"
+   ]
+  },
+  "6630": {
+   "name": "Technic, Gear Rack 1 x 8 with Holes",
+   "count": 4,
+   "colours": {
+    "Light Gray": 4
+   },
+   "colour_ids": {
+    "Light Gray": 9
+   },
+   "weight_g": 2.0,
+   "ldraw_id": "6630",
+   "category": "Technic, Gear",
+   "match_confidence": 0.862,
+   "photos": [
+    "part_2026-10-05_20-47-49_447e.jpg"
+   ]
+  },
+  "6641": {
+   "name": "Technic Changeover Catch",
+   "count": 4,
+   "colours": {
+    "Red": 4
+   },
+   "colour_ids": {
+    "Red": 5
+   },
+   "weight_g": 0.5,
+   "ldraw_id": "6641",
+   "category": "Technic",
+   "match_confidence": 0.861,
+   "photos": [
+    "part_2026-10-05_22-00-58_2efc.jpg"
+   ]
+  },
+  "69761": {
+   "name": "Technic, Gear 22 Tooth Bevel",
+   "count": 3,
+   "colours": {
+    "Yellow": 3
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 2.2,
+   "ldraw_id": "69761",
+   "category": "Technic, Gear",
+   "match_confidence": 0.814,
+   "photos": [
+    "part_2026-10-05_21-45-24_8550.jpg"
+   ]
+  },
+  "69762": {
+   "name": "Technic, Gear 14 Tooth Bevel Thick",
+   "count": 6,
+   "colours": {
+    "Yellow": 6
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 1.2,
+   "ldraw_id": "69762",
+   "category": "Technic, Gear",
+   "match_confidence": 0.836,
+   "photos": [
+    "part_2026-10-05_21-39-31_0c13.jpg"
+   ]
+  },
+  "69778": {
+   "name": "Technic, Gear 12 Tooth",
+   "count": 8,
+   "colours": {
+    "Blue": 8
+   },
+   "colour_ids": {
+    "Blue": 7
+   },
+   "weight_g": 0.5,
+   "ldraw_id": "69778",
+   "category": "Technic, Gear",
+   "match_confidence": 0.849,
+   "photos": [
+    "part_2026-10-05_20-40-18_5f71.jpg"
+   ]
+  },
+  "731c04": {
+   "name": "Technic, Shock Absorber 6.5L with Black Piston Rod - Hard Spring, Tight Coils in Middle",
+   "count": 6,
+   "colours": {
+    "Yellow": 6
+   },
+   "colour_ids": {
+    "Yellow": 3
+   },
+   "weight_g": 2.1,
+   "ldraw_id": null,
+   "category": "Technic, Shock Absorber",
+   "match_confidence": 0.871,
+   "photos": [
+    "part_2026-10-05_21-33-43_33db.jpg"
+   ]
+  },
+  "87082": {
+   "name": "Technic, Pin 3L with Friction Ridges and Center Pin Hole",
+   "count": 5,
+   "colours": {
+    "Light Nougat": 5
+   },
+   "colour_ids": {
+    "Light Nougat": 90
+   },
+   "weight_g": 0.5,
+   "ldraw_id": "87082",
+   "category": "Technic, Pin",
+   "match_confidence": 0.879,
+   "photos": [
+    "part_2026-10-05_21-40-15_c181.jpg"
+   ]
+  },
+  "87083": {
+   "name": "Technic, Axle  4L with Stop",
+   "count": 8,
+   "colours": {
+    "Dark Bluish Gray": 8
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 0.59,
+   "ldraw_id": "87083",
+   "category": "Technic, Axle",
+   "match_confidence": 0.841,
+   "photos": [
+    "part_2026-10-05_21-58-30_9856.jpg"
+   ]
+  },
+  "87513c01": {
+   "name": "Electric 9V Battery Box Power Functions (Non-Rechargeable) with Dark Bluish Gray Bottom",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 40.0,
+   "ldraw_id": null,
+   "category": "Electric, Battery Box",
+   "match_confidence": 0.801,
+   "photos": [
+    "part_2026-10-05_22-12-43_6c25.jpg"
+   ]
+  },
+  "87574c01": {
+   "name": "Electric, Train Motor 9V RC Train with Integrated PF Attachment, Orange Wheel Holders",
+   "count": 2,
+   "colours": {
+    "Black": 2
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 57.1,
+   "ldraw_id": "87574c01",
+   "category": "Electric, Train",
+   "match_confidence": 0.774,
+   "photos": [
+    "part_2026-10-05_22-12-57_f8b0.jpg"
+   ]
+  },
+  "87761": {
+   "name": "Technic, Gear Rack 1 x 7 with Axle and Pin Holes",
+   "count": 2,
+   "colours": {
+    "Black": 2
+   },
+   "colour_ids": {
+    "Black": 11
+   },
+   "weight_g": 1.8,
+   "ldraw_id": "87761",
+   "category": "Technic, Gear",
+   "match_confidence": 0.872,
+   "photos": [
+    "part_2026-10-05_22-00-37_98a0.jpg"
+   ]
+  },
+  "92438": {
+   "name": "Plate 8 x 16",
+   "count": 1,
+   "colours": {
+    "Light Bluish Gray": 1
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 17.0,
+   "ldraw_id": "92438",
+   "category": "Plate",
+   "match_confidence": 0.876,
+   "photos": [
+    "part_2026-10-05_23-11-11_4a5c.jpg"
+   ]
+  },
+  "92906": {
+   "name": "Technic, Steering CV Joint Narrow with 2L Axle",
+   "count": 4,
+   "colours": {
+    "Dark Bluish Gray": 4
+   },
+   "colour_ids": {
+    "Dark Bluish Gray": 85
+   },
+   "weight_g": 0.45,
+   "ldraw_id": "92906",
+   "category": "Technic, Steering",
+   "match_confidence": 0.86,
+   "photos": [
+    "part_2026-10-05_22-00-18_db79.jpg"
+   ]
+  },
+  "94925": {
+   "name": "Technic, Gear 16 Tooth - Axle Hole with Closed Sides",
+   "count": 20,
+   "colours": {
+    "Light Bluish Gray": 20
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 0.7,
+   "ldraw_id": "94925",
+   "category": "Technic, Gear",
+   "match_confidence": 0.826,
+   "photos": [
+    "part_2026-10-05_20-51-09_3403.jpg"
+   ]
+  },
+  "99498c01": {
+   "name": "Electric, Motor 9V Power Functions Servo with Dark Bluish Gray Bottom",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 44.0,
+   "ldraw_id": "99498c01",
+   "category": "Electric, Motor",
+   "match_confidence": 0.756,
+   "photos": [
+    "part_2026-10-05_22-13-16_a74f.jpg"
+   ]
+  },
+  "99499c01": {
+   "name": "Electric, Motor 9V Power Functions L with Dark Bluish Gray Bottom",
+   "count": 2,
+   "colours": {
+    "Light Bluish Gray": 2
+   },
+   "colour_ids": {
+    "Light Bluish Gray": 86
+   },
+   "weight_g": 45.0,
+   "ldraw_id": "99499c01",
+   "category": "Electric, Motor",
+   "match_confidence": 0.863,
+   "photos": [
+    "part_2026-10-05_22-13-22_8985.jpg"
+   ]
+  }
+ },
+ "flags": [
+  {
+   "id": "92438",
+   "issue": "'Parts' lots give 10 x Light Bluish Gray, 'Summary by part' 1 (summary used)"
+  },
+  {
+   "id": "12787c01",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "24316",
+   "issue": "low photo-match confidence 0.65: Technic, Axle  3L with Stop"
+  },
+  {
+   "id": "2815",
+   "issue": "Tire for the Technic wedge-belt wheel: fits 4185 (4 tyres for the 4 x 4185 pulleys); confirm they are the rubber 2815 tyres and not 4185 pulleys counted twice"
+  },
+  {
+   "id": "2909c03",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "3001",
+   "issue": "Brick 2 x 4: 500 pieces in one lot -- confirm the count (bulk lot) before designs rely on it as ballast"
+  },
+  {
+   "id": "3706",
+   "issue": "low photo-match confidence 0.65: Technic, Axle  6L"
+  },
+  {
+   "id": "3706",
+   "issue": "several colours {'Light Gray': 20, 'Black': 24} (counts summed)"
+  },
+  {
+   "id": "3707",
+   "issue": "low photo-match confidence 0.61: Technic, Axle  8L"
+  },
+  {
+   "id": "40490",
+   "issue": "low photo-match confidence 0.55: Technic, Liftarm Thick 1 x 9"
+  },
+  {
+   "id": "4265c",
+   "issue": "Technic bush 1/2 smooth: 66 pieces (white) -- confirm half bushes (4265c) and not full bushes (3713)"
+  },
+  {
+   "id": "55423c01",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "55982c01",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "58120c01",
+   "issue": "low photo-match confidence 0.62: Electric, Motor 9V Power Functions M with Dark Bluish Gray Bottom"
+  },
+  {
+   "id": "58123c01",
+   "issue": "PF IR receiver: confirm it is a genuine LEGO 8884 (the clone kits' receivers are 2.4 GHz radio and cannot be driven by the IR bridge)"
+  },
+  {
+   "id": "59510c01",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "62821b",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "62821b",
+   "issue": "Differential 28T bevel with closed centre: needs 3 internal 12T bevel gears to work"
+  },
+  {
+   "id": "65414",
+   "issue": "low photo-match confidence 0.62: Technic, Gear Differential Housing"
+  },
+  {
+   "id": "65414",
+   "issue": "Differential housing (new style, 5 internal gears): low photo-match confidence; confirm vs 62821b"
+  },
+  {
+   "id": "731c04",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "87513c01",
+   "issue": "no LDraw id in the sheet (geometry mapped by hand or not simulated)"
+  },
+  {
+   "id": "87574c01",
+   "issue": "PF train motor: drives its own integrated train wheels (rails); not a general Technic drive"
+  }
+ ]
+}

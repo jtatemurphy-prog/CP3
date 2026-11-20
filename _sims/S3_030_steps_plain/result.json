@@ -1,0 +1,106 @@
+{
+ "obstacle": "steps",
+ "level": 1,
+ "crossed": false,
+ "time_s": 4.25,
+ "reached_goal_s": null,
+ "max_progress": 0.1,
+ "max_progress_m": 0.0374,
+ "failure": "stuck",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 3.84,
+   "engaged": 0.97,
+   "state": "locked"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 3.87,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfL-hcgL": {
+   "slips": 0,
+   "peak_n": 1.26,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-hcgR": {
+   "slips": 0,
+   "peak_n": 2.65,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "h8gL-igaL": {
+   "slips": 0,
+   "peak_n": 2.39,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgL-h8gL": {
+   "slips": 0,
+   "peak_n": 2.19,
+   "engaged": 0.92,
+   "state": "locked"
+  },
+  "hhgL-hcgL": {
+   "slips": 0,
+   "peak_n": 2.6,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "h8gR-igaR": {
+   "slips": 0,
+   "peak_n": 2.32,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgR-h8gR": {
+   "slips": 0,
+   "peak_n": 1.95,
+   "engaged": 0.93,
+   "state": "locked"
+  },
+  "hhgR-hcgR": {
+   "slips": 0,
+   "peak_n": 2.6,
+   "engaged": 1.0,
+   "state": "locked"
+  }
+ },
+ "chains": [],
+ "mesh_events_dropped": 0,
+ "leads": [
+  {
+   "dev": "motfL",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motfR",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 0.36,
+ "motor_program_log": [
+  "0.04 s motfL: 7",
+  "0.04 s motfR: 7"
+ ],
+ "valid": true,
+ "wall_s": 935.3
+}

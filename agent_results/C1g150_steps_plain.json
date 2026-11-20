@@ -1,0 +1,148 @@
+{
+ "id": "C1g150_steps_plain",
+ "job": {
+  "id": "C1g150_steps_plain",
+  "kind": "sim",
+  "design": "agent_designs/C1g150.json",
+  "bench": "steps",
+  "nudge": "plain",
+  "video": false,
+  "record": true
+ },
+ "result": {
+  "obstacle": "steps",
+  "level": 1,
+  "crossed": false,
+  "time_s": 4.449,
+  "reached_goal_s": null,
+  "max_progress": 0.321,
+  "max_progress_m": 0.1515,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 19.03,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igaL-igmL": {
+    "slips": 0,
+    "peak_n": 3.42,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igmL-igbL": {
+    "slips": 0,
+    "peak_n": 2.26,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igbL-grL": {
+    "slips": 0,
+    "peak_n": 1.76,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 11.15,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igaR-igmR": {
+    "slips": 0,
+    "peak_n": 3.45,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igmR-igbR": {
+    "slips": 0,
+    "peak_n": 2.27,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igbR-grR": {
+    "slips": 0,
+    "peak_n": 1.78,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.46,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.77,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 0.88,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 0.46,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 1.03,
+  "motor_program_log": [
+   "0.04 s motL: 7",
+   "0.04 s motR: 7"
+  ],
+  "valid": true,
+  "wall_s": 507.0,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\C1g150_steps_plain",
+  "wall": 508.0,
+  "review": {
+   "critical": [],
+   "warnings": []
+  },
+  "stats": {
+   "n_parts": 101,
+   "mass_g": 484.77,
+   "length_mm": 190.64,
+   "width_mm": 224.0,
+   "height_mm": 176.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "4WD",
+   "n_motors": 2
+  }
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "obstacle": "rope",
+ "level": 1,
+ "crossed": false,
+ "time_s": 4.34,
+ "reached_goal_s": null,
+ "max_progress": 0.753,
+ "max_progress_m": 0.6497,
+ "failure": "flipped",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 25.17,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 31.13,
+   "engaged": 0.97,
+   "state": "locked"
+  },
+  "rgfL-igaL": {
+   "slips": 0,
+   "peak_n": 18.36,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-igaR": {
+   "slips": 1,
+   "peak_n": 38.32,
+   "engaged": 0.31,
+   "state": "locked"
+  },
+  "h8gL-igaL": {
+   "slips": 0,
+   "peak_n": 22.37,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgL-h8gL": {
+   "slips": 0,
+   "peak_n": 34.0,
+   "engaged": 0.95,
+   "state": "locked"
+  },
+  "hhgL-hcgL": {
+   "slips": 0,
+   "peak_n": 73.71,
+   "engaged": 0.76,
+   "state": "slipping"
+  },
+  "h8gR-igaR": {
+   "slips": 1,
+   "peak_n": 24.29,
+   "engaged": 0.0,
+   "state": "free"
+  },
+  "hcgR-h8gR": {
+   "slips": 1,
+   "peak_n": 35.79,
+   "engaged": 0.0,
+   "state": "free"
+  },
+  "hhgR-hcgR": {
+   "slips": 0,
+   "peak_n": 73.71,
+   "engaged": 1.0,
+   "state": "slipping"
+  },
+  "spfL-sprL": {
+   "slips": 2,
+   "peak_n": 9.84,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "spfR-sprR": {
+   "slips": 5,
+   "peak_n": 9.91,
+   "engaged": 1.0,
+   "state": "locked"
+  }
+ },
+ "chains": [
+  {
+   "name": "chL",
+   "sprockets": [
+    "spfL",
+    "sprL"
+   ],
+   "peak_n": 9.84,
+   "gap_min_mm": -0.0,
+   "gap_max_mm": -0.0,
+   "axial_max_mm": 0.36,
+   "skips": 2,
+   "state": "locked"
+  },
+  {
+   "name": "chR",
+   "sprockets": [
+    "spfR",
+    "sprR"
+   ],
+   "peak_n": 9.91,
+   "gap_min_mm": -0.0,
+   "gap_max_mm": -0.0,
+   "axial_max_mm": 0.35,
+   "skips": 5,
+   "state": "locked"
+  }
+ ],
+ "mesh_events_dropped": 28,
+ "leads": [
+  {
+   "dev": "motfL",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motfR",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 1.02,
+ "motor_program_log": [
+  "0.04 s motfL: 7",
+  "0.04 s motfR: 7",
+  "0.54 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.2 mm, sliding 0.00 m/s)",
+  "0.56 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.2 mm, sliding 0.00 m/s)",
+  "0.66 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.68 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.71 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.72 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.74 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.74 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding -0.00 m/s)",
+  "0.85 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+  "0.90 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)"
+ ],
+ "valid": true,
+ "wall_s": 977.7
+}

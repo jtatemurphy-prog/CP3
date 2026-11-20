@@ -1,0 +1,156 @@
+{
+ "id": "T8_rope_plain",
+ "job": {
+  "id": "T8_rope_plain",
+  "kind": "sim",
+  "design": "agent_designs/T8.json",
+  "bench": "rope",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "rope",
+  "level": 1,
+  "crossed": false,
+  "time_s": 4.679,
+  "reached_goal_s": null,
+  "max_progress": 0.219,
+  "max_progress_m": 0.182,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 6.94,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 6.76,
+    "engaged": 0.96,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 5.48,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.41,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfL-sprL": {
+    "slips": 0,
+    "peak_n": 9.21,
+    "engaged": 1.0,
+    "state": "slipping"
+   },
+   "spfR-sprR": {
+    "slips": 0,
+    "peak_n": 13.85,
+    "engaged": 0.0,
+    "state": "free"
+   }
+  },
+  "chains": [
+   {
+    "name": "chL",
+    "sprockets": [
+     "spfL",
+     "sprL"
+    ],
+    "peak_n": 9.21,
+    "gap_min_mm": -3.51,
+    "gap_max_mm": 1.6,
+    "axial_max_mm": 9.14,
+    "skips": 0,
+    "state": "slipping"
+   },
+   {
+    "name": "chR",
+    "sprockets": [
+     "spfR",
+     "sprR"
+    ],
+    "peak_n": 13.85,
+    "gap_min_mm": -3.46,
+    "gap_max_mm": 2.8,
+    "axial_max_mm": 5.04,
+    "skips": 0,
+    "state": "free"
+   }
+  ],
+  "mesh_events_dropped": 1009,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 2.79,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7",
+   "0.35 s mesh spfR-sprR locked -> free (centre distance -3.20 mm, axial offset 3.2 mm, sliding 0.00 m/s)",
+   "0.35 s mesh spfR-sprR free -> slipping (centre distance -3.19 mm, axial offset 3.4 mm, sliding 0.07 m/s)",
+   "0.35 s mesh spfR-sprR slipping -> locked (centre distance -3.13 mm, axial offset 3.4 mm, sliding 0.00 m/s)",
+   "0.47 s mesh spfL-sprL locked -> free (centre distance -3.20 mm, axial offset 3.5 mm, sliding -0.00 m/s)",
+   "0.47 s mesh spfL-sprL free -> slipping (centre distance -3.19 mm, axial offset 3.9 mm, sliding 0.04 m/s)",
+   "0.47 s mesh spfL-sprL slipping -> locked (centre distance -3.18 mm, axial offset 4.0 mm, sliding -0.00 m/s)",
+   "0.48 s mesh spfL-sprL locked -> free (centre distance -3.21 mm, axial offset 4.1 mm, sliding 0.01 m/s)",
+   "0.48 s mesh spfL-sprL free -> slipping (centre distance -3.20 mm, axial offset 4.2 mm, sliding 0.02 m/s)",
+   "0.48 s mesh spfL-sprL slipping -> locked (centre distance -3.18 mm, axial offset 4.2 mm, sliding 0.00 m/s)",
+   "0.51 s mesh spfL-sprL locked -> free (centre distance -3.22 mm, axial offset 4.5 mm, sliding 0.01 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 483.5,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T8_rope_plain",
+  "wall": 484.6,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "raxr cluster has 8.0 mm of axial play (free +4.0 / -4.0 mm): gears and wheels on it wander and rub"
+   ]
+  },
+  "stats": {
+   "n_parts": 202,
+   "mass_g": 670.59,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T8_rope_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T8_rope_plain\\contact_overview.jpg"
+  ]
+ }
+}

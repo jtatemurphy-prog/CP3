@@ -1,0 +1,229 @@
+{
+ "id": "S2_ramp_plain",
+ "job": {
+  "id": "S2_ramp_plain",
+  "kind": "sim",
+  "design": "agent_designs/S2.json",
+  "bench": "ramp",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "ramp",
+  "level": 1,
+  "crossed": false,
+  "time_s": 7.309,
+  "reached_goal_s": null,
+  "max_progress": 0.345,
+  "max_progress_m": 0.2331,
+  "failure": "broke (axrL, grL, wrL)",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 5.3,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 7.13,
+    "engaged": 0.0,
+    "state": "free"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 64.71,
+    "engaged": 0.97,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 5.74,
+    "engaged": 0.98,
+    "state": "locked"
+   },
+   "rgfL-hcgL": {
+    "slips": 0,
+    "peak_n": 94.19,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-hcgR": {
+    "slips": 1,
+    "peak_n": 80.64,
+    "engaged": 0.82,
+    "state": "slipping"
+   },
+   "cgL-igbL": {
+    "slips": 0,
+    "peak_n": 6.91,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "cgR-igbR": {
+    "slips": 0,
+    "peak_n": 5.38,
+    "engaged": 0.88,
+    "state": "locked"
+   },
+   "h8gL-igaL": {
+    "slips": 0,
+    "peak_n": 5.06,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgL-h8gL": {
+    "slips": 0,
+    "peak_n": 4.54,
+    "engaged": 0.97,
+    "state": "locked"
+   },
+   "hhgL-hcg2L": {
+    "slips": 3,
+    "peak_n": 73.71,
+    "engaged": 1.0,
+    "state": "slipping"
+   },
+   "h8gR-igaR": {
+    "slips": 0,
+    "peak_n": 25.71,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgR-h8gR": {
+    "slips": 0,
+    "peak_n": 20.01,
+    "engaged": 0.96,
+    "state": "locked"
+   },
+   "hhgR-hcg2R": {
+    "slips": 0,
+    "peak_n": 73.71,
+    "engaged": 1.0,
+    "state": "slipping"
+   },
+   "rcsL-rbsL": {
+    "slips": 0,
+    "peak_n": 1.09,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rcsR-rbsR": {
+    "slips": 0,
+    "peak_n": 1.09,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "rchL",
+    "sprockets": [
+     "rcsL",
+     "rbsL"
+    ],
+    "peak_n": 1.09,
+    "gap_min_mm": -0.06,
+    "gap_max_mm": 0.04,
+    "axial_max_mm": 0.61,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "rchR",
+    "sprockets": [
+     "rcsR",
+     "rbsR"
+    ],
+    "peak_n": 1.09,
+    "gap_min_mm": -0.09,
+    "gap_max_mm": 0.17,
+    "axial_max_mm": 0.62,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 61,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery2",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 1.24,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7",
+   "3.56 s mesh hhgR-hcg2R locked -> free (centre distance +0.00 mm, axial offset 7.7 mm, sliding 0.00 m/s)",
+   "4.08 s mesh gfR-igaR locked -> free (centre distance -0.23 mm, axial offset 7.7 mm, sliding -0.00 m/s)",
+   "4.29 s mesh hhgR-hcg2R free -> slipping (centre distance +0.00 mm, axial offset 7.4 mm, sliding -0.03 m/s)",
+   "4.65 s mesh rgfR-hcgR locked -> slipping (centre distance +0.38 mm, axial offset 0.3 mm, sliding -0.55 m/s)",
+   "4.74 s mesh hhgL-hcg2L locked -> free (centre distance -0.00 mm, axial offset 7.7 mm, sliding -0.05 m/s)",
+   "4.83 s mesh hhgL-hcg2L free -> slipping (centre distance +0.00 mm, axial offset 7.4 mm, sliding 0.58 m/s)",
+   "4.94 s mesh hhgL-hcg2L slipping -> locked (centre distance +0.00 mm, axial offset 7.1 mm, sliding 0.00 m/s)",
+   "4.95 s mesh gfR-igaR free -> slipping (centre distance -0.21 mm, axial offset 7.3 mm, sliding -0.52 m/s)",
+   "4.95 s mesh hhgL-hcg2L locked -> slipping (centre distance +0.00 mm, axial offset 7.6 mm, sliding -0.09 m/s)",
+   "4.96 s mesh hhgL-hcg2L slipping -> free (centre distance +0.00 mm, axial offset 7.7 mm, sliding -0.27 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 1115.8,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S2_ramp_plain",
+  "wall": 1117.0,
+  "review": {
+   "critical": [
+    "battery, bplL (114 g) can be pulled off bbrL +z: the only things holding it are 6 studs, all pulling apart the same way, with nothing interlocking across the joint. Under its own weight with the vehicle picked up by the chassis (x3) the joint is loaded to 1.3 x its strength (tipping about its edge towards +y, 15.0 N total pull-off), so it comes apart. Clamp it from the other side, pin through both groups, or spread the joint.",
+    "battery2, bplR (114 g) can be pulled off bbrR +z: the only things holding it are 6 studs, all pulling apart the same way, with nothing interlocking across the joint. Under its own weight with the vehicle picked up by the chassis (x3) the joint is loaded to 1.3 x its strength (tipping about its edge towards -y, 15.0 N total pull-off), so it comes apart. Clamp it from the other side, pin through both groups, or spread the joint."
+   ],
+   "warnings": [
+    "grL (on axrL) can slide 16.0 mm (-axis -y) until wrL touches wrR; after 7.0 mm it is out of mesh with igbL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "iaaL cluster has 4.0 mm of axial play (free +0.0 / -4.0 mm): gears and wheels on it wander and rub",
+    "gfR (on axfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "iaaR cluster has 4.0 mm of axial play (free +4.0 / -0.0 mm): gears and wheels on it wander and rub",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 7.0 mm it is out of mesh with igaL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 6.9 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgL (on hhaL) can slide 8.0 mm (-axis -y) until hhbL66 touches hvL; after 7.0 mm it is out of mesh with hcg2L and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 6.9 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgR (on hhaR) can slide 8.0 mm (+axis +y) until hhbR66 touches hvR; after 7.0 mm it is out of mesh with hcg2R and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hvL, hvR, hxL55, hxL71, hxR55 and 1 more parts form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints."
+   ]
+  },
+  "stats": {
+   "n_parts": 202,
+   "mass_g": 796.53,
+   "length_mm": 244.92,
+   "width_mm": 240.0,
+   "height_mm": 129.72,
+   "ground_clearance_mm": 2.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S2_ramp_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S2_ramp_plain\\contact_overview.jpg"
+  ]
+ }
+}

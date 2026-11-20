@@ -1,0 +1,118 @@
+{
+ "obstacle": "steps",
+ "level": 1,
+ "crossed": false,
+ "time_s": 4.24,
+ "reached_goal_s": null,
+ "max_progress": 0.137,
+ "max_progress_m": 0.051,
+ "failure": "stuck",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 3.73,
+   "engaged": 0.83,
+   "state": "locked"
+  },
+  "igaL-igmL": {
+   "slips": 0,
+   "peak_n": 3.79,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "igmL-igbL": {
+   "slips": 0,
+   "peak_n": 3.13,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "igbL-grL": {
+   "slips": 0,
+   "peak_n": 2.65,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 2.25,
+   "engaged": 0.82,
+   "state": "locked"
+  },
+  "igaR-igmR": {
+   "slips": 0,
+   "peak_n": 3.53,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "igmR-igbR": {
+   "slips": 0,
+   "peak_n": 2.96,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "igbR-grR": {
+   "slips": 0,
+   "peak_n": 3.03,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfL-igaL": {
+   "slips": 0,
+   "peak_n": 1.0,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-igaR": {
+   "slips": 0,
+   "peak_n": 1.26,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgrL-igbL": {
+   "slips": 0,
+   "peak_n": 0.84,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgrR-igbR": {
+   "slips": 0,
+   "peak_n": 0.99,
+   "engaged": 0.99,
+   "state": "locked"
+  }
+ },
+ "chains": [],
+ "mesh_events_dropped": 0,
+ "leads": [
+  {
+   "dev": "motL",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motR",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 0.7,
+ "motor_program_log": [
+  "0.04 s motL: 7",
+  "0.04 s motR: 7"
+ ],
+ "valid": true,
+ "wall_s": 848.1
+}

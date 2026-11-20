@@ -1,0 +1,179 @@
+{
+ "id": "K2_bridge_plain",
+ "job": {
+  "id": "K2_bridge_plain",
+  "kind": "sim",
+  "design": "agent_designs/K2.json",
+  "bench": "bridge",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "bridge",
+  "level": 1,
+  "crossed": false,
+  "time_s": 3.41,
+  "reached_goal_s": null,
+  "max_progress": 0.603,
+  "max_progress_m": 0.5259,
+  "failure": "touched chasm floor (motr)",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 4.35,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 1.07,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 2.75,
+    "engaged": 0.72,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 2.89,
+    "engaged": 0.09,
+    "state": "free"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.07,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.15,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 1.29,
+    "engaged": 0.93,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 1.52,
+    "engaged": 0.57,
+    "state": "locked"
+   },
+   "h8gL-igaL": {
+    "slips": 0,
+    "peak_n": 0.47,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgL-h8gL": {
+    "slips": 0,
+    "peak_n": 0.19,
+    "engaged": 0.98,
+    "state": "locked"
+   },
+   "hhgL-hcgL": {
+    "slips": 0,
+    "peak_n": 0.1,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gR-igaR": {
+    "slips": 0,
+    "peak_n": 0.47,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgR-h8gR": {
+    "slips": 0,
+    "peak_n": 0.19,
+    "engaged": 0.97,
+    "state": "locked"
+   },
+   "hhgR-hcgR": {
+    "slips": 0,
+    "peak_n": 0.1,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 1.23,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7",
+   "3.38 s mesh grR-igbR locked -> free (centre distance +1.45 mm, axial offset 3.8 mm, sliding 0.00 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 1071.1,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\K2_bridge_plain",
+  "wall": 1073.3,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "axfL (with wfL, gfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 9.4 mm it comes out of the motor motf's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "gfL (on axfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 7.0 mm it is out of mesh with igaL and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "axrR (with wrR, grR) can slide 16.0 mm (+axis +y) until wrR touches wrL; after 9.4 mm it comes out of the motor motr's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "grR (on axrR) can slide 16.0 mm (+axis +y) until wrR touches wrL; after 7.0 mm it is out of mesh with igbR and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 7.0 mm it is out of mesh with igaL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 6.9 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgL (on hhaL) can slide 8.0 mm (-axis -y) until hhbL58 touches hvL; after 6.7 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 6.9 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgR (on hhaR) can slide 8.0 mm (+axis +y) until hhbR58 touches hvR; after 6.7 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hxR55, hxR71, hvR form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints.",
+    "hxL55, hxL71, hvL form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints."
+   ]
+  },
+  "stats": {
+   "n_parts": 136,
+   "mass_g": 548.41,
+   "length_mm": 220.92,
+   "width_mm": 224.0,
+   "height_mm": 136.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\K2_bridge_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\K2_bridge_plain\\contact_overview.jpg"
+  ]
+ }
+}

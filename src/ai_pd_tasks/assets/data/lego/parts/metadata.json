@@ -1,0 +1,3695 @@
+{
+  "3895": {
+    "bricklink_id": "3895",
+    "ldraw_id": "3895",
+    "title": "Technic Brick  1 x 12 with Holes",
+    "colour": "Black",
+    "usd": "3895_c0.usda",
+    "bounds_min_mm": [
+      -48.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      48.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 13018,
+    "hulls": 178,
+    "mass_measured_g": 4.2,
+    "mass_hull_estimate_g": 6.04,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -5.02
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "3710": {
+    "bricklink_id": "3710",
+    "ldraw_id": "3710",
+    "title": "Plate  1 x  4",
+    "colour": "Black",
+    "usd": "3710_c0.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -4.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      16.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 1036,
+    "hulls": 32,
+    "mass_measured_g": 0.71,
+    "mass_hull_estimate_g": 0.56,
+    "com_mm": [
+      -0.04,
+      0.01,
+      -1.4
+    ]
+  },
+  "3701": {
+    "bricklink_id": "3701",
+    "ldraw_id": "3701",
+    "title": "Technic Brick  1 x  4 with Holes",
+    "colour": "Black",
+    "usd": "3701_c0.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      16.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 3786,
+    "hulls": 50,
+    "mass_measured_g": 1.46,
+    "mass_hull_estimate_g": 2.12,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -4.97
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "3032": {
+    "bricklink_id": "3032",
+    "ldraw_id": "3032",
+    "title": "Plate  4 x  6",
+    "colour": "Black",
+    "usd": "3032_c0.usda",
+    "bounds_min_mm": [
+      -24.0,
+      -16.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      24.0,
+      16.0,
+      1.6
+    ],
+    "triangles": 7804,
+    "hulls": 47,
+    "mass_measured_g": 3.3,
+    "mass_hull_estimate_g": 4.38,
+    "com_mm": [
+      -0.42,
+      -0.15,
+      -1.5
+    ]
+  },
+  "44294": {
+    "bricklink_id": "44294",
+    "ldraw_id": "44294",
+    "title": "Technic Axle  7",
+    "colour": "Light_Bluish_Grey",
+    "usd": "44294_c71.usda",
+    "bounds_min_mm": [
+      -27.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      27.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.05,
+    "mass_hull_estimate_g": 0.87,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3705": {
+    "bricklink_id": "3705",
+    "ldraw_id": "3705",
+    "title": "Technic Axle  4",
+    "colour": "Black",
+    "usd": "3705_c0.usda",
+    "bounds_min_mm": [
+      -15.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      15.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 0.59,
+    "mass_hull_estimate_g": 0.48,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "94925": {
+    "bricklink_id": "94925",
+    "ldraw_id": "94925",
+    "title": "Technic Gear 16 Tooth Reinforced",
+    "colour": "Light_Bluish_Grey",
+    "usd": "94925_c71.usda",
+    "bounds_min_mm": [
+      -8.66,
+      -4.0,
+      -8.66
+    ],
+    "bounds_max_mm": [
+      8.66,
+      4.0,
+      8.66
+    ],
+    "triangles": 1248,
+    "hulls": 17,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 1.69,
+    "com_mm": [
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    "teeth": 16,
+    "tooth_phase_deg": -0.0
+  },
+  "3648": {
+    "bricklink_id": "3648",
+    "ldraw_id": "3648b",
+    "title": "Technic Gear 24 Tooth with Single Axle Hole",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "3648b_c72.usda",
+    "bounds_min_mm": [
+      -12.96,
+      -3.85,
+      -12.96
+    ],
+    "bounds_max_mm": [
+      12.96,
+      3.85,
+      12.96
+    ],
+    "triangles": 4328,
+    "hulls": 25,
+    "mass_measured_g": 1.17,
+    "mass_hull_estimate_g": 3.69,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    "teeth": 24,
+    "tooth_phase_deg": -0.0
+  },
+  "10928": {
+    "bricklink_id": "10928",
+    "ldraw_id": "10928",
+    "title": "Technic Gear  8 Tooth Reinforced",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "10928_c72.usda",
+    "bounds_min_mm": [
+      -4.97,
+      -4.0,
+      -4.97
+    ],
+    "bounds_max_mm": [
+      4.97,
+      4.0,
+      4.97
+    ],
+    "triangles": 928,
+    "hulls": 9,
+    "mass_measured_g": 0.22,
+    "mass_hull_estimate_g": 0.46,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    "teeth": 8,
+    "tooth_phase_deg": 0.0
+  },
+  "32062": {
+    "bricklink_id": "32062",
+    "ldraw_id": "32062",
+    "title": "Technic Axle  2 Notched",
+    "colour": "Red",
+    "usd": "32062_c4.usda",
+    "bounds_min_mm": [
+      -7.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      7.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 368,
+    "hulls": 1,
+    "mass_measured_g": 0.26,
+    "mass_hull_estimate_g": 0.23,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "4185": {
+    "bricklink_id": "4185",
+    "ldraw_id": "4185a",
+    "title": "Technic Wedge Belt Wheel - Not Reinforced",
+    "colour": "Light_Bluish_Grey",
+    "usd": "4185a_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -2.0,
+      -12.0
+    ],
+    "bounds_max_mm": [
+      12.0,
+      2.0,
+      12.0
+    ],
+    "triangles": 3616,
+    "hulls": 48,
+    "mass_measured_g": 0.97,
+    "mass_hull_estimate_g": 0.95,
+    "com_mm": [
+      0.29,
+      -0.02,
+      -0.19
+    ]
+  },
+  "3713": {
+    "bricklink_id": "3713",
+    "ldraw_id": "3713",
+    "title": "Technic Bush with Two Flanges",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3713_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -4.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      3.6,
+      4.0,
+      3.6
+    ],
+    "triangles": 776,
+    "hulls": 33,
+    "mass_measured_g": 0.14,
+    "mass_hull_estimate_g": 0.05,
+    "com_mm": [
+      0.48,
+      -0.49,
+      0.17
+    ]
+  },
+  "58120c01": {
+    "bricklink_id": "58120c01",
+    "ldraw_id": "58120",
+    "title": "Electric Power Functions Medium Motor",
+    "colour": "Light_Bluish_Grey",
+    "usd": "58120_c71.usda",
+    "bounds_min_mm": [
+      -11.6,
+      0.0,
+      -12.0
+    ],
+    "bounds_max_mm": [
+      11.6,
+      48.0,
+      11.6
+    ],
+    "triangles": 5521,
+    "hulls": 24,
+    "mass_measured_g": 33.5,
+    "mass_hull_estimate_g": 24.37,
+    "com_mm": [
+      -0.01,
+      23.73,
+      0.12
+    ]
+  },
+  "87513c01": {
+    "bricklink_id": "87513c01",
+    "ldraw_id": "64228",
+    "title": "Electric Power Functions AAA Battery Box [72 Bottom] (Needs Work)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "64228_c71.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -16.0,
+      -38.4
+    ],
+    "bounds_max_mm": [
+      32.0,
+      16.0,
+      1.6
+    ],
+    "triangles": 11319,
+    "hulls": 24,
+    "mass_measured_g": 109.0,
+    "mass_hull_estimate_g": 81.65,
+    "com_mm": [
+      0.23,
+      -0.03,
+      -18.85
+    ]
+  },
+  "32073": {
+    "bricklink_id": "32073",
+    "ldraw_id": "32073",
+    "title": "Technic Axle  5",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32073_c71.usda",
+    "bounds_min_mm": [
+      -19.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      19.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 0.66,
+    "mass_hull_estimate_g": 0.61,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3706": {
+    "bricklink_id": "3706",
+    "ldraw_id": "3706",
+    "title": "Technic Axle  6",
+    "colour": "Black",
+    "usd": "3706_c0.usda",
+    "bounds_min_mm": [
+      -23.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      23.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 0.86,
+    "mass_hull_estimate_g": 0.74,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3707": {
+    "bricklink_id": "3707",
+    "ldraw_id": "3707",
+    "title": "Technic Axle  8",
+    "colour": "Black",
+    "usd": "3707_c0.usda",
+    "bounds_min_mm": [
+      -31.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      31.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.18,
+    "mass_hull_estimate_g": 0.99,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3894": {
+    "bricklink_id": "3894",
+    "ldraw_id": "3894",
+    "title": "Technic Brick  1 x  6 with Holes",
+    "colour": "Black",
+    "usd": "3894_c0.usda",
+    "bounds_min_mm": [
+      -24.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      24.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 6094,
+    "hulls": 82,
+    "mass_measured_g": 2.2,
+    "mass_hull_estimate_g": 3.1,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -5.0
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "3702": {
+    "bricklink_id": "3702",
+    "ldraw_id": "3702",
+    "title": "Technic Brick  1 x  8 with Holes",
+    "colour": "Black",
+    "usd": "3702_c0.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      32.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 8402,
+    "hulls": 114,
+    "mass_measured_g": 2.85,
+    "mass_hull_estimate_g": 4.08,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -5.01
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "3703": {
+    "bricklink_id": "3703",
+    "ldraw_id": "3703",
+    "title": "Technic Brick  1 x 16 with Holes",
+    "colour": "Black",
+    "usd": "3703_c0.usda",
+    "bounds_min_mm": [
+      -64.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      64.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 17634,
+    "hulls": 242,
+    "mass_measured_g": 5.87,
+    "mass_hull_estimate_g": 8.01,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -5.03
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "2780": {
+    "bricklink_id": "2780",
+    "ldraw_id": "61332",
+    "title": "Technic Pin with Friction Type 2",
+    "colour": "Black",
+    "usd": "61332_c0.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -3.2,
+      -2.96
+    ],
+    "bounds_max_mm": [
+      8.0,
+      3.2,
+      2.96
+    ],
+    "triangles": 1410,
+    "hulls": 1,
+    "mass_measured_g": 0.2,
+    "mass_hull_estimate_g": 0.24,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3482c01": {
+    "bricklink_id": "3482c01",
+    "ldraw_id": "3482c01",
+    "title": "Wheel Rim  8 x 17.5 with Axlehole with Black Tyre  7/ 56 x 17 Offset Tread",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3482c01_c71.usda",
+    "bounds_min_mm": [
+      -12.4,
+      -4.0,
+      -12.4
+    ],
+    "bounds_max_mm": [
+      12.4,
+      4.0,
+      12.4
+    ],
+    "triangles": 2736,
+    "hulls": 2,
+    "mass_measured_g": 2.35,
+    "mass_hull_estimate_g": 5.63,
+    "com_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wheel_radius_mm": 12.4,
+    "wheel_collision_mm": [
+      [
+        12.4,
+        -3.6,
+        3.6,
+        0.8
+      ],
+      [
+        8.8,
+        -4.0,
+        4.0,
+        0.3
+      ]
+    ]
+  },
+  "56904c01": {
+    "bricklink_id": "56904c01",
+    "ldraw_id": "56904c01",
+    "title": "Wheel Rim 14 x 30 with 6 Spokes and No Pegholes with Tyre 14/ 43 x 30",
+    "colour": "Light_Bluish_Grey",
+    "usd": "56904c01_c71.usda",
+    "bounds_min_mm": [
+      -21.41,
+      -8.0,
+      -21.41
+    ],
+    "bounds_max_mm": [
+      21.41,
+      7.2,
+      21.41
+    ],
+    "triangles": 7400,
+    "hulls": 2,
+    "mass_measured_g": 11.68,
+    "mass_hull_estimate_g": 33.17,
+    "com_mm": [
+      0.0,
+      -0.14,
+      -0.0
+    ],
+    "wheel_radius_mm": 21.42,
+    "wheel_collision_mm": [
+      [
+        21.42,
+        -7.2,
+        7.2,
+        1.0
+      ],
+      [
+        15.2,
+        -8.0,
+        7.2,
+        0.4
+      ]
+    ]
+  },
+  "32020c01": {
+    "bricklink_id": "32020c01",
+    "ldraw_id": "32020c01",
+    "title": "Wheel Rim 18 x 37 with 6 Pegholes and Long Axle Bush with Rubber Black Tyre 20/ 64 x 37 S",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32020c01_c71.usda",
+    "bounds_min_mm": [
+      -31.32,
+      -13.8,
+      -31.32
+    ],
+    "bounds_max_mm": [
+      31.32,
+      6.2,
+      31.32
+    ],
+    "triangles": 15788,
+    "hulls": 1,
+    "mass_measured_g": 33.0,
+    "mass_hull_estimate_g": 64.32,
+    "com_mm": [
+      0.0,
+      -3.8,
+      0.0
+    ],
+    "wheel_radius_mm": 31.32,
+    "wheel_collision_mm": [
+      [
+        31.32,
+        -13.8,
+        6.2,
+        1.2
+      ]
+    ]
+  },
+  "3649": {
+    "bricklink_id": "3649",
+    "ldraw_id": "3649",
+    "title": "Technic Gear 40 Tooth",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3649_c71.usda",
+    "bounds_min_mm": [
+      -20.94,
+      -4.0,
+      -20.94
+    ],
+    "bounds_max_mm": [
+      20.94,
+      4.0,
+      20.94
+    ],
+    "triangles": 10672,
+    "hulls": 41,
+    "mass_measured_g": 3.76,
+    "mass_hull_estimate_g": 10.26,
+    "com_mm": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "teeth": 40,
+    "tooth_phase_deg": 0.001
+  },
+  "32270": {
+    "bricklink_id": "32270",
+    "ldraw_id": "32270",
+    "title": "Technic Gear 12 Tooth Double Bevel",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32270_c71.usda",
+    "bounds_min_mm": [
+      -6.8,
+      -4.0,
+      -6.8
+    ],
+    "bounds_max_mm": [
+      6.8,
+      4.0,
+      6.8
+    ],
+    "triangles": 2088,
+    "hulls": 13,
+    "mass_measured_g": 0.58,
+    "mass_hull_estimate_g": 0.92,
+    "com_mm": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "teeth": 12,
+    "tooth_phase_deg": 0.0
+  },
+  "32269": {
+    "bricklink_id": "32269",
+    "ldraw_id": "32269",
+    "title": "Technic Gear 20 Tooth Double Bevel",
+    "colour": "Tan",
+    "usd": "32269_c19.usda",
+    "bounds_min_mm": [
+      -10.8,
+      -4.0,
+      -10.8
+    ],
+    "bounds_max_mm": [
+      10.8,
+      4.0,
+      10.8
+    ],
+    "triangles": 3880,
+    "hulls": 21,
+    "mass_measured_g": 1.4,
+    "mass_hull_estimate_g": 2.56,
+    "com_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "teeth": 20,
+    "tooth_phase_deg": 0.0
+  },
+  "32498": {
+    "bricklink_id": "32498",
+    "ldraw_id": "32498",
+    "title": "Technic Gear 36 Tooth Double Bevel",
+    "colour": "Black",
+    "usd": "32498_c0.usda",
+    "bounds_min_mm": [
+      -18.8,
+      -4.0,
+      -18.8
+    ],
+    "bounds_max_mm": [
+      18.8,
+      4.0,
+      18.8
+    ],
+    "triangles": 14328,
+    "hulls": 37,
+    "mass_measured_g": 3.5,
+    "mass_hull_estimate_g": 8.37,
+    "com_mm": [
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    "teeth": 36,
+    "tooth_phase_deg": 0.0
+  },
+  "99499c01": {
+    "bricklink_id": "99499c01",
+    "ldraw_id": "99499",
+    "title": "Electric Power Functions Large Motor",
+    "colour": "Light_Bluish_Grey",
+    "usd": "99499_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      0.0,
+      -15.8
+    ],
+    "bounds_max_mm": [
+      12.0,
+      56.0,
+      15.8
+    ],
+    "triangles": 13456,
+    "hulls": 24,
+    "mass_measured_g": 45.0,
+    "mass_hull_estimate_g": 34.21,
+    "com_mm": [
+      -0.03,
+      27.53,
+      -0.08
+    ]
+  },
+  "58121c01": {
+    "bricklink_id": "58121c01",
+    "ldraw_id": "58121",
+    "title": "Electric Power Functions XL Motor (Complete)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "58121_c71.usda",
+    "bounds_min_mm": [
+      -20.0,
+      0.0,
+      -19.74
+    ],
+    "bounds_max_mm": [
+      20.0,
+      48.0,
+      19.74
+    ],
+    "triangles": 7552,
+    "hulls": 24,
+    "mass_measured_g": 72.0,
+    "mass_hull_estimate_g": 55.42,
+    "com_mm": [
+      0.07,
+      23.01,
+      0.05
+    ]
+  },
+  "60483": {
+    "bricklink_id": "60483",
+    "ldraw_id": "60483",
+    "title": "Technic Beam  2 Liftarm",
+    "colour": "Black",
+    "usd": "60483_c0.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      11.6,
+      4.0
+    ],
+    "triangles": 1232,
+    "hulls": 29,
+    "mass_measured_g": 0.54,
+    "mass_hull_estimate_g": 0.16,
+    "com_mm": [
+      0.02,
+      3.64,
+      -0.01
+    ]
+  },
+  "32524": {
+    "bricklink_id": "32524",
+    "ldraw_id": "16615",
+    "title": "=Technic Beam  7",
+    "colour": "Black",
+    "usd": "16615_c0.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -27.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      27.6,
+      4.0
+    ],
+    "triangles": 6172,
+    "hulls": 48,
+    "mass_measured_g": 1.74,
+    "mass_hull_estimate_g": 1.96,
+    "com_mm": [
+      -0.04,
+      0.01,
+      0.0
+    ]
+  },
+  "40490": {
+    "bricklink_id": "40490",
+    "ldraw_id": "40490",
+    "title": "Technic Beam  9",
+    "colour": "Black",
+    "usd": "40490_c0.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -35.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      35.6,
+      4.0
+    ],
+    "triangles": 7972,
+    "hulls": 40,
+    "mass_measured_g": 2.59,
+    "mass_hull_estimate_g": 2.72,
+    "com_mm": [
+      0.0,
+      -0.16,
+      -0.0
+    ]
+  },
+  "32278": {
+    "bricklink_id": "32278",
+    "ldraw_id": "32278",
+    "title": "Technic Beam 15",
+    "colour": "Black",
+    "usd": "32278_c0.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -59.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      59.6,
+      4.0
+    ],
+    "triangles": 13372,
+    "hulls": 46,
+    "mass_measured_g": 4.0,
+    "mass_hull_estimate_g": 5.46,
+    "com_mm": [
+      -0.03,
+      0.1,
+      -0.0
+    ]
+  },
+  "7229": {
+    "bricklink_id": "7229",
+    "ldraw_id": "7229",
+    "title": "Technic Beam  3 with Center Axle Hole",
+    "colour": "Black",
+    "usd": "7229_c0.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -11.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      11.6,
+      4.0
+    ],
+    "triangles": 2012,
+    "hulls": 42,
+    "mass_measured_g": 0.69,
+    "mass_hull_estimate_g": 0.44,
+    "com_mm": [
+      0.1,
+      2.04,
+      -0.01
+    ]
+  },
+  "3737": {
+    "bricklink_id": "3737",
+    "ldraw_id": "3737",
+    "title": "Technic Axle 10",
+    "colour": "Black",
+    "usd": "3737_c0.usda",
+    "bounds_min_mm": [
+      -39.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      39.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.49,
+    "mass_hull_estimate_g": 1.25,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "3708": {
+    "bricklink_id": "3708",
+    "ldraw_id": "3708",
+    "title": "Technic Axle 12",
+    "colour": "Black",
+    "usd": "3708_c0.usda",
+    "bounds_min_mm": [
+      -47.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      47.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.82,
+    "mass_hull_estimate_g": 1.5,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "4716": {
+    "bricklink_id": "4716",
+    "ldraw_id": "4716",
+    "title": "Technic Worm Gear 2L",
+    "colour": "Light_Bluish_Grey",
+    "usd": "4716_c71.usda",
+    "bounds_min_mm": [
+      -5.08,
+      -8.0,
+      -5.08
+    ],
+    "bounds_max_mm": [
+      5.08,
+      8.0,
+      5.08
+    ],
+    "triangles": 948,
+    "hulls": 48,
+    "mass_measured_g": 0.6,
+    "mass_hull_estimate_g": 0.84,
+    "com_mm": [
+      0.01,
+      0.1,
+      0.0
+    ]
+  },
+  "58124c01": {
+    "bricklink_id": "58124c01",
+    "ldraw_id": "58124c01",
+    "title": "Electric Power Functions Connector with PF Bottom",
+    "colour": "Light_Bluish_Grey",
+    "usd": "58124c01_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -8.0,
+      -6.4
+    ],
+    "bounds_max_mm": [
+      12.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 1340,
+    "hulls": 43,
+    "mass_measured_g": 2.5,
+    "mass_hull_estimate_g": 1.47,
+    "com_mm": [
+      1.32,
+      -0.01,
+      -2.47
+    ]
+  },
+  "59510c01": {
+    "bricklink_id": "59510c01",
+    "ldraw_id": "58119",
+    "title": "Electric Power Functions 9V Battery Box (Complete)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "58119_c71.usda",
+    "bounds_min_mm": [
+      -44.0,
+      -16.0,
+      -28.0
+    ],
+    "bounds_max_mm": [
+      44.0,
+      16.0,
+      35.6
+    ],
+    "triangles": 27830,
+    "hulls": 24,
+    "mass_measured_g": 191.5,
+    "mass_hull_estimate_g": 132.7,
+    "com_mm": [
+      0.07,
+      -0.07,
+      0.34
+    ]
+  },
+  "58123c01": {
+    "bricklink_id": "58123c01",
+    "ldraw_id": "58123",
+    "title": "Electric Power Functions IR Receiver",
+    "colour": "Light_Bluish_Grey",
+    "usd": "58123_c71.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -16.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      16.0,
+      16.0,
+      29.51
+    ],
+    "triangles": 6902,
+    "hulls": 16,
+    "mass_measured_g": 20.6,
+    "mass_hull_estimate_g": 25.07,
+    "com_mm": [
+      -0.0,
+      -3.7,
+      4.49
+    ]
+  },
+  "56145c01": {
+    "bricklink_id": "56145c01",
+    "ldraw_id": "56145c02",
+    "title": "Wheel Rim 20 x 30, 6 Spokes, Ribs with Tyre 22/ 30 x 30 ZR",
+    "colour": "Black",
+    "usd": "56145c02_c0.usda",
+    "bounds_min_mm": [
+      -21.6,
+      -10.8,
+      -21.6
+    ],
+    "bounds_max_mm": [
+      21.6,
+      10.8,
+      21.6
+    ],
+    "triangles": 7546,
+    "hulls": 2,
+    "mass_measured_g": 15.1,
+    "mass_hull_estimate_g": 48.08,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -0.0
+    ],
+    "wheel_radius_mm": 21.6,
+    "wheel_collision_mm": [
+      [
+        21.6,
+        -10.8,
+        10.8,
+        1.5
+      ],
+      [
+        15.2,
+        -10.0,
+        10.0,
+        0.4
+      ]
+    ]
+  },
+  "55982c01": {
+    "bricklink_id": "55982c01",
+    "ldraw_id": "55982c01",
+    "title": "Wheel Rim 14 x 18 with Axlehole with Tyre 30.4 x 14 Offset Tread",
+    "colour": "Light_Bluish_Grey",
+    "usd": "55982c01_c71.usda",
+    "bounds_min_mm": [
+      -15.2,
+      -6.8,
+      -15.2
+    ],
+    "bounds_max_mm": [
+      15.2,
+      8.0,
+      15.2
+    ],
+    "triangles": 5764,
+    "hulls": 2,
+    "mass_measured_g": 8.37,
+    "mass_hull_estimate_g": 13.68,
+    "com_mm": [
+      0.0,
+      0.15,
+      -0.0
+    ],
+    "wheel_radius_mm": 15.2,
+    "wheel_collision_mm": [
+      [
+        15.2,
+        -6.8,
+        6.8,
+        1.0
+      ],
+      [
+        8.4,
+        -6.8,
+        8.0,
+        0.3
+      ]
+    ]
+  },
+  "55423c01": {
+    "bricklink_id": "55423c01",
+    "ldraw_id": "55423",
+    "title": "Train Wheel for RC Train w Technic Axle Hole and Rubber Ring",
+    "colour": "Black",
+    "usd": "55423_c0.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -1.0,
+      -12.0
+    ],
+    "bounds_max_mm": [
+      12.0,
+      4.0,
+      12.0
+    ],
+    "triangles": 2970,
+    "hulls": 2,
+    "mass_measured_g": 1.1,
+    "mass_hull_estimate_g": 1.49,
+    "com_mm": [
+      0.0,
+      1.56,
+      0.0
+    ],
+    "wheel_radius_mm": 12.0,
+    "wheel_collision_mm": [
+      [
+        12.0,
+        2.4,
+        3.6,
+        0.4
+      ],
+      [
+        9.15,
+        -1.0,
+        2.4,
+        0.3
+      ]
+    ]
+  },
+  "4185t": {
+    "bricklink_id": "4185t",
+    "ldraw_id": "4185t",
+    "title": "Technic Wedge Belt Wheel with Tyre 2815",
+    "colour": "Yellow",
+    "usd": "4185t_c14.usda",
+    "bounds_min_mm": [
+      -15.2,
+      -2.0,
+      -15.2
+    ],
+    "bounds_max_mm": [
+      15.2,
+      2.0,
+      15.2
+    ],
+    "triangles": 4192,
+    "hulls": 2,
+    "mass_measured_g": 1.72,
+    "mass_hull_estimate_g": 4.29,
+    "com_mm": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "wheel_radius_mm": 15.2,
+    "wheel_collision_mm": [
+      [
+        15.2,
+        -1.6,
+        1.6,
+        0.6
+      ],
+      [
+        12.0,
+        -2.0,
+        2.0,
+        0.3
+      ]
+    ]
+  },
+  "2730": {
+    "bricklink_id": "2730",
+    "ldraw_id": "2730",
+    "title": "Technic Brick  1 x 10 with Holes",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "2730_c72.usda",
+    "bounds_min_mm": [
+      -40.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      40.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 10710,
+    "hulls": 146,
+    "mass_measured_g": 3.67,
+    "mass_hull_estimate_g": 5.06,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -5.02
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "32018": {
+    "bricklink_id": "32018",
+    "ldraw_id": "32018",
+    "title": "Technic Brick  1 x 14 with Holes",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32018_c71.usda",
+    "bounds_min_mm": [
+      -56.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      56.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 15326,
+    "hulls": 210,
+    "mass_measured_g": 4.92,
+    "mass_hull_estimate_g": 7.02,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -5.03
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "3700": {
+    "bricklink_id": "3700",
+    "ldraw_id": "3700",
+    "title": "Technic Brick  1 x  2 with Hole",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3700_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      8.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 1478,
+    "hulls": 18,
+    "mass_measured_g": 0.82,
+    "mass_hull_estimate_g": 1.14,
+    "com_mm": [
+      0.0,
+      -0.0,
+      -4.91
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "32000": {
+    "bricklink_id": "32000",
+    "ldraw_id": "32000",
+    "title": "Technic Brick  1 x  2 with Holes",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32000_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      8.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 1812,
+    "hulls": 32,
+    "mass_measured_g": 0.73,
+    "mass_hull_estimate_g": 0.98,
+    "com_mm": [
+      -0.0,
+      0.0,
+      -5.05
+    ],
+    "pin_hole_free_radius_mm": 0.0
+  },
+  "6541": {
+    "bricklink_id": "6541",
+    "ldraw_id": "6541",
+    "title": "Technic Brick  1 x  1 with Hole",
+    "colour": "Light_Bluish_Grey",
+    "usd": "6541_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 904,
+    "hulls": 16,
+    "mass_measured_g": 0.38,
+    "mass_hull_estimate_g": 0.49,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -5.05
+    ],
+    "pin_hole_free_radius_mm": 2.403
+  },
+  "32523": {
+    "bricklink_id": "32523",
+    "ldraw_id": "32523",
+    "title": "Technic Beam  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32523_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -11.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      11.6,
+      4.0
+    ],
+    "triangles": 2572,
+    "hulls": 46,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 0.61,
+    "com_mm": [
+      -0.22,
+      -1.55,
+      -0.01
+    ]
+  },
+  "32316": {
+    "bricklink_id": "32316",
+    "ldraw_id": "32316",
+    "title": "Technic Beam  5",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32316_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -19.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      19.6,
+      4.0
+    ],
+    "triangles": 4372,
+    "hulls": 46,
+    "mass_measured_g": 1.25,
+    "mass_hull_estimate_g": 1.59,
+    "com_mm": [
+      -0.48,
+      0.27,
+      -0.05
+    ]
+  },
+  "32525": {
+    "bricklink_id": "32525",
+    "ldraw_id": "32525",
+    "title": "Technic Beam 11",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32525_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -43.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      43.6,
+      4.0
+    ],
+    "triangles": 9772,
+    "hulls": 48,
+    "mass_measured_g": 2.8,
+    "mass_hull_estimate_g": 3.67,
+    "com_mm": [
+      0.05,
+      -0.03,
+      0.01
+    ]
+  },
+  "41239": {
+    "bricklink_id": "41239",
+    "ldraw_id": "41239",
+    "title": "Technic Beam 13",
+    "colour": "Light_Bluish_Grey",
+    "usd": "41239_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -51.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      3.6,
+      51.6,
+      4.0
+    ],
+    "triangles": 11572,
+    "hulls": 48,
+    "mass_measured_g": 3.3,
+    "mass_hull_estimate_g": 4.46,
+    "com_mm": [
+      -0.02,
+      0.44,
+      0.0
+    ]
+  },
+  "3673": {
+    "bricklink_id": "3673",
+    "ldraw_id": "3673",
+    "title": "Technic Pin",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3673_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      8.0,
+      3.2,
+      3.2
+    ],
+    "triangles": 1936,
+    "hulls": 1,
+    "mass_measured_g": 0.16,
+    "mass_hull_estimate_g": 0.24,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "6558": {
+    "bricklink_id": "6558",
+    "ldraw_id": "6558",
+    "title": "Technic Pin Long with Friction and Slot",
+    "colour": "Blue",
+    "usd": "6558_c1.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -3.2,
+      -3.12
+    ],
+    "bounds_max_mm": [
+      12.0,
+      3.2,
+      3.12
+    ],
+    "triangles": 5312,
+    "hulls": 1,
+    "mass_measured_g": 0.37,
+    "mass_hull_estimate_g": 0.36,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "32054": {
+    "bricklink_id": "32054",
+    "ldraw_id": "32054",
+    "title": "Technic Pin Long with Stop Bush",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32054_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -3.6,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      12.0,
+      3.6,
+      3.6
+    ],
+    "triangles": 4720,
+    "hulls": 44,
+    "mass_measured_g": 0.33,
+    "mass_hull_estimate_g": 0.34,
+    "com_mm": [
+      -0.07,
+      -0.09,
+      0.06
+    ]
+  },
+  "43093": {
+    "bricklink_id": "43093",
+    "ldraw_id": "43093",
+    "title": "Technic Axle Pin with Friction",
+    "colour": "Blue",
+    "usd": "43093_c1.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      7.8,
+      3.2,
+      3.2
+    ],
+    "triangles": 1720,
+    "hulls": 1,
+    "mass_measured_g": 0.26,
+    "mass_hull_estimate_g": 0.23,
+    "com_mm": [
+      -0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "65249": {
+    "bricklink_id": "65249",
+    "ldraw_id": "65249",
+    "title": "Technic Axle Pin Long without Friction with  2L Axle",
+    "colour": "Light_Bluish_Grey",
+    "usd": "65249_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      11.8,
+      3.2,
+      3.2
+    ],
+    "triangles": 1096,
+    "hulls": 1,
+    "mass_measured_g": 0.3,
+    "mass_hull_estimate_g": 0.36,
+    "com_mm": [
+      -0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "15100": {
+    "bricklink_id": "15100",
+    "ldraw_id": "15100",
+    "title": "Technic Pin with Friction with Perpendicular Pin Hole Type 1",
+    "colour": "Dark_Azure",
+    "usd": "15100_c321.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      12.0,
+      3.6,
+      4.0
+    ],
+    "triangles": 1766,
+    "hulls": 39,
+    "mass_measured_g": 0.4,
+    "mass_hull_estimate_g": 0.21,
+    "com_mm": [
+      1.78,
+      0.08,
+      -0.01
+    ]
+  },
+  "87082": {
+    "bricklink_id": "87082",
+    "ldraw_id": "87082",
+    "title": "Technic Pin Long with Pin Hole Type 1",
+    "colour": "Light_Bluish_Grey",
+    "usd": "87082_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      12.0,
+      3.6,
+      4.0
+    ],
+    "triangles": 2764,
+    "hulls": 43,
+    "mass_measured_g": 0.5,
+    "mass_hull_estimate_g": 0.46,
+    "com_mm": [
+      0.57,
+      0.06,
+      0.09
+    ]
+  },
+  "4519": {
+    "bricklink_id": "4519",
+    "ldraw_id": "4519",
+    "title": "Technic Axle  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "4519_c71.usda",
+    "bounds_min_mm": [
+      -11.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      11.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 0.43,
+    "mass_hull_estimate_g": 0.36,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "60485": {
+    "bricklink_id": "60485",
+    "ldraw_id": "60485",
+    "title": "Technic Axle  9",
+    "colour": "Light_Bluish_Grey",
+    "usd": "60485_c71.usda",
+    "bounds_min_mm": [
+      -35.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      35.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.3,
+    "mass_hull_estimate_g": 1.12,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "23948": {
+    "bricklink_id": "23948",
+    "ldraw_id": "23948",
+    "title": "Technic Axle 11",
+    "colour": "Light_Bluish_Grey",
+    "usd": "23948_c71.usda",
+    "bounds_min_mm": [
+      -43.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      43.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 1.65,
+    "mass_hull_estimate_g": 1.37,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "50451": {
+    "bricklink_id": "50451",
+    "ldraw_id": "50451",
+    "title": "Technic Axle 16",
+    "colour": "Black",
+    "usd": "50451_c0.usda",
+    "bounds_min_mm": [
+      -63.8,
+      -2.4,
+      -2.4
+    ],
+    "bounds_max_mm": [
+      63.8,
+      2.4,
+      2.4
+    ],
+    "triangles": 176,
+    "hulls": 1,
+    "mass_measured_g": 2.37,
+    "mass_hull_estimate_g": 2.01,
+    "com_mm": [
+      0.0,
+      -0.0,
+      0.0
+    ]
+  },
+  "24316": {
+    "bricklink_id": "24316",
+    "ldraw_id": "24316",
+    "title": "Technic Axle  3 with Stop",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "24316_c72.usda",
+    "bounds_min_mm": [
+      -11.8,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      12.0,
+      3.2,
+      3.2
+    ],
+    "triangles": 296,
+    "hulls": 1,
+    "mass_measured_g": 0.45,
+    "mass_hull_estimate_g": 0.36,
+    "com_mm": [
+      0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "15462": {
+    "bricklink_id": "15462",
+    "ldraw_id": "15462",
+    "title": "Technic Axle  5 with Stop",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "15462_c72.usda",
+    "bounds_min_mm": [
+      -19.8,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      20.0,
+      3.2,
+      3.2
+    ],
+    "triangles": 296,
+    "hulls": 1,
+    "mass_measured_g": 0.73,
+    "mass_hull_estimate_g": 0.61,
+    "com_mm": [
+      0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "87083": {
+    "bricklink_id": "87083",
+    "ldraw_id": "87083",
+    "title": "Technic Axle  4 with Stop",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "87083_c72.usda",
+    "bounds_min_mm": [
+      -15.8,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      16.0,
+      3.2,
+      3.2
+    ],
+    "triangles": 296,
+    "hulls": 1,
+    "mass_measured_g": 0.59,
+    "mass_hull_estimate_g": 0.49,
+    "com_mm": [
+      0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "6587": {
+    "bricklink_id": "6587",
+    "ldraw_id": "6587",
+    "title": "Technic Axle  3 with Stud",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "6587_c72.usda",
+    "bounds_min_mm": [
+      -11.8,
+      -3.2,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      13.6,
+      3.2,
+      3.2
+    ],
+    "triangles": 584,
+    "hulls": 1,
+    "mass_measured_g": 0.48,
+    "mass_hull_estimate_g": 0.36,
+    "com_mm": [
+      0.1,
+      -0.0,
+      0.0
+    ]
+  },
+  "4265c": {
+    "bricklink_id": "4265c",
+    "ldraw_id": "32123a",
+    "title": "Technic Bush  1/2 Smooth with Axle Hole Reduced",
+    "colour": "White",
+    "usd": "32123a_c15.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -2.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      3.6,
+      2.0,
+      3.6
+    ],
+    "triangles": 736,
+    "hulls": 47,
+    "mass_measured_g": 0.1,
+    "mass_hull_estimate_g": 0.05,
+    "com_mm": [
+      0.0,
+      -0.01,
+      0.01
+    ]
+  },
+  "6589": {
+    "bricklink_id": "6589",
+    "ldraw_id": "6589",
+    "title": "Technic Gear 12 Tooth Bevel",
+    "colour": "Light_Bluish_Grey",
+    "usd": "6589_c71.usda",
+    "bounds_min_mm": [
+      -6.4,
+      -1.2,
+      -6.4
+    ],
+    "bounds_max_mm": [
+      6.4,
+      2.8,
+      6.4
+    ],
+    "triangles": 1284,
+    "hulls": 12,
+    "mass_measured_g": 0.29,
+    "mass_hull_estimate_g": 0.4,
+    "com_mm": [
+      -0.12,
+      0.78,
+      -0.04
+    ]
+  },
+  "32198": {
+    "bricklink_id": "32198",
+    "ldraw_id": "32198a",
+    "title": "Technic Gear 20 Tooth Bevel with Two Axlehole Slots",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32198a_c71.usda",
+    "bounds_min_mm": [
+      -10.4,
+      -2.8,
+      -10.4
+    ],
+    "bounds_max_mm": [
+      10.4,
+      1.2,
+      10.4
+    ],
+    "triangles": 1300,
+    "hulls": 13,
+    "mass_measured_g": 0.75,
+    "mass_hull_estimate_g": 1.04,
+    "com_mm": [
+      -0.21,
+      -1.03,
+      0.18
+    ]
+  },
+  "69778": {
+    "bricklink_id": "69778",
+    "ldraw_id": "69778",
+    "title": "Technic Gear 12 Tooth",
+    "colour": "Light_Bluish_Grey",
+    "usd": "69778_c71.usda",
+    "bounds_min_mm": [
+      -7.08,
+      -4.0,
+      -7.08
+    ],
+    "bounds_max_mm": [
+      7.08,
+      4.0,
+      7.08
+    ],
+    "triangles": 1372,
+    "hulls": 13,
+    "mass_measured_g": 0.5,
+    "mass_hull_estimate_g": 1.0,
+    "com_mm": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "teeth": 12,
+    "tooth_phase_deg": -0.0
+  },
+  "18946": {
+    "bricklink_id": "18946",
+    "ldraw_id": "18946",
+    "title": "Technic Gear 16 Tooth with Clutch on Both Sides",
+    "colour": "Light_Bluish_Grey",
+    "usd": "18946_c71.usda",
+    "bounds_min_mm": [
+      -8.71,
+      -4.0,
+      -8.71
+    ],
+    "bounds_max_mm": [
+      8.71,
+      4.0,
+      8.71
+    ],
+    "triangles": 1968,
+    "hulls": 17,
+    "mass_measured_g": 0.84,
+    "mass_hull_estimate_g": 1.7,
+    "com_mm": [
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    "teeth": 16,
+    "tooth_phase_deg": 0.0
+  },
+  "6542b": {
+    "bricklink_id": "6542b",
+    "ldraw_id": "6542b",
+    "title": "Technic Gear 16 Tooth with Clutch Smooth",
+    "colour": "Light_Bluish_Grey",
+    "usd": "6542b_c71.usda",
+    "bounds_min_mm": [
+      -8.74,
+      -4.0,
+      -8.74
+    ],
+    "bounds_max_mm": [
+      8.74,
+      4.0,
+      8.74
+    ],
+    "triangles": 1896,
+    "hulls": 17,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 1.7,
+    "com_mm": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "teeth": 16,
+    "tooth_phase_deg": 0.0
+  },
+  "4019": {
+    "bricklink_id": "4019",
+    "ldraw_id": "4019",
+    "title": "Technic Gear 16 Tooth",
+    "colour": "Light_Grey",
+    "usd": "4019_c7.usda",
+    "bounds_min_mm": [
+      -8.66,
+      -4.0,
+      -8.66
+    ],
+    "bounds_max_mm": [
+      8.66,
+      4.0,
+      8.66
+    ],
+    "triangles": 1704,
+    "hulls": 17,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 1.69,
+    "com_mm": [
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    "teeth": 16,
+    "tooth_phase_deg": -0.0
+  },
+  "32140": {
+    "bricklink_id": "32140",
+    "ldraw_id": "32140",
+    "title": "Technic Beam  2 x  4 Liftarm Bent 90",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32140_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      11.6,
+      27.6,
+      4.0
+    ],
+    "triangles": 3832,
+    "hulls": 47,
+    "mass_measured_g": 1.43,
+    "mass_hull_estimate_g": 1.41,
+    "com_mm": [
+      1.28,
+      15.29,
+      0.08
+    ]
+  },
+  "32526": {
+    "bricklink_id": "32526",
+    "ldraw_id": "32526",
+    "title": "Technic Beam  3 x  5 Bent 90",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32526_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      19.6,
+      35.6,
+      4.0
+    ],
+    "triangles": 6144,
+    "hulls": 48,
+    "mass_measured_g": 1.77,
+    "mass_hull_estimate_g": 3.09,
+    "com_mm": [
+      3.0,
+      20.37,
+      -0.05
+    ]
+  },
+  "32348": {
+    "bricklink_id": "32348",
+    "ldraw_id": "32348",
+    "title": "Technic Beam  4 x  4 Liftarm Bent 53.13",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32348_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      22.8,
+      42.0,
+      4.0
+    ],
+    "triangles": 5166,
+    "hulls": 47,
+    "mass_measured_g": 2.0,
+    "mass_hull_estimate_g": 3.02,
+    "com_mm": [
+      5.0,
+      20.63,
+      0.01
+    ]
+  },
+  "32271": {
+    "bricklink_id": "32271",
+    "ldraw_id": "32271",
+    "title": "Technic Beam  3 x  7 Liftarm Bent 53.13",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32271_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      16.4,
+      61.2,
+      4.0
+    ],
+    "triangles": 6966,
+    "hulls": 48,
+    "mass_measured_g": 2.63,
+    "mass_hull_estimate_g": 2.84,
+    "com_mm": [
+      2.16,
+      31.06,
+      0.0
+    ]
+  },
+  "6629": {
+    "bricklink_id": "6629",
+    "ldraw_id": "6629",
+    "title": "Technic Beam  4 x  6 Liftarm Bent 53.13",
+    "colour": "Light_Bluish_Grey",
+    "usd": "6629_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      22.8,
+      58.0,
+      4.0
+    ],
+    "triangles": 6966,
+    "hulls": 48,
+    "mass_measured_g": 2.6,
+    "mass_hull_estimate_g": 2.89,
+    "com_mm": [
+      4.3,
+      30.11,
+      -0.0
+    ]
+  },
+  "60484": {
+    "bricklink_id": "60484",
+    "ldraw_id": "60484",
+    "title": "Technic Beam  3 x  3 T-shaped",
+    "colour": "Light_Bluish_Grey",
+    "usd": "60484_c71.usda",
+    "bounds_min_mm": [
+      -11.6,
+      -3.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      11.6,
+      19.6,
+      4.0
+    ],
+    "triangles": 4234,
+    "hulls": 44,
+    "mass_measured_g": 1.19,
+    "mass_hull_estimate_g": 1.55,
+    "com_mm": [
+      -0.17,
+      11.99,
+      0.03
+    ]
+  },
+  "32056": {
+    "bricklink_id": "32056",
+    "ldraw_id": "32056",
+    "title": "Technic Beam  3 x  3 x  0.5 Liftarm Bent 90",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32056_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -3.6,
+      -2.0
+    ],
+    "bounds_max_mm": [
+      19.6,
+      19.6,
+      2.0
+    ],
+    "triangles": 2960,
+    "hulls": 38,
+    "mass_measured_g": 0.73,
+    "mass_hull_estimate_g": 0.71,
+    "com_mm": [
+      4.47,
+      4.71,
+      0.05
+    ]
+  },
+  "32009": {
+    "bricklink_id": "32009",
+    "ldraw_id": "32009",
+    "title": "Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32009_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -67.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      35.6,
+      3.6,
+      4.0
+    ],
+    "triangles": 8816,
+    "hulls": 48,
+    "mass_measured_g": 3.46,
+    "mass_hull_estimate_g": 3.83,
+    "com_mm": [
+      7.3,
+      -25.04,
+      0.0
+    ]
+  },
+  "6536": {
+    "bricklink_id": "6536",
+    "ldraw_id": "6536",
+    "title": "Technic Cross Block 1 x 2 (Axle/Pin)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "6536_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      3.6
+    ],
+    "triangles": 1924,
+    "hulls": 41,
+    "mass_measured_g": 0.39,
+    "mass_hull_estimate_g": 0.39,
+    "com_mm": [
+      0.02,
+      0.01,
+      -4.82
+    ]
+  },
+  "32184": {
+    "bricklink_id": "32184",
+    "ldraw_id": "32184",
+    "title": "Technic Cross Block 1 x 3 (Axle/Pin/Axle)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32184_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      11.6
+    ],
+    "triangles": 3076,
+    "hulls": 48,
+    "mass_measured_g": 0.64,
+    "mass_hull_estimate_g": 0.77,
+    "com_mm": [
+      -0.15,
+      0.02,
+      0.04
+    ]
+  },
+  "42003": {
+    "bricklink_id": "42003",
+    "ldraw_id": "42003",
+    "title": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "42003_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      11.6
+    ],
+    "triangles": 3332,
+    "hulls": 46,
+    "mass_measured_g": 0.77,
+    "mass_hull_estimate_g": 0.73,
+    "com_mm": [
+      -0.29,
+      -0.08,
+      0.4
+    ]
+  },
+  "32013": {
+    "bricklink_id": "32013",
+    "ldraw_id": "32013",
+    "title": "Technic Angle Connector #1",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32013_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -12.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      3.6,
+      3.6
+    ],
+    "triangles": 1247,
+    "hulls": 48,
+    "mass_measured_g": 0.46,
+    "mass_hull_estimate_g": 0.32,
+    "com_mm": [
+      -0.02,
+      -4.13,
+      0.03
+    ]
+  },
+  "32015": {
+    "bricklink_id": "32015",
+    "ldraw_id": "32015",
+    "title": "Technic Angle Connector #5 (112.5 degree)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32015_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -12.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      7.82,
+      12.42
+    ],
+    "triangles": 1804,
+    "hulls": 48,
+    "mass_measured_g": 0.69,
+    "mass_hull_estimate_g": 0.59,
+    "com_mm": [
+      -0.01,
+      -1.65,
+      2.39
+    ]
+  },
+  "32034": {
+    "bricklink_id": "32034",
+    "ldraw_id": "32034",
+    "title": "Technic Angle Connector #2 (180 degree)",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32034_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -12.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      12.0,
+      3.6
+    ],
+    "triangles": 1798,
+    "hulls": 48,
+    "mass_measured_g": 0.68,
+    "mass_hull_estimate_g": 0.62,
+    "com_mm": [
+      -0.01,
+      0.02,
+      0.0
+    ]
+  },
+  "48989": {
+    "bricklink_id": "48989",
+    "ldraw_id": "48989",
+    "title": "Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins",
+    "colour": "Light_Bluish_Grey",
+    "usd": "48989_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -12.0,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      12.0,
+      11.6
+    ],
+    "triangles": 6976,
+    "hulls": 48,
+    "mass_measured_g": 1.22,
+    "mass_hull_estimate_g": 1.62,
+    "com_mm": [
+      -0.03,
+      -0.12,
+      -0.12
+    ]
+  },
+  "3001": {
+    "bricklink_id": "3001",
+    "ldraw_id": "3001",
+    "title": "Brick  2 x  4",
+    "colour": "Black",
+    "usd": "3001_c0.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -8.0,
+      -9.6
+    ],
+    "bounds_max_mm": [
+      16.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 2044,
+    "hulls": 1,
+    "mass_measured_g": 2.32,
+    "mass_hull_estimate_g": 5.16,
+    "com_mm": [
+      0.0,
+      0.0,
+      -4.8
+    ]
+  },
+  "3020": {
+    "bricklink_id": "3020",
+    "ldraw_id": "3020",
+    "title": "Plate  2 x  4",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3020_c71.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -8.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      16.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 2044,
+    "hulls": 1,
+    "mass_measured_g": 1.2,
+    "mass_hull_estimate_g": 1.72,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3021": {
+    "bricklink_id": "3021",
+    "ldraw_id": "3021",
+    "title": "Plate  2 x  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3021_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -8.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      12.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 1468,
+    "hulls": 1,
+    "mass_measured_g": 0.93,
+    "mass_hull_estimate_g": 1.29,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3022": {
+    "bricklink_id": "3022",
+    "ldraw_id": "3022",
+    "title": "Plate  2 x  2",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3022_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -8.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      8.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 892,
+    "hulls": 1,
+    "mass_measured_g": 0.64,
+    "mass_hull_estimate_g": 0.86,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3023": {
+    "bricklink_id": "3023",
+    "ldraw_id": "3023b",
+    "title": "Plate  1 x  2",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3023b_c71.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -4.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      8.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 460,
+    "hulls": 1,
+    "mass_measured_g": 0.36,
+    "mass_hull_estimate_g": 0.43,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3623": {
+    "bricklink_id": "3623",
+    "ldraw_id": "3623",
+    "title": "Plate  1 x  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3623_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -4.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      12.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 748,
+    "hulls": 1,
+    "mass_measured_g": 0.53,
+    "mass_hull_estimate_g": 0.65,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3795": {
+    "bricklink_id": "3795",
+    "ldraw_id": "3795",
+    "title": "Plate  2 x  6",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3795_c71.usda",
+    "bounds_min_mm": [
+      -24.0,
+      -8.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      24.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 3196,
+    "hulls": 1,
+    "mass_measured_g": 1.74,
+    "mass_hull_estimate_g": 2.58,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3034": {
+    "bricklink_id": "3034",
+    "ldraw_id": "3034",
+    "title": "Plate  2 x  8",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3034_c71.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -8.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      32.0,
+      8.0,
+      1.6
+    ],
+    "triangles": 4348,
+    "hulls": 1,
+    "mass_measured_g": 2.27,
+    "mass_hull_estimate_g": 3.44,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "4477": {
+    "bricklink_id": "4477",
+    "ldraw_id": "4477",
+    "title": "Plate  1 x 10",
+    "colour": "Light_Bluish_Grey",
+    "usd": "4477_c71.usda",
+    "bounds_min_mm": [
+      -40.0,
+      -4.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      40.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 2764,
+    "hulls": 1,
+    "mass_measured_g": 1.61,
+    "mass_hull_estimate_g": 2.15,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3028": {
+    "bricklink_id": "3028",
+    "ldraw_id": "3028",
+    "title": "Plate  6 x 12",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3028_c71.usda",
+    "bounds_min_mm": [
+      -48.0,
+      -24.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      48.0,
+      24.0,
+      1.6
+    ],
+    "triangles": 26236,
+    "hulls": 1,
+    "mass_measured_g": 9.47,
+    "mass_hull_estimate_g": 15.48,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3030": {
+    "bricklink_id": "3030",
+    "ldraw_id": "3030",
+    "title": "Plate  4 x 10",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3030_c71.usda",
+    "bounds_min_mm": [
+      -40.0,
+      -16.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      40.0,
+      16.0,
+      1.6
+    ],
+    "triangles": 13564,
+    "hulls": 1,
+    "mass_measured_g": 5.55,
+    "mass_hull_estimate_g": 8.6,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3031": {
+    "bricklink_id": "3031",
+    "ldraw_id": "3031",
+    "title": "Plate  4 x  4",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3031_c71.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -16.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      16.0,
+      16.0,
+      1.6
+    ],
+    "triangles": 4924,
+    "hulls": 1,
+    "mass_measured_g": 2.22,
+    "mass_hull_estimate_g": 3.44,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3033": {
+    "bricklink_id": "3033",
+    "ldraw_id": "3033",
+    "title": "Plate  6 x 10",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3033_c71.usda",
+    "bounds_min_mm": [
+      -40.0,
+      -24.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      40.0,
+      24.0,
+      1.6
+    ],
+    "triangles": 21628,
+    "hulls": 1,
+    "mass_measured_g": 7.95,
+    "mass_hull_estimate_g": 12.9,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3035": {
+    "bricklink_id": "3035",
+    "ldraw_id": "3035",
+    "title": "Plate  4 x  8",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3035_c71.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -16.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      32.0,
+      16.0,
+      1.6
+    ],
+    "triangles": 10684,
+    "hulls": 1,
+    "mass_measured_g": 4.7,
+    "mass_hull_estimate_g": 6.88,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3036": {
+    "bricklink_id": "3036",
+    "ldraw_id": "3036",
+    "title": "Plate  6 x  8",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3036_c71.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -24.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      32.0,
+      24.0,
+      1.6
+    ],
+    "triangles": 17020,
+    "hulls": 1,
+    "mass_measured_g": 6.4,
+    "mass_hull_estimate_g": 10.32,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "3958": {
+    "bricklink_id": "3958",
+    "ldraw_id": "3958",
+    "title": "Plate  6 x  6",
+    "colour": "Light_Bluish_Grey",
+    "usd": "3958_c71.usda",
+    "bounds_min_mm": [
+      -24.0,
+      -24.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      24.0,
+      24.0,
+      1.6
+    ],
+    "triangles": 12412,
+    "hulls": 1,
+    "mass_measured_g": 4.71,
+    "mass_hull_estimate_g": 7.74,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "41539": {
+    "bricklink_id": "41539",
+    "ldraw_id": "41539",
+    "title": "Plate  8 x  8",
+    "colour": "Light_Bluish_Grey",
+    "usd": "41539_c71.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -32.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      32.0,
+      32.0,
+      1.6
+    ],
+    "triangles": 23356,
+    "hulls": 1,
+    "mass_measured_g": 9.4,
+    "mass_hull_estimate_g": 13.76,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "92438": {
+    "bricklink_id": "92438",
+    "ldraw_id": "92438",
+    "title": "Plate  8 x 16",
+    "colour": "Light_Bluish_Grey",
+    "usd": "92438_c71.usda",
+    "bounds_min_mm": [
+      -64.0,
+      -32.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      64.0,
+      32.0,
+      1.6
+    ],
+    "triangles": 48700,
+    "hulls": 1,
+    "mass_measured_g": 17.0,
+    "mass_hull_estimate_g": 27.53,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.6
+    ]
+  },
+  "99498c01": {
+    "bricklink_id": "99498c01",
+    "ldraw_id": "99498",
+    "title": "Electric Power Functions Servo Motor",
+    "colour": "Light_Bluish_Grey",
+    "usd": "99498_c71.usda",
+    "bounds_min_mm": [
+      -12.0,
+      0.0,
+      -11.8
+    ],
+    "bounds_max_mm": [
+      12.0,
+      55.6,
+      27.8
+    ],
+    "triangles": 14666,
+    "hulls": 24,
+    "mass_measured_g": 44.0,
+    "mass_hull_estimate_g": 39.47,
+    "com_mm": [
+      0.02,
+      25.5,
+      10.39
+    ]
+  },
+  "64179": {
+    "bricklink_id": "64179",
+    "ldraw_id": "64179",
+    "title": "Technic Beam  7 x  5 with Open Center  5 x  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "64179_c71.usda",
+    "bounds_min_mm": [
+      -20.0,
+      -28.0,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      20.0,
+      28.0,
+      4.0
+    ],
+    "triangles": 18376,
+    "hulls": 48,
+    "mass_measured_g": 5.3,
+    "mass_hull_estimate_g": 9.56,
+    "com_mm": [
+      -0.1,
+      -0.49,
+      0.04
+    ]
+  },
+  "64178": {
+    "bricklink_id": "64178",
+    "ldraw_id": "64178",
+    "title": "Technic Beam 11 x  5 with Open Center  5 x  3",
+    "colour": "Light_Bluish_Grey",
+    "usd": "64178_c71.usda",
+    "bounds_min_mm": [
+      -20.0,
+      -43.6,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      20.0,
+      43.6,
+      4.0
+    ],
+    "triangles": 22756,
+    "hulls": 48,
+    "mass_measured_g": 7.0,
+    "mass_hull_estimate_g": 13.82,
+    "com_mm": [
+      -0.25,
+      -0.17,
+      0.0
+    ]
+  },
+  "57520": {
+    "bricklink_id": "57520",
+    "ldraw_id": "57520",
+    "title": "Technic Sprocket Wheel 25.4",
+    "colour": "Pearl_Light_Grey",
+    "usd": "57520_c135.usda",
+    "bounds_min_mm": [
+      -12.8,
+      -4.0,
+      -12.59
+    ],
+    "bounds_max_mm": [
+      12.8,
+      4.0,
+      12.59
+    ],
+    "triangles": 4644,
+    "hulls": 48,
+    "mass_measured_g": 1.63,
+    "mass_hull_estimate_g": 1.66,
+    "com_mm": [
+      -0.18,
+      -0.6,
+      -0.11
+    ]
+  },
+  "3743": {
+    "bricklink_id": "3743",
+    "ldraw_id": "3743",
+    "title": "Technic Gear Rack  1 x  4",
+    "colour": "Black",
+    "usd": "3743_c0.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -4.0,
+      -3.2
+    ],
+    "bounds_max_mm": [
+      16.0,
+      4.0,
+      2.4
+    ],
+    "triangles": 580,
+    "hulls": 11,
+    "mass_measured_g": 0.79,
+    "mass_hull_estimate_g": 1.24,
+    "com_mm": [
+      0.0,
+      0.0,
+      -0.84
+    ]
+  },
+  "6630": {
+    "bricklink_id": "6630",
+    "ldraw_id": "6630",
+    "title": "Technic Gear Rack  1 x  8 with Holes",
+    "colour": "Light_Grey",
+    "usd": "6630_c7.usda",
+    "bounds_min_mm": [
+      -32.0,
+      -4.0,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      32.0,
+      4.0,
+      1.6
+    ],
+    "triangles": 1888,
+    "hulls": 15,
+    "mass_measured_g": 2.0,
+    "mass_hull_estimate_g": 2.44,
+    "com_mm": [
+      0.0,
+      0.0,
+      -1.7
+    ]
+  },
+  "87761": {
+    "bricklink_id": "87761",
+    "ldraw_id": "87761",
+    "title": "Technic Gear Rack  1 x  7 with Pegholes and Axleholes",
+    "colour": "Black",
+    "usd": "87761_c0.usda",
+    "bounds_min_mm": [
+      -28.0,
+      -4.0,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      28.0,
+      4.0,
+      4.0
+    ],
+    "triangles": 3934,
+    "hulls": 11,
+    "mass_measured_g": 1.8,
+    "mass_hull_estimate_g": 3.28,
+    "com_mm": [
+      -0.0,
+      -0.0,
+      -0.42
+    ]
+  },
+  "57519": {
+    "bricklink_id": "57519",
+    "ldraw_id": "57519",
+    "title": "Technic Sprocket Wheel  40.4",
+    "colour": "Yellow",
+    "usd": "57519_c14.usda",
+    "bounds_min_mm": [
+      -20.4,
+      -7.28,
+      -20.23
+    ],
+    "bounds_max_mm": [
+      20.4,
+      7.28,
+      20.23
+    ],
+    "triangles": 18492,
+    "hulls": 48,
+    "mass_measured_g": 5.1,
+    "mass_hull_estimate_g": 9.49,
+    "com_mm": [
+      -0.02,
+      -0.41,
+      -0.03
+    ]
+  },
+  "32072": {
+    "bricklink_id": "32072",
+    "ldraw_id": "32072",
+    "title": "Technic Gear  4 Knob",
+    "colour": "Yellow",
+    "usd": "32072_c14.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -4.0,
+      -12.0
+    ],
+    "bounds_max_mm": [
+      12.0,
+      4.0,
+      12.0
+    ],
+    "triangles": 3804,
+    "hulls": 46,
+    "mass_measured_g": 0.87,
+    "mass_hull_estimate_g": 0.8,
+    "com_mm": [
+      -0.1,
+      -0.01,
+      0.08
+    ]
+  },
+  "69761": {
+    "bricklink_id": "69761",
+    "ldraw_id": "69761",
+    "title": "Technic Gear 22 Tooth Bevel with Peghole",
+    "colour": "Yellow",
+    "usd": "69761_c14.usda",
+    "bounds_min_mm": [
+      -16.36,
+      -4.0,
+      -16.36
+    ],
+    "bounds_max_mm": [
+      16.36,
+      4.0,
+      16.36
+    ],
+    "triangles": 2352,
+    "hulls": 48,
+    "mass_measured_g": 2.2,
+    "mass_hull_estimate_g": 3.69,
+    "com_mm": [
+      0.01,
+      1.03,
+      -0.11
+    ]
+  },
+  "69762": {
+    "bricklink_id": "69762",
+    "ldraw_id": "69762",
+    "title": "Technic Gear 14 Tooth Bevel",
+    "colour": "Yellow",
+    "usd": "69762_c14.usda",
+    "bounds_min_mm": [
+      -10.8,
+      -4.0,
+      -10.8
+    ],
+    "bounds_max_mm": [
+      10.8,
+      4.0,
+      10.8
+    ],
+    "triangles": 1884,
+    "hulls": 48,
+    "mass_measured_g": 1.2,
+    "mass_hull_estimate_g": 1.62,
+    "com_mm": [
+      -0.1,
+      -0.05,
+      -0.05
+    ]
+  },
+  "57585": {
+    "bricklink_id": "57585",
+    "ldraw_id": "57585",
+    "title": "Technic Bush with Three Axles",
+    "colour": "Light_Bluish_Grey",
+    "usd": "57585_c71.usda",
+    "bounds_min_mm": [
+      -11.07,
+      -7.61,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      11.07,
+      11.8,
+      4.0
+    ],
+    "triangles": 1468,
+    "hulls": 44,
+    "mass_measured_g": 0.65,
+    "mass_hull_estimate_g": 0.57,
+    "com_mm": [
+      0.01,
+      -0.03,
+      -0.01
+    ]
+  },
+  "55615": {
+    "bricklink_id": "55615",
+    "ldraw_id": "55615",
+    "title": "Technic Pin Connector Perpendicular  3 x  3 Bent 90 with 4 Pins, Slots Along Beam",
+    "colour": "Light_Bluish_Grey",
+    "usd": "55615_c71.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -12.0,
+      -12.0
+    ],
+    "bounds_max_mm": [
+      4.0,
+      19.6,
+      19.6
+    ],
+    "triangles": 8756,
+    "hulls": 48,
+    "mass_measured_g": 1.9,
+    "mass_hull_estimate_g": 2.46,
+    "com_mm": [
+      -0.01,
+      3.39,
+      2.79
+    ]
+  },
+  "6575": {
+    "bricklink_id": "6575",
+    "ldraw_id": "6575a",
+    "title": "Technic Cam with Narrow Slit and Recessed Axlehole",
+    "colour": "Yellow",
+    "usd": "6575a_c14.usda",
+    "bounds_min_mm": [
+      -7.6,
+      -2.0,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      7.6,
+      2.0,
+      11.6
+    ],
+    "triangles": 1564,
+    "hulls": 48,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 0.6,
+    "com_mm": [
+      -0.04,
+      -0.0,
+      0.88
+    ]
+  },
+  "6641": {
+    "bricklink_id": "6641",
+    "ldraw_id": "6641",
+    "title": "Technic Transmission Changeover Catch Type 1",
+    "colour": "Red",
+    "usd": "6641_c4.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -18.4,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      4.0,
+      2.4,
+      3.6
+    ],
+    "triangles": 1026,
+    "hulls": 43,
+    "mass_measured_g": 0.5,
+    "mass_hull_estimate_g": 0.51,
+    "com_mm": [
+      -0.0,
+      -5.99,
+      0.01
+    ]
+  },
+  "35188": {
+    "bricklink_id": "35188",
+    "ldraw_id": "35188",
+    "title": "Technic Changeover Rotary Catch",
+    "colour": "Orange",
+    "usd": "35188_c25.usda",
+    "bounds_min_mm": [
+      -11.04,
+      -5.91,
+      -11.04
+    ],
+    "bounds_max_mm": [
+      11.04,
+      5.91,
+      11.04
+    ],
+    "triangles": 1876,
+    "hulls": 48,
+    "mass_measured_g": 1.08,
+    "mass_hull_estimate_g": 1.33,
+    "com_mm": [
+      -0.09,
+      -0.04,
+      0.04
+    ]
+  },
+  "6588": {
+    "bricklink_id": "6588",
+    "ldraw_id": "6588",
+    "title": "Technic Gearbox  2 x  4 x  3 & 1/3",
+    "colour": "Light_Grey",
+    "usd": "6588_c7.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -8.0,
+      -16.0
+    ],
+    "bounds_max_mm": [
+      16.0,
+      8.0,
+      16.0
+    ],
+    "triangles": 8350,
+    "hulls": 48,
+    "mass_measured_g": 4.5,
+    "mass_hull_estimate_g": 8.75,
+    "com_mm": [
+      0.12,
+      0.06,
+      -0.16
+    ]
+  },
+  "57515": {
+    "bricklink_id": "57515",
+    "ldraw_id": "57515",
+    "title": "Technic Suspension Arm  2 x  6",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "57515_c72.usda",
+    "bounds_min_mm": [
+      -8.0,
+      -44.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      8.0,
+      3.6,
+      3.6
+    ],
+    "triangles": 8560,
+    "hulls": 48,
+    "mass_measured_g": 1.52,
+    "mass_hull_estimate_g": 1.83,
+    "com_mm": [
+      -0.06,
+      -19.45,
+      0.1
+    ]
+  },
+  "731c04": {
+    "bricklink_id": "731c04",
+    "ldraw_id": "731c04_cyl",
+    "title": "Technic Shock Absorber 6.5L Extra Stiff - cylinder side (bench sim body)",
+    "colour": "Yellow",
+    "usd": "731c04_cyl_c14.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -40.0
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "triangles": 3702,
+    "hulls": 47,
+    "mass_measured_g": 2.1,
+    "mass_hull_estimate_g": 1.07,
+    "com_mm": [
+      0.03,
+      -0.03,
+      -11.75
+    ]
+  },
+  "2909c03": {
+    "bricklink_id": "2909c03",
+    "ldraw_id": "2909c03_cyl",
+    "title": "Technic Shock Absorber 9L Soft - cylinder side (bench sim body)",
+    "colour": "Black",
+    "usd": "2909c03_cyl_c0.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -5.2,
+      -56.0
+    ],
+    "bounds_max_mm": [
+      5.2,
+      5.2,
+      0.0
+    ],
+    "triangles": 3925,
+    "hulls": 48,
+    "mass_measured_g": 4.0,
+    "mass_hull_estimate_g": 2.79,
+    "com_mm": [
+      -1.17,
+      0.01,
+      -20.28
+    ]
+  },
+  "32494": {
+    "bricklink_id": "32494",
+    "ldraw_id": "32494",
+    "title": "Technic Wheel Spindle Axle Driver",
+    "colour": "Light_Bluish_Grey",
+    "usd": "32494_c71.usda",
+    "bounds_min_mm": [
+      -3.6,
+      -4.0,
+      -3.6
+    ],
+    "bounds_max_mm": [
+      3.6,
+      20.0,
+      3.6
+    ],
+    "triangles": 2208,
+    "hulls": 43,
+    "mass_measured_g": 0.55,
+    "mass_hull_estimate_g": 0.38,
+    "com_mm": [
+      0.03,
+      10.36,
+      -0.0
+    ]
+  },
+  "92906": {
+    "bricklink_id": "92906",
+    "ldraw_id": "92906",
+    "title": "Technic Steering Constant Velocity 4.8mm Joint Female",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "92906_c72.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -19.8,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      4.0,
+      2.4,
+      4.0
+    ],
+    "triangles": 1512,
+    "hulls": 39,
+    "mass_measured_g": 0.45,
+    "mass_hull_estimate_g": 0.35,
+    "com_mm": [
+      -0.01,
+      -6.67,
+      0.01
+    ]
+  },
+  "62821b": {
+    "bricklink_id": "62821b",
+    "ldraw_id": "62821",
+    "title": "Technic Differential with One Gear 28 Tooth Bevel",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "62821_c72.usda",
+    "bounds_min_mm": [
+      -14.4,
+      -12.0,
+      -14.4
+    ],
+    "bounds_max_mm": [
+      14.4,
+      12.0,
+      14.4
+    ],
+    "triangles": 4248,
+    "hulls": 48,
+    "mass_measured_g": 2.8,
+    "mass_hull_estimate_g": 3.6,
+    "com_mm": [
+      0.49,
+      2.67,
+      -0.22
+    ]
+  },
+  "65414": {
+    "bricklink_id": "65414",
+    "ldraw_id": "65414",
+    "title": "Technic Differential Casing for 5 Internal Gears",
+    "colour": "Light_Bluish_Grey",
+    "usd": "65414_c71.usda",
+    "bounds_min_mm": [
+      -10.5,
+      -4.0,
+      -10.5
+    ],
+    "bounds_max_mm": [
+      10.5,
+      18.8,
+      10.28
+    ],
+    "triangles": 2090,
+    "hulls": 47,
+    "mass_measured_g": 2.31,
+    "mass_hull_estimate_g": 2.87,
+    "com_mm": [
+      -0.07,
+      6.03,
+      -0.39
+    ]
+  },
+  "12787c01": {
+    "bricklink_id": "12787c01",
+    "ldraw_id": "12799",
+    "title": "Technic Motor Pull Back  6 x  5 x  3 (Complete)",
+    "colour": "Dark_Bluish_Grey",
+    "usd": "12799_c72.usda",
+    "bounds_min_mm": [
+      -12.0,
+      -43.6,
+      -11.6
+    ],
+    "bounds_max_mm": [
+      12.0,
+      6.4,
+      27.6
+    ],
+    "triangles": 21799,
+    "hulls": 24,
+    "mass_measured_g": 31.0,
+    "mass_hull_estimate_g": 35.73,
+    "com_mm": [
+      -0.01,
+      -20.07,
+      9.57
+    ]
+  },
+  "87574c01": {
+    "bricklink_id": "87574c01",
+    "ldraw_id": "87574c01",
+    "title": "Electric Power Functions Train Motor with Black Coiled Cable",
+    "colour": "Black",
+    "usd": "87574c01_c0.usda",
+    "bounds_min_mm": [
+      -16.0,
+      -43.0,
+      -23.6
+    ],
+    "bounds_max_mm": [
+      16.0,
+      43.0,
+      5.6
+    ],
+    "triangles": 18568,
+    "hulls": 24,
+    "mass_measured_g": 57.1,
+    "mass_hull_estimate_g": 56.18,
+    "com_mm": [
+      0.03,
+      0.08,
+      -12.45
+    ]
+  },
+  "731c04_rod": {
+    "bricklink_id": "731c04_rod",
+    "ldraw_id": "731c04_rod",
+    "title": "Technic Shock Absorber 6.5L - piston rod (bench sim body, origin at the rod-end pin hole)",
+    "colour": "Black",
+    "usd": "731c04_rod_c0.usda",
+    "bounds_min_mm": [
+      -4.0,
+      -4.0,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      4.0,
+      4.0,
+      32.0
+    ],
+    "triangles": 1586,
+    "hulls": 45,
+    "mass_measured_g": 0.7,
+    "mass_hull_estimate_g": 0.52,
+    "com_mm": [
+      -0.02,
+      -0.0,
+      9.4
+    ]
+  },
+  "2909c03_rod": {
+    "bricklink_id": "2909c03_rod",
+    "ldraw_id": "2909c03_rod",
+    "title": "Technic Shock Absorber 9L Soft - piston rod (bench sim body, origin at the rod-end pin hole)",
+    "colour": "Black",
+    "usd": "2909c03_rod_c0.usda",
+    "bounds_min_mm": [
+      -5.0,
+      -5.0,
+      -4.0
+    ],
+    "bounds_max_mm": [
+      5.0,
+      5.0,
+      42.8
+    ],
+    "triangles": 2578,
+    "hulls": 38,
+    "mass_measured_g": 1.2,
+    "mass_hull_estimate_g": 1.2,
+    "com_mm": [
+      0.0,
+      0.01,
+      13.18
+    ]
+  }
+}

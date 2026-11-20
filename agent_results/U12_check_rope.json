@@ -1,0 +1,437 @@
+{
+ "id": "U12_check_rope",
+ "job": {
+  "id": "U12_check_rope",
+  "kind": "check",
+  "design": "agent_designs/U12.json",
+  "bench": "rope"
+ },
+ "result": {
+  "accepted": true,
+  "review_critical": [],
+  "plain": {
+   "crossed": true,
+   "failure": null,
+   "max_progress": 1.785,
+   "max_progress_m": 1.5393,
+   "time_s": 3.62,
+   "broken_joints": [],
+   "valid": true,
+   "motor_program_log": [
+    "0.04 s motfL: 7",
+    "0.04 s motfR: 7",
+    "0.57 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "0.58 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "0.60 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.0 mm, sliding 0.00 m/s)",
+    "0.63 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.0 mm, sliding 0.00 m/s)",
+    "0.65 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "0.68 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "0.86 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "0.89 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "2.15 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+    "2.17 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+   ],
+   "gear_meshes": {
+    "gfL-igaL": {
+     "slips": 0,
+     "peak_n": 4.29,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "grL-igbL": {
+     "slips": 0,
+     "peak_n": 2.97,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "gfR-igaR": {
+     "slips": 0,
+     "peak_n": 5.32,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "grR-igbR": {
+     "slips": 0,
+     "peak_n": 0.15,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "rgfL-igaL": {
+     "slips": 0,
+     "peak_n": 2.5,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "rgfR-igaR": {
+     "slips": 0,
+     "peak_n": 3.48,
+     "engaged": 0.99,
+     "state": "locked"
+    },
+    "rgrL-igbL": {
+     "slips": 0,
+     "peak_n": 4.87,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "h8gL-igaL": {
+     "slips": 0,
+     "peak_n": 1.55,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "hcgL-h8gL": {
+     "slips": 0,
+     "peak_n": 0.98,
+     "engaged": 0.96,
+     "state": "locked"
+    },
+    "hhgL-hcgL": {
+     "slips": 0,
+     "peak_n": 0.67,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "h8gR-igaR": {
+     "slips": 0,
+     "peak_n": 0.72,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "hcgR-h8gR": {
+     "slips": 0,
+     "peak_n": 0.26,
+     "engaged": 0.96,
+     "state": "locked"
+    },
+    "hhgR-hcgR": {
+     "slips": 0,
+     "peak_n": 0.15,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "spfL-sprL": {
+     "slips": 5,
+     "peak_n": 9.97,
+     "engaged": 1.0,
+     "state": "locked"
+    },
+    "spfR-sprR": {
+     "slips": 2,
+     "peak_n": 10.0,
+     "engaged": 1.0,
+     "state": "locked"
+    }
+   },
+   "leads": [
+    {
+     "dev": "motfL",
+     "to": "receiver",
+     "peak_n": 0.0,
+     "unplugged": false
+    },
+    {
+     "dev": "motfR",
+     "to": "receiver",
+     "peak_n": 0.0,
+     "unplugged": false
+    },
+    {
+     "dev": "receiver",
+     "to": "battery",
+     "peak_n": 0.0,
+     "unplugged": false
+    }
+   ],
+   "diverged": false,
+   "passed": true,
+   "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_run_c4c6d29f",
+   "videos": [
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_run_c4c6d29f\\video\\follow.mp4",
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_run_c4c6d29f\\video\\overview.mp4"
+   ],
+   "contact_sheets": [
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_run_c4c6d29f\\contact_follow.jpg",
+    "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_run_c4c6d29f\\contact_overview.jpg"
+   ]
+  },
+  "nudges": {
+   "offset_1mm": {
+    "crossed": true,
+    "failure": null,
+    "max_progress": 1.785,
+    "max_progress_m": 1.5402,
+    "time_s": 6.129,
+    "broken_joints": [],
+    "valid": true,
+    "motor_program_log": [
+     "0.04 s motfL: 7",
+     "0.04 s motfR: 7",
+     "0.41 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+     "0.46 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.3 mm, sliding 0.00 m/s)",
+     "0.63 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.63 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.66 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.68 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.70 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.2 mm, sliding 0.00 m/s)",
+     "0.78 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.81 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.81 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+    ],
+    "gear_meshes": {
+     "gfL-igaL": {
+      "slips": 0,
+      "peak_n": 4.53,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grL-igbL": {
+      "slips": 0,
+      "peak_n": 2.84,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "gfR-igaR": {
+      "slips": 0,
+      "peak_n": 4.87,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grR-igbR": {
+      "slips": 0,
+      "peak_n": 0.59,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfL-igaL": {
+      "slips": 0,
+      "peak_n": 4.71,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfR-igaR": {
+      "slips": 0,
+      "peak_n": 2.95,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgrL-igbL": {
+      "slips": 0,
+      "peak_n": 4.26,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gL-igaL": {
+      "slips": 0,
+      "peak_n": 1.41,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgL-h8gL": {
+      "slips": 0,
+      "peak_n": 1.14,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgL-hcgL": {
+      "slips": 0,
+      "peak_n": 1.08,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gR-igaR": {
+      "slips": 0,
+      "peak_n": 2.69,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgR-h8gR": {
+      "slips": 0,
+      "peak_n": 2.39,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgR-hcgR": {
+      "slips": 0,
+      "peak_n": 2.23,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfL-sprL": {
+      "slips": 9,
+      "peak_n": 10.0,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfR-sprR": {
+      "slips": 3,
+      "peak_n": 9.92,
+      "engaged": 1.0,
+      "state": "locked"
+     }
+    },
+    "leads": [
+     {
+      "dev": "motfL",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "motfR",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "receiver",
+      "to": "battery",
+      "peak_n": 0.0,
+      "unplugged": false
+     }
+    ],
+    "diverged": false,
+    "passed": true,
+    "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_offset_1mm_c4c6d29f"
+   },
+   "commands_50ms_late": {
+    "crossed": true,
+    "failure": null,
+    "max_progress": 1.785,
+    "max_progress_m": 1.5393,
+    "time_s": 3.62,
+    "broken_joints": [],
+    "valid": true,
+    "motor_program_log": [
+     "0.04 s motfL: 7",
+     "0.04 s motfR: 7",
+     "0.57 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.58 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.60 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.0 mm, sliding 0.00 m/s)",
+     "0.63 s mesh spfR-sprR locked -> slipping (centre distance -0.00 mm, axial offset 0.0 mm, sliding 0.00 m/s)",
+     "0.65 s mesh spfR-sprR slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.68 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.86 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "0.89 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "2.15 s mesh spfL-sprL locked -> slipping (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)",
+     "2.17 s mesh spfL-sprL slipping -> locked (centre distance -0.00 mm, axial offset 0.1 mm, sliding 0.00 m/s)"
+    ],
+    "gear_meshes": {
+     "gfL-igaL": {
+      "slips": 0,
+      "peak_n": 4.29,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grL-igbL": {
+      "slips": 0,
+      "peak_n": 2.97,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "gfR-igaR": {
+      "slips": 0,
+      "peak_n": 5.32,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "grR-igbR": {
+      "slips": 0,
+      "peak_n": 0.15,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfL-igaL": {
+      "slips": 0,
+      "peak_n": 2.5,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "rgfR-igaR": {
+      "slips": 0,
+      "peak_n": 3.48,
+      "engaged": 0.99,
+      "state": "locked"
+     },
+     "rgrL-igbL": {
+      "slips": 0,
+      "peak_n": 4.87,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gL-igaL": {
+      "slips": 0,
+      "peak_n": 1.55,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgL-h8gL": {
+      "slips": 0,
+      "peak_n": 0.98,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgL-hcgL": {
+      "slips": 0,
+      "peak_n": 0.67,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "h8gR-igaR": {
+      "slips": 0,
+      "peak_n": 0.72,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "hcgR-h8gR": {
+      "slips": 0,
+      "peak_n": 0.26,
+      "engaged": 0.96,
+      "state": "locked"
+     },
+     "hhgR-hcgR": {
+      "slips": 0,
+      "peak_n": 0.15,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfL-sprL": {
+      "slips": 5,
+      "peak_n": 9.97,
+      "engaged": 1.0,
+      "state": "locked"
+     },
+     "spfR-sprR": {
+      "slips": 2,
+      "peak_n": 10.0,
+      "engaged": 1.0,
+      "state": "locked"
+     }
+    },
+    "leads": [
+     {
+      "dev": "motfL",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "motfR",
+      "to": "receiver",
+      "peak_n": 0.0,
+      "unplugged": false
+     },
+     {
+      "dev": "receiver",
+      "to": "battery",
+      "peak_n": 0.0,
+      "unplugged": false
+     }
+    ],
+    "diverged": false,
+    "passed": true,
+    "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\agent_designs\\_sims\\1120_143139_rope_commands_50ms_late_c4c6d29f"
+   }
+  }
+ }
+}

@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+"""brick: the level-1 benches, the design check and the calibrated simulator (v14).
+
+    brick list                          the 4 benches
+    brick task <bench>                  course, start, goal and limits of the bench, as JSON
+    brick validate <design> <bench>     static check + design review (fast)
+    brick simulate <design> <bench>     one physics run: verdict JSON, videos, contact sheets
+    brick check <design> <bench>        acceptance: validate, plain run and the two nudged runs
+"""
+import hashlib, json, os, subprocess, sys, time
+from concurrent.futures import ThreadPoolExecutor
+
+H = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(H, "src"))
+BENCHES = ["steps", "rope", "ramp", "bridge"]
+LEVEL = 1
+ENV = {"LEGO_EVAL_FINAL": "1", "LEGO_START_BOARD_MM": '{"*": 500, "gap": 1000}', "LEGO_BENCH_CLUTCH": "rigid",
+       "LEGO_BENCH_CRANK_RIDERS": "1", "LEGO_BENCH_WORM_EFF": "0.3", "LEGO_BENCH_CRANK_ITERS": "128",
+       "LEGO_BENCH_WORM_GOVERNOR": "1", "LEGO_BENCH_MAX_DRIVE_MOTORS": "none", "LEGO_BENCH_POWERED": "any",
+       "CSIM_PARAMS": os.path.join(H, "simulator", "params_v14.json"), "CSIM_WALL_S": "900"}
+os.environ.update(ENV)
+NUDGES = [("offset_1mm", {"LEGO_BENCH_START_DY": "0.001"}), ("commands_50ms_late", {"LEGO_BENCH_SETTLE_DELTA": "0.05"})]
+KEEP = ["crossed", "failure", "max_progress", "max_progress_m", "time_s", "broken_joints", "mean_speed_m_s",
+        "expected_speed_m_s", "valid", "motor_program_log", "gear_meshes", "leads", "diverged"]
+
+
+def task(bench):
+    return json.load(open(os.path.join(H, "tasks", bench + ".json")))
+
+
+def validate(path, bench):
+    from ai_pd_tasks.lego_bench import dfm
+    from ai_pd_tasks.lego_bench.design import Budget, Design, place, validate as val
+    from ai_pd_tasks.lego_bench.obstacles import check_constraints, generate, redo_constraints, start_gap_issue
+    try:
+        d = Design.load(path)
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "errors": [f"cannot load the design: {type(e).__name__}: {e}"], "warnings": []}
+    rep = val(d, Budget.for_part_set("inventory"))
+    ob, errs = generate(bench, LEVEL, "final"), list(rep.errors)
+    if rep.ok:
+        errs += check_constraints(ob, d, rep.stats, redo_constraints(task(bench)["cap"]))
+    gi = start_gap_issue(ob, d, float((rep.stats or {}).get("length_mm") or 0.0))
+    if gi:
+        errs.append(f"start: {gi}")
+    if not any(p.part == "58123c01" for p in d.parts):
+        errs.append("the PF IR receiver 58123c01 must be on board")
+    if not any(p.bp.kind == "motor" for p in place(d).values()):
+        errs.append("the design needs at least one motor")
+    st = rep.stats or {}
+    rv = dfm.review(d)
+    return {"ok": not errs, "errors": errs[:40], "warnings": list(rep.warnings)[:20],
+            "stats": {k: st[k] for k in ("n_parts", "mass_g", "length_mm", "width_mm", "height_mm", "ground_clearance_mm",
+                                         "wheel_radius_mm", "expected_speed_m_s", "drive", "n_motors") if k in st},
+            "review": {"critical": [f["message"] for f in rv["critical"]][:20], "warnings": [f["message"] for f in rv["warnings"]][:20]}}
+
+
+def contact(video, out):
+    if not os.path.exists(video):
+        return None
+    dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", video],
+                         capture_output=True, text=True).stdout.strip() or "10"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-vf",
+                    f"fps={12 / max(float(dur), 0.1):.5f},scale=400:-1,tile=4x3", "-frames:v", "1", out])
+    return out if os.path.exists(out) else None
+
+
+def run(path, bench, video=True, env=None, tag="run"):
+    path = os.path.abspath(path)
+    sha = hashlib.sha256(open(path, "rb").read()).hexdigest()[:8]
+    d = os.path.join(os.path.dirname(path), "_sims", f"{time.strftime('%m%d_%H%M%S')}_{bench}_{tag}_{sha}")
+    os.makedirs(d)
+    cmd = [sys.executable, os.path.join(H, "simulator", "run_csim.py"), "--design", path, "--obstacle", bench, "--level", str(LEVEL),
+           "--out", os.path.join(d, "result.json")] + (["--video", "--video_dir", os.path.join(d, "video")] if video else [])
+    e = dict(os.environ, **(env or {}), PYTHONPATH=os.path.join(H, "src"))
+    with open(os.path.join(d, "sim.log"), "w") as f:
+        try:
+            subprocess.run(cmd, cwd=os.path.join(H, "simulator"), env=e, stdout=f, stderr=subprocess.STDOUT, timeout=1800)
+        except subprocess.TimeoutExpired:
+            pass
+    rp = os.path.join(d, "result.json")
+    if not os.path.exists(rp):
+        return {"passed": False, "error": "the simulator produced no result", "log_tail": open(os.path.join(d, "sim.log")).read()[-1500:], "dir": d}
+    r = json.load(open(rp))
+    out = {k: r[k] for k in KEEP if k in r}
+    if isinstance(out.get("motor_program_log"), list):
+        out["motor_program_log"] = out["motor_program_log"][:40]
+    out.update(passed=bool(r.get("crossed")), dir=d)
+    if video:
+        out["videos"] = [os.path.join(d, "video", c + ".mp4") for c in ("follow", "overview")]
+        out["contact_sheets"] = [p for p in (contact(os.path.join(d, "video", c + ".mp4"), os.path.join(d, f"contact_{c}.jpg"))
+                                             for c in ("follow", "overview")) if p]
+    return out
+
+
+def main():
+    a = sys.argv[1:]
+    if not a or a[0] in ("-h", "--help"):
+        sys.exit(__doc__)
+    c = a[0]
+    if c == "list":
+        out = {b: task(b)["description"] for b in BENCHES}
+    elif c == "task" and len(a) == 2 and a[1] in BENCHES:
+        out = task(a[1])
+    elif c in ("validate", "simulate", "check") and len(a) == 3 and a[2] in BENCHES:
+        path, bench = a[1], a[2]
+        v = validate(path, bench)
+        if c == "validate":
+            out = v
+        elif not v["ok"]:
+            out = {"error": "the design does not validate", **v}
+        elif c == "simulate":
+            out = run(path, bench)
+        else:
+            with ThreadPoolExecutor(3) as ex:
+                plain = ex.submit(run, path, bench, True)
+                nud = [(n, ex.submit(run, path, bench, False, e, n)) for n, e in NUDGES]
+                out = {"plain": plain.result(), "nudges": {n: f.result() for n, f in nud}}
+            ok = out["plain"]["passed"] and all(x["passed"] for x in out["nudges"].values())
+            out = {"accepted": bool(ok and not v["review"]["critical"]), "review_critical": v["review"]["critical"], **out}
+    else:
+        sys.exit(__doc__)
+    print(json.dumps(out, indent=1))
+
+
+if __name__ == "__main__":
+    main()

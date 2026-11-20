@@ -1,0 +1,101 @@
+{
+ "obstacle": "bridge",
+ "level": 1,
+ "crossed": false,
+ "time_s": 1.619,
+ "reached_goal_s": null,
+ "max_progress": 0.196,
+ "max_progress_m": 0.1658,
+ "failure": "broke (wrL)",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 5.4,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "grL-igbL": {
+   "slips": 0,
+   "peak_n": 24.81,
+   "engaged": 0.0,
+   "state": "free"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 2.43,
+   "engaged": 0.54,
+   "state": "locked"
+  },
+  "grR-igbR": {
+   "slips": 0,
+   "peak_n": 8.84,
+   "engaged": 0.72,
+   "state": "locked"
+  },
+  "rgfL-igaL": {
+   "slips": 0,
+   "peak_n": 3.92,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-igaR": {
+   "slips": 0,
+   "peak_n": 3.88,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgrL-igbL": {
+   "slips": 0,
+   "peak_n": 17.85,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgrR-igbR": {
+   "slips": 0,
+   "peak_n": 10.26,
+   "engaged": 0.95,
+   "state": "locked"
+  }
+ },
+ "chains": [],
+ "mesh_events_dropped": 0,
+ "leads": [
+  {
+   "dev": "motf",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motr",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery2",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 0.67,
+ "motor_program_log": [
+  "0.04 s motf: 7",
+  "0.04 s motr: 7",
+  "0.69 s mesh grL-igbL locked -> free (centre distance +0.38 mm, axial offset 7.6 mm, sliding 0.00 m/s)",
+  "0.74 s mesh grL-igbL free -> slipping (centre distance -0.25 mm, axial offset 7.4 mm, sliding 0.03 m/s)",
+  "0.79 s mesh grL-igbL slipping -> locked (centre distance +0.74 mm, axial offset 7.0 mm, sliding 0.00 m/s)",
+  "0.86 s mesh grL-igbL locked -> free (centre distance +0.57 mm, axial offset 7.6 mm, sliding -0.00 m/s)",
+  "0.90 s mesh grL-igbL free -> slipping (centre distance -0.01 mm, axial offset 7.4 mm, sliding 0.08 m/s)",
+  "1.04 s mesh grL-igbL slipping -> locked (centre distance +0.70 mm, axial offset 6.6 mm, sliding 0.00 m/s)",
+  "1.18 s mesh grL-igbL locked -> free (centre distance +0.24 mm, axial offset 7.7 mm, sliding -0.01 m/s)"
+ ],
+ "valid": true,
+ "wall_s": 406.8
+}

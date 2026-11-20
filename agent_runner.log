@@ -1,0 +1,1053 @@
+07:23:06 runner up, 8 workers, cpu=16
+07:36:45 start C1_ramp_plain sim ramp plain
+07:36:45 start C1_rope_plain sim rope plain
+07:36:45 start C1_steps_plain sim steps plain
+07:36:47 start C1_bridge_plain sim bridge plain
+07:43:45 done  C1_bridge_plain: crossed=True failure=None t=1.469 prog=1.375 err=None
+07:44:55 done  C1_steps_plain: crossed=False failure=stuck t=4.2 prog=0.088 err=None
+07:48:08 start C1g150_steps_plain sim steps plain
+07:48:08 start C1g250_steps_plain sim steps plain
+07:51:47 done  C1_rope_plain: crossed=False failure=stuck t=17.4 prog=0.777 err=None
+07:54:34 done  C1_ramp_plain: crossed=True failure=None t=24.399 prog=1.424 err=None
+07:56:40 done  C1g150_steps_plain: crossed=False failure=stuck t=4.449 prog=0.321 err=None
+07:56:51 start D1_steps_plain sim steps plain
+07:56:51 start D1_rope_plain sim rope plain
+07:56:51 start D1_ramp_plain sim ramp plain
+07:56:51 start D1_bridge_plain sim bridge plain
+08:31:22 runner up, 8 workers, cpu=16
+08:31:22 start D1_bridge_plain sim bridge plain
+08:31:22 start D1_ramp_plain sim ramp plain
+08:31:22 start D1_rope_plain sim rope plain
+08:31:22 start D1_steps_plain sim steps plain
+08:40:49 done  D1_bridge_plain: crossed=False failure=touched chasm floor (motb) t=1.959 prog=0.812 err=None
+08:42:32 done  D1_steps_plain: crossed=False failure=stuck t=4.29 prog=0.087 err=None
+08:43:26 done  D1_rope_plain: crossed=False failure=stuck t=5.829 prog=0.217 err=None
+08:46:56 start F1_bridge_plain sim bridge plain
+08:46:56 start F1_ramp_plain sim ramp plain
+08:46:56 start F1_rope_plain sim rope plain
+08:48:38 start G1_rope_plain sim rope plain
+08:48:38 start G1_steps_plain sim steps plain
+08:48:38 start G1_bridge_plain sim bridge plain
+08:48:38 start G1_ramp_plain sim ramp plain
+08:54:30 done  D1_ramp_plain: crossed=False failure=wall-clock limit t=None prog=0.336 err=None
+08:55:23 done  F1_bridge_plain: crossed=True failure=None t=1.499 prog=1.368 err=None
+08:58:18 done  F1_rope_plain: crossed=False failure=stuck t=6.029 prog=0.221 err=None
+08:59:31 start F1_rope_rec sim rope plain
+09:02:17 done  G1_bridge_plain: crossed=True failure=None t=1.969 prog=1.328 err=None
+09:03:08 done  G1_steps_plain: crossed=False failure=stuck t=4.24 prog=0.137 err=None
+09:03:56 done  G1_rope_plain: crossed=False failure=stuck t=5.019 prog=0.289 err=None
+09:04:04 start H1_ramp_plain sim ramp plain
+09:04:04 start H1_bridge_plain sim bridge plain
+09:04:04 start H1_steps_plain sim steps plain
+09:04:04 start H1_rope_plain sim rope plain
+09:04:49 start G1_steps_rec sim steps plain
+09:04:56 done  G1_ramp_plain: crossed=False failure=stuck t=7.109 prog=0.316 err=None
+09:09:38 done  F1_ramp_plain: crossed=False failure=wall-clock limit t=None prog=0.366 err=None
+09:10:36 done  F1_rope_rec: crossed=False failure=stuck t=6.029 prog=0.221 err=None
+09:12:37 done  H1_bridge_plain: crossed=False failure=touched chasm floor (motr) t=1.389 prog=0.721 err=None
+09:14:03 done  H1_steps_plain: crossed=False failure=stuck t=4.25 prog=0.153 err=None
+09:14:44 done  H1_ramp_plain: crossed=False failure=stuck t=5.479 prog=0.285 err=None
+09:16:51 done  H1_rope_plain: crossed=False failure=stuck t=8.539 prog=0.804 err=None
+09:19:02 done  G1_steps_rec: crossed=False failure=stuck t=4.24 prog=0.137 err=None
+09:24:03 start H1_ramp_rec sim ramp plain
+09:32:51 start K1_rope_plain sim rope plain
+09:32:51 start K1_bridge_plain sim bridge plain
+09:32:51 start K1_steps_plain sim steps plain
+09:32:51 start K1_ramp_plain sim ramp plain
+09:35:20 done  H1_ramp_rec: crossed=False failure=stuck t=5.479 prog=0.285 err=None
+09:48:53 done  K1_bridge_plain: crossed=False failure=touched chasm floor (motr) t=3.25 prog=0.714 err=None
+09:49:48 done  K1_steps_plain: crossed=False failure=stuck t=4.669 prog=0.227 err=None
+09:52:47 done  K1_rope_plain: crossed=False failure=stuck t=8.359 prog=0.75 err=None
+09:56:16 done  K1_ramp_plain: crossed=False failure=stuck t=16.34 prog=0.586 err=None
+09:56:16 STOP found, exiting
+13:30:22 runner up, 8 workers, cpu=16
+13:30:22 removed stale STOP
+13:30:22 start K1_bridge_plain_rec sim bridge plain
+13:30:22 start K2_bridge_plain sim bridge plain
+13:30:22 start K3_ramp_plain sim ramp plain
+13:30:22 start K2_steps_plain sim steps plain
+13:30:22 start K1_steps_plain_rec sim steps plain
+13:30:22 start K2_ramp_plain sim ramp plain
+13:30:22 start K2_rope_plain sim rope plain
+13:30:22 start K3_bridge_plain sim bridge plain
+13:47:35 done  K3_bridge_plain: crossed=False failure=touched chasm floor (motr) t=2.42 prog=0.563 err=None
+13:47:37 start K3_rope_plain sim rope plain
+13:48:07 done  K1_bridge_plain_rec: crossed=False failure=touched chasm floor (motr) t=3.25 prog=0.714 err=None
+13:48:10 start K3_steps_plain sim steps plain
+13:48:46 done  K2_bridge_plain: crossed=False failure=touched chasm floor (motr) t=3.41 prog=0.603 err=None
+13:48:49 start N0b_bridge_plain sim bridge plain
+13:49:11 done  K1_steps_plain_rec: crossed=False failure=stuck t=4.669 prog=0.227 err=None
+13:49:13 start N0b_ramp_plain sim ramp plain
+13:49:47 done  K2_steps_plain: crossed=False failure=stuck t=4.769 prog=0.227 err=None
+13:49:49 start N0b_rope_plain sim rope plain
+13:50:31 done  K2_rope_plain: crossed=False failure=broke (axfL, gfL, wfL) t=4.959 prog=0.745 err=None
+13:50:34 start N0b_steps_plain sim steps plain
+13:51:46 done  K3_ramp_plain: crossed=True failure=None t=7.699 prog=1.395 err=None
+13:51:46 start N1X_bridge_plain sim bridge plain
+14:00:32 done  N0b_ramp_plain: crossed=False failure=stuck t=4.34 prog=0.136 err=None
+14:00:35 start N1X_ramp_plain sim ramp plain
+14:00:41 done  K2_ramp_plain: crossed=True failure=None t=20.819 prog=1.394 err=None
+14:00:44 start N1X_rope_plain sim rope plain
+14:02:00 done  N0b_steps_plain: crossed=False failure=stuck t=4.26 prog=0.152 err=None
+14:02:02 start N1X_steps_plain sim steps plain
+14:02:52 done  N0b_rope_plain: crossed=False failure=stuck t=6.789 prog=0.21 err=None
+14:02:53 start N1_bridge_plain sim bridge plain
+14:06:58 done  K3_steps_plain: crossed=False failure=stuck t=5.759 prog=0.491 err=None
+14:07:00 start N1_ramp_plain validate steps 
+14:07:03 done  N1_ramp_plain: crossed=None failure=None t=None prog=None err=None
+14:07:06 start N1_rope_plain validate steps 
+14:07:07 done  K3_rope_plain: crossed=False failure=stuck t=6.549 prog=0.751 err=None
+14:07:09 start N1_steps_plain validate steps 
+14:07:12 done  N1_rope_plain: crossed=None failure=None t=None prog=None err=None
+14:07:13 done  N1_steps_plain: crossed=None failure=None t=None prog=None err=None
+14:07:15 start N1b_ramp_plain validate steps 
+14:07:15 start N1b_bridge_plain validate steps 
+18:50:27 runner up, 8 workers, cpu=16
+18:50:27 requeued C1g250_steps_plain.running
+18:50:27 requeued N0b_bridge_plain.running
+18:50:27 requeued N1b_bridge_plain.running
+18:50:27 requeued N1b_ramp_plain.running
+18:50:27 requeued N1X_bridge_plain.running
+18:50:27 requeued N1X_ramp_plain.running
+18:50:27 requeued N1X_rope_plain.running
+18:50:27 requeued N1X_steps_plain.running
+18:50:27 requeued N1_bridge_plain.running
+18:50:27 start N1b_bridge_plain validate steps 
+18:50:27 start N0b_bridge_plain validate steps 
+18:50:27 start C1g250_steps_plain validate steps 
+18:50:27 start N1X_ramp_plain validate steps 
+18:50:27 start N1X_bridge_plain validate steps 
+18:50:27 start N1_bridge_plain validate steps 
+18:50:27 start N1X_rope_plain validate steps 
+18:50:27 start N1X_steps_plain validate steps 
+18:50:43 done  C1g250_steps_plain: crossed=None failure=None t=None prog=None err=None
+18:50:44 done  N0b_bridge_plain: crossed=None failure=None t=None prog=None err=None
+18:50:46 start N1b_ramp_plain validate steps 
+18:50:46 start N1b_rope_plain validate steps 
+18:50:48 done  N1X_bridge_plain: crossed=None failure=None t=None prog=None err=None
+18:50:48 done  N1_bridge_plain: crossed=None failure=None t=None prog=None err=None
+18:50:48 done  N1b_bridge_plain: crossed=None failure=None t=None prog=None err=None
+18:50:48 done  N1X_steps_plain: crossed=None failure=None t=None prog=None err=None
+18:50:49 done  N1X_rope_plain: crossed=None failure=None t=None prog=None err=None
+18:50:49 done  N1X_ramp_plain: crossed=None failure=None t=None prog=None err=None
+18:50:49 start N2X_steps_plain sim steps plain
+18:50:49 start N2X_bridge_plain sim bridge plain
+18:50:49 start N1b_steps_plain validate steps 
+18:50:49 start N2X_ramp_plain sim ramp plain
+18:50:49 start N2X_rope_plain sim rope plain
+18:50:49 start N2_bridge_plain sim bridge plain
+18:51:13 done  N1b_ramp_plain: crossed=None failure=None t=None prog=None err=None
+18:51:13 done  N1b_rope_plain: crossed=None failure=None t=None prog=None err=None
+18:51:13 start N2_ramp_plain sim ramp plain
+18:51:13 start N2_rope_plain sim rope plain
+18:51:15 done  N1b_steps_plain: crossed=None failure=None t=None prog=None err=None
+18:51:16 start N2_steps_plain sim steps plain
+19:05:13 done  N2X_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.479 prog=0.573 err=None
+19:05:15 start P1X_bridge_plain sim bridge plain
+19:05:53 done  N2_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.789 prog=0.664 err=None
+19:05:54 start P1X_ramp_plain sim ramp plain
+19:06:34 done  N2X_rope_plain: crossed=False failure=broke (axfL, gfL, spfL, wfL) t=3.26 prog=0.742 err=None
+19:06:36 start P1X_rope_plain sim rope plain
+19:06:47 done  N2_rope_plain: crossed=False failure=broke (axfL, gfL, spfL, wfL) t=2.89 prog=0.557 err=None
+19:06:48 start P1X_steps_plain sim steps plain
+19:07:26 done  N2X_steps_plain: crossed=False failure=stuck t=4.529 prog=0.227 err=None
+19:07:27 start P2X_bridge_plain sim bridge plain
+19:07:41 done  N2_steps_plain: crossed=False failure=stuck t=4.719 prog=0.226 err=None
+19:07:42 start P2X_ramp_plain sim ramp plain
+19:08:54 done  N2X_ramp_plain: crossed=True failure=None t=6.669 prog=1.397 err=None
+19:08:57 start P2X_rope_plain sim rope plain
+19:18:31 done  P1X_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.539 prog=0.612 err=None
+19:18:34 start P2X_steps_plain sim steps plain
+19:20:53 done  P2X_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.409 prog=0.562 err=None
+19:20:55 start P2_bridge_plain sim bridge plain
+19:22:07 done  N2_ramp_plain: crossed=True failure=None t=25.489 prog=1.406 err=None
+19:22:07 start P2_ramp_plain sim ramp plain
+19:22:17 done  P1X_steps_plain: crossed=False failure=stuck t=4.559 prog=0.225 err=None
+19:22:19 start P2_rope_plain sim rope plain
+19:22:23 done  P1X_rope_plain: crossed=False failure=stuck t=4.779 prog=0.156 err=None
+19:22:25 start P2_steps_plain sim steps plain
+19:22:35 done  P1X_ramp_plain: crossed=True failure=None t=6.429 prog=1.41 err=None
+19:23:50 done  P2X_rope_plain: crossed=False failure=broke (axfR, gfR, spfR, wfR) t=3.69 prog=0.431 err=None
+19:24:30 done  P2X_ramp_plain: crossed=True failure=None t=6.189 prog=1.411 err=None
+19:33:30 done  P2X_steps_plain: crossed=False failure=stuck t=4.529 prog=0.225 err=None
+19:34:20 done  P2_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.749 prog=0.737 err=None
+19:36:29 done  P2_rope_plain: crossed=False failure=broke (axfR, gfR, spfR, wfR) t=3.49 prog=0.427 err=None
+19:37:20 done  P2_steps_plain: crossed=False failure=stuck t=4.679 prog=0.226 err=None
+19:38:59 start S3_000_steps_plain sim steps plain
+19:38:59 start S3_000_bridge_plain sim bridge plain
+19:38:59 start S3_002_bridge_plain sim bridge plain
+19:38:59 start S3_001_bridge_plain sim bridge plain
+19:38:59 start S3_002_steps_plain sim steps plain
+19:38:59 start S3_001_steps_plain sim steps plain
+19:38:59 start S3_004_bridge_plain sim bridge plain
+19:47:14 done  S3_000_bridge_plain: crossed=False failure=left_lane t=1.399 prog=0.963 err=None
+19:47:15 start S3_003_bridge_plain sim bridge plain
+19:48:16 done  S3_000_steps_plain: crossed=False failure=stuck t=4.21 prog=0.154 err=None
+19:48:18 start S3_003_steps_plain sim steps plain
+19:49:56 done  P2_ramp_plain: crossed=True failure=None t=24.119 prog=1.403 err=None
+19:49:58 start S3_004_steps_plain sim steps plain
+19:51:54 done  S3_002_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.009 prog=0.32 err=None
+19:51:55 start S3_007_bridge_plain sim bridge plain
+19:53:01 done  S3_004_bridge_plain: crossed=True failure=None t=2.21 prog=1.379 err=None
+19:53:04 start S3_007_steps_plain sim steps plain
+19:53:13 done  S3_001_bridge_plain: crossed=False failure=touched chasm floor (motr) t=2.47 prog=0.597 err=None
+19:53:16 start S3_008_bridge_plain sim bridge plain
+19:54:17 done  S3_002_steps_plain: crossed=False failure=stuck t=4.499 prog=0.227 err=None
+19:54:19 start S3_008_steps_plain sim steps plain
+19:54:41 done  S3_001_steps_plain: crossed=False failure=stuck t=4.649 prog=0.233 err=None
+19:54:43 start S3_009_bridge_plain sim bridge plain
+20:00:34 done  S3_003_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.139 prog=0.343 err=None
+20:00:35 start S3_009_steps_plain sim steps plain
+20:03:43 done  S3_003_steps_plain: crossed=False failure=stuck t=4.739 prog=0.225 err=None
+20:03:44 start S3_010_bridge_plain sim bridge plain
+20:04:47 done  S3_004_steps_plain: crossed=False failure=stuck t=4.719 prog=0.232 err=None
+20:04:47 start S3_010_steps_plain sim steps plain
+20:05:43 done  S3_007_bridge_plain: crossed=True failure=None t=2.75 prog=1.366 err=None
+20:05:44 start S3_012_bridge_plain sim bridge plain
+20:06:47 done  S3_008_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.129 prog=0.319 err=None
+20:06:47 start S3_012_steps_plain sim steps plain
+20:08:09 done  S3_007_steps_plain: crossed=False failure=stuck t=4.469 prog=0.227 err=None
+20:08:11 start S3_013_bridge_plain sim bridge plain
+20:08:34 done  S3_009_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.789 prog=0.767 err=None
+20:08:35 start S3_013_steps_plain sim steps plain
+20:10:15 done  S3_008_steps_plain: crossed=False failure=stuck t=4.729 prog=0.226 err=None
+20:10:18 start S3_019_bridge_plain sim bridge plain
+20:16:26 done  S3_009_steps_plain: crossed=False failure=stuck t=4.559 prog=0.228 err=None
+20:16:27 start K3_steps_plain_rec sim steps plain
+20:17:47 done  S3_010_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.589 prog=0.681 err=None
+20:17:48 start S3_019_steps_plain sim steps plain
+20:19:54 done  S3_012_bridge_plain: crossed=True failure=None t=2.21 prog=1.377 err=None
+20:19:54 start S3_022_bridge_plain sim bridge plain
+20:20:58 done  S3_010_steps_plain: crossed=False failure=stuck t=4.749 prog=0.226 err=None
+20:21:01 start S3_022_steps_plain sim steps plain
+20:22:01 done  S3_012_steps_plain: crossed=False failure=stuck t=4.579 prog=0.232 err=None
+20:22:04 start S3_027_bridge_plain sim bridge plain
+20:22:32 done  S3_013_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.159 prog=0.252 err=None
+20:22:34 start S3_027_steps_plain sim steps plain
+20:24:23 done  S3_019_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.149 prog=0.282 err=None
+20:24:25 start S3_028_bridge_plain sim bridge plain
+20:25:12 done  S3_013_steps_plain: crossed=False failure=stuck t=4.609 prog=0.228 err=None
+20:25:13 start S3_028_steps_plain sim steps plain
+20:28:55 done  S3_022_bridge_plain: crossed=True failure=None t=1.329 prog=1.422 err=None
+20:28:58 start S3_030_bridge_plain sim bridge plain
+20:31:11 done  S3_022_steps_plain: crossed=False failure=stuck t=4.22 prog=0.153 err=None
+20:31:13 start S3_030_steps_plain sim steps plain
+20:33:44 done  S3_019_steps_plain: crossed=False failure=stuck t=4.719 prog=0.227 err=None
+20:34:01 done  K3_steps_plain_rec: crossed=False failure=stuck t=5.759 prog=0.491 err=None
+20:36:16 done  S3_027_bridge_plain: crossed=False failure=touched chasm floor (motfR) t=1.749 prog=0.737 err=None
+20:38:18 done  S3_028_bridge_plain: crossed=True failure=None t=2.65 prog=1.375 err=None
+20:38:29 start T1_rope_plain sim rope plain
+20:38:29 start T1_bridge_plain sim bridge plain
+20:38:29 start T1_steps_plain sim steps plain
+20:38:29 start T2_bridge_plain sim bridge plain
+20:38:35 done  S3_027_steps_plain: crossed=False failure=stuck t=4.679 prog=0.226 err=None
+20:38:35 start T2_rope_plain sim rope plain
+10:18:26 runner up, 8 workers, cpu=16
+10:18:26 requeued S3_028_steps_plain.running
+10:18:26 requeued S3_030_bridge_plain.running
+10:18:26 requeued S3_030_steps_plain.running
+10:18:26 requeued T1_bridge_plain.running
+10:18:26 requeued T1_rope_plain.running
+10:18:26 requeued T1_steps_plain.running
+10:18:26 requeued T2_bridge_plain.running
+10:18:26 requeued T2_rope_plain.running
+10:18:26 start S3_028_steps_plain sim steps plain
+10:18:26 start T1_bridge_plain sim bridge plain
+10:18:26 start S3_030_bridge_plain sim bridge plain
+10:18:26 start T1_steps_plain sim steps plain
+10:18:26 start T1_rope_plain sim rope plain
+10:18:26 start S3_030_steps_plain sim steps plain
+10:18:26 start T2_bridge_plain sim bridge plain
+10:18:26 start T2_rope_plain sim rope plain
+10:32:13 done  T1_bridge_plain: crossed=False failure=touched chasm floor (motf) t=0.989 prog=0.313 err=None
+10:32:13 start T2_steps_plain sim steps plain
+10:32:29 done  T2_bridge_plain: crossed=False failure=touched chasm floor (motf) t=0.989 prog=0.308 err=None
+10:32:31 start T3_bridge_plain sim bridge plain
+10:33:06 done  T2_rope_plain: crossed=False failure=broke (stud joint released: deck/dbRa) t=1.879 prog=0.285 err=None
+10:33:07 start T3_steps_plain sim steps plain
+10:33:25 done  S3_030_bridge_plain: crossed=True failure=None t=2.13 prog=1.378 err=None
+10:33:25 start T5_bridge_plain sim bridge plain
+10:33:59 done  T1_rope_plain: crossed=False failure=broke (stud joint released: deck/dbRa) t=3.55 prog=0.327 err=None
+10:34:01 start T5_steps_plain sim steps plain
+10:34:31 done  S3_030_steps_plain: crossed=False failure=stuck t=4.25 prog=0.1 err=None
+10:34:31 start U1_bridge_plain sim bridge plain
+10:34:33 done  T1_steps_plain: crossed=False failure=stuck t=4.499 prog=0.221 err=None
+10:34:34 start U1_ramp_plain sim ramp plain
+10:35:00 done  S3_028_steps_plain: crossed=False failure=stuck t=4.449 prog=0.228 err=None
+10:35:01 start U1_rope_plain sim rope plain
+10:45:27 done  T3_bridge_plain: crossed=False failure=touched chasm floor (motf) t=0.999 prog=0.316 err=None
+10:45:29 start U1_steps_plain sim steps plain
+10:46:51 done  T5_bridge_plain: crossed=False failure=touched chasm floor (motf) t=1.019 prog=0.322 err=None
+10:46:53 start U2_bridge_plain sim bridge plain
+10:48:15 done  T2_steps_plain: crossed=False failure=stuck t=4.469 prog=0.222 err=None
+10:48:18 start U2_ramp_plain sim ramp plain
+10:48:29 done  T3_steps_plain: crossed=False failure=stuck t=4.499 prog=0.222 err=None
+10:48:30 start U2_rope_plain sim rope plain
+10:49:11 done  U1_bridge_plain: crossed=False failure=touched chasm floor (motr) t=1.649 prog=0.522 err=None
+10:49:12 start U2_steps_plain sim steps plain
+10:49:52 done  T5_steps_plain: crossed=False failure=stuck t=4.499 prog=0.222 err=None
+10:49:54 start U3_rope_plain sim rope plain
+10:52:30 done  U1_rope_plain: crossed=False failure=broke (axfL, gfL, wfL) t=4.799 prog=0.737 err=None
+10:52:30 start U3_steps_plain sim steps plain
+10:54:44 done  U1_ramp_plain: crossed=False failure=stuck t=9.23 prog=0.505 err=None
+10:54:45 start U4_rope_plain sim rope plain
+11:01:44 done  U2_bridge_plain: crossed=False failure=touched chasm floor (motr) t=1.639 prog=0.521 err=None
+11:01:46 start U4_steps_plain sim steps plain
+11:05:16 done  U1_steps_plain: crossed=False failure=stuck t=7.369 prog=0.486 err=None
+11:05:16 start V1_bridge_plain sim bridge plain
+11:06:33 done  U3_rope_plain: crossed=False failure=broke (axfL, gfL, wfL) t=3.27 prog=0.403 err=None
+11:06:34 start V1_ramp_plain sim ramp plain
+11:06:38 done  U2_rope_plain: crossed=False failure=broke (axfL, gfL, wfL) t=4.899 prog=0.728 err=None
+11:06:40 start V1_rope_plain sim rope plain
+11:07:45 done  U2_steps_plain: crossed=False failure=stuck t=6.579 prog=0.488 err=None
+11:07:47 start V1_steps_plain sim steps plain
+11:08:29 done  U2_ramp_plain: crossed=False failure=stuck t=8.679 prog=0.511 err=None
+11:08:32 start V2_bridge_plain sim bridge plain
+11:11:00 done  U3_steps_plain: crossed=False failure=stuck t=6.239 prog=0.489 err=None
+11:11:02 start V2_ramp_plain sim ramp plain
+11:16:48 done  U4_rope_plain: crossed=False failure=stuck t=8.639 prog=0.632 err=None
+11:16:50 start V2_rope_plain sim rope plain
+11:19:51 done  U4_steps_plain: crossed=False failure=stuck t=6.519 prog=0.488 err=None
+11:19:51 start V2_steps_plain sim steps plain
+11:20:07 done  V1_bridge_plain: crossed=True failure=None t=2.28 prog=1.373 err=None
+11:20:09 start W1_bridge_plain sim bridge plain
+11:22:35 done  V2_bridge_plain: crossed=True failure=None t=2.29 prog=1.37 err=None
+11:22:36 start W1_ramp_plain sim ramp plain
+11:22:41 done  V1_ramp_plain: crossed=True failure=None t=4.739 prog=1.411 err=None
+11:22:42 start W1_rope_plain sim rope plain
+11:23:28 done  V1_steps_plain: crossed=False failure=stuck t=4.419 prog=0.228 err=None
+11:23:30 start W1_steps_plain sim steps plain
+11:26:30 done  V2_ramp_plain: crossed=True failure=None t=4.749 prog=1.414 err=None
+11:26:30 start W2_bridge_plain sim bridge plain
+11:31:19 done  V1_rope_plain: crossed=False failure=stuck t=15.1 prog=0.468 err=None
+11:31:22 start W2_ramp_plain sim ramp plain
+11:34:51 done  V2_steps_plain: crossed=False failure=stuck t=4.419 prog=0.228 err=None
+11:34:52 start V2_steps_plain_rec sim steps plain
+11:36:48 done  W1_bridge_plain: crossed=True failure=None t=3.11 prog=1.333 err=None
+11:36:49 start W2_rope_plain sim rope plain
+11:39:15 done  V2_rope_plain: crossed=False failure=stuck t=13.43 prog=0.467 err=None
+11:39:17 start W2_steps_plain sim steps plain
+13:27:37 done  W1_rope_plain: crossed=False failure=wall-clock limit t=None prog=0.233 err=None
+13:27:55 done  W1_ramp_plain: crossed=False failure=wall-clock limit t=None prog=0.615 err=None
+13:28:01 done  W1_steps_plain: crossed=False failure=wall-clock limit t=None prog=0.574 err=None
+13:30:40 done  W2_bridge_plain: crossed=True failure=None t=3.13 prog=1.333 err=None
+13:35:02 start W1_steps_plain_r2 sim steps plain
+13:35:02 start W1_rope_plain_r2 sim rope plain
+13:35:02 start W1_ramp_plain_r2 sim ramp plain
+13:36:05 start X1_bridge_plain sim bridge plain
+13:36:22 done  V2_steps_plain_rec: crossed=False failure=stuck t=4.419 prog=0.228 err=None
+13:36:23 start X1_ramp_plain sim ramp plain
+13:38:49 done  W2_ramp_plain: crossed=True failure=None t=7.169 prog=1.36 err=None
+13:38:51 start X1_rope_plain sim rope plain
+13:43:10 done  W2_rope_plain: crossed=False failure=stuck t=5.199 prog=0.24 err=None
+13:43:12 start X1_steps_plain sim steps plain
+13:46:24 done  W2_steps_plain: crossed=False failure=stuck t=6.339 prog=0.575 err=None
+13:46:25 start X2_bridge_plain sim bridge plain
+13:51:19 done  X1_bridge_plain: crossed=True failure=None t=2.26 prog=1.373 err=None
+13:51:19 start X2_ramp_plain sim ramp plain
+13:53:02 done  X1_ramp_plain: crossed=True failure=None t=5.099 prog=1.418 err=None
+13:53:04 start X2_rope_plain sim rope plain
+13:54:06 done  W1_rope_plain_r2: crossed=False failure=stuck t=5.169 prog=0.233 err=None
+13:54:07 start X2_steps_plain sim steps plain
+13:54:37 done  W1_steps_plain_r2: crossed=False failure=stuck t=6.449 prog=0.574 err=None
+13:55:51 done  W1_ramp_plain_r2: crossed=True failure=None t=7.389 prog=1.359 err=None
+13:58:18 done  X1_steps_plain: crossed=False failure=stuck t=5.259 prog=0.422 err=None
+13:59:26 start Y1_ramp_plain sim ramp plain
+13:59:26 start Y1_rope_plain sim rope plain
+13:59:26 start Y1_bridge_plain sim bridge plain
+13:59:59 done  X1_rope_plain: crossed=False failure=stuck t=12.64 prog=0.693 err=None
+13:59:59 start Y1_steps_plain sim steps plain
+14:00:30 done  X2_bridge_plain: crossed=True failure=None t=2.47 prog=1.368 err=None
+14:00:32 start W1_rope_plain_rec sim rope plain
+14:06:48 done  X2_ramp_plain: crossed=True failure=None t=5.429 prog=1.416 err=None
+14:06:51 start Y2_bridge_plain sim bridge plain
+14:08:29 done  X2_rope_plain: crossed=False failure=stuck t=5.169 prog=0.238 err=None
+14:08:30 start Y2_ramp_plain sim ramp plain
+14:09:06 done  X2_steps_plain: crossed=False failure=stuck t=5.289 prog=0.422 err=None
+14:09:09 start Y2_rope_plain sim rope plain
+14:14:24 done  Y1_bridge_plain: crossed=True failure=None t=2.38 prog=1.344 err=None
+14:14:24 start X1_rope_plain_rec sim rope plain
+14:15:44 done  Y1_ramp_plain: crossed=True failure=None t=4.769 prog=1.38 err=None
+14:15:45 start Y2_steps_plain sim steps plain
+14:15:58 done  Y1_rope_plain: crossed=False failure=stuck t=4.919 prog=0.233 err=None
+14:16:08 done  Y1_steps_plain: crossed=False failure=stuck t=4.499 prog=0.22 err=None
+14:17:45 done  W1_rope_plain_rec: crossed=False failure=stuck t=5.169 prog=0.233 err=None
+14:21:21 done  Y2_bridge_plain: crossed=True failure=None t=2.39 prog=1.344 err=None
+14:21:49 start W3_bridge_plain sim bridge plain
+14:21:49 start W3_steps_plain sim steps plain
+14:21:49 start W3_ramp_plain sim ramp plain
+14:21:49 start W3_rope_plain sim rope plain
+14:24:24 done  Y2_ramp_plain: crossed=True failure=None t=4.869 prog=1.382 err=None
+14:24:25 start W4_rope_plain sim rope plain
+14:25:09 done  Y2_rope_plain: crossed=False failure=stuck t=4.889 prog=0.26 err=None
+14:25:10 start W4_steps_plain sim steps plain
+14:31:47 done  Y2_steps_plain: crossed=False failure=stuck t=5.289 prog=0.404 err=None
+14:32:14 start Y2_steps_plain_rec sim steps plain
+14:33:36 done  X1_rope_plain_rec: crossed=False failure=stuck t=12.64 prog=0.693 err=None
+14:37:16 done  W3_bridge_plain: crossed=True failure=None t=3.14 prog=1.332 err=None
+14:38:20 done  W3_rope_plain: crossed=False failure=stuck t=5.229 prog=0.255 err=None
+14:40:23 done  W4_rope_plain: crossed=False failure=stuck t=5.219 prog=0.256 err=None
+14:40:29 start W3_rope_plain_rec sim rope plain
+14:40:36 done  W3_ramp_plain: crossed=True failure=None t=7.629 prog=1.357 err=None
+14:41:15 done  W3_steps_plain: crossed=False failure=stuck t=7.729 prog=0.579 err=None
+14:42:30 done  W4_steps_plain: crossed=False failure=stuck t=6.119 prog=0.531 err=None
+14:47:44 done  Y2_steps_plain_rec: crossed=False failure=stuck t=5.289 prog=0.404 err=None
+14:55:20 done  W3_rope_plain_rec: crossed=False failure=stuck t=5.229 prog=0.255 err=None
+14:58:16 start W6_ramp_plain sim ramp plain
+14:58:16 start W6_rope_plain sim rope plain
+14:58:16 start W5_rope_plain sim rope plain
+14:58:16 start W6_steps_plain sim steps plain
+14:58:16 start W6_bridge_plain sim bridge plain
+15:15:09 done  W6_bridge_plain: crossed=True failure=None t=3.31 prog=1.331 err=None
+15:19:32 done  W6_ramp_plain: crossed=True failure=None t=8.889 prog=1.36 err=None
+15:20:04 done  W6_steps_plain: crossed=False failure=stuck t=9.93 prog=0.576 err=None
+15:23:59 done  W6_rope_plain: crossed=False failure=stuck t=14.52 prog=0.686 err=None
+15:24:58 done  W5_rope_plain: crossed=False failure=stuck t=16.15 prog=0.627 err=None
+15:25:39 start W7_rope_plain sim rope plain
+15:25:39 start W6_rope_plain_rec sim rope plain
+15:25:39 start W7_steps_plain sim steps plain
+15:45:23 done  W7_steps_plain: crossed=False failure=stuck t=8.869 prog=0.575 err=None
+15:50:48 done  W6_rope_plain_rec: crossed=False failure=stuck t=14.52 prog=0.686 err=None
+15:51:55 done  W7_rope_plain: crossed=False failure=stuck t=16.58 prog=0.732 err=None
+16:54:32 start W8_ramp_plain sim ramp plain
+16:54:32 start W7_rope_plain_rec sim rope plain
+16:54:32 start W8_bridge_plain sim bridge plain
+16:54:32 start W8_steps_plain sim steps plain
+16:54:32 start W8_rope_plain sim rope plain
+17:11:46 done  W8_bridge_plain: crossed=True failure=None t=3.31 prog=1.331 err=None
+17:16:13 done  W8_ramp_plain: crossed=True failure=None t=8.869 prog=1.363 err=None
+17:16:25 done  W8_steps_plain: crossed=False failure=stuck t=9.47 prog=0.578 err=None
+17:17:31 start W8_steps_plain_rec sim steps plain
+17:21:19 done  W8_rope_plain: crossed=False failure=stuck t=16.16 prog=0.439 err=None
+17:23:00 done  W7_rope_plain_rec: crossed=False failure=stuck t=16.58 prog=0.732 err=None
+17:27:53 start W11_bridge_plain sim bridge plain
+17:27:53 start W11_rope_plain_rec sim rope plain
+17:27:53 start W8_rope_plain_rec sim rope plain
+17:27:53 start W11_rope_plain sim rope plain
+17:27:53 start W11_ramp_plain sim ramp plain
+17:27:53 start W11_steps_plain sim steps plain
+17:38:29 done  W8_steps_plain_rec: crossed=False failure=stuck t=9.47 prog=0.578 err=None
+17:44:35 done  W11_bridge_plain: crossed=True failure=None t=3.28 prog=1.332 err=None
+17:45:36 done  W11_rope_plain_rec: crossed=False failure=stuck t=5.209 prog=0.229 err=None
+17:45:37 done  W11_rope_plain: crossed=False failure=stuck t=5.209 prog=0.229 err=None
+17:45:52 start W12_bridge_plain sim bridge plain
+17:45:52 start W12_ramp_plain sim ramp plain
+17:45:52 start W12_steps_plain_rec sim steps plain
+17:45:52 start W12_rope_plain sim rope plain
+17:45:52 start W12_steps_plain sim steps plain
+18:37:29 runner up, 8 workers, cpu=16
+18:37:29 requeued W11_ramp_plain.running
+18:37:29 requeued W11_steps_plain.running
+18:37:29 requeued W12_bridge_plain.running
+18:37:29 requeued W12_ramp_plain.running
+18:37:29 requeued W12_rope_plain.running
+18:37:29 requeued W12_steps_plain.running
+18:37:29 requeued W12_steps_plain_rec.running
+18:37:29 requeued W8_rope_plain_rec.running
+18:37:29 start W11_ramp_plain sim ramp plain
+18:37:29 start W11_steps_plain sim steps plain
+18:37:29 start W12_bridge_plain sim bridge plain
+18:37:29 start W12_ramp_plain sim ramp plain
+18:37:29 start W12_rope_plain sim rope plain
+18:37:29 start W12_steps_plain_rec sim steps plain
+18:37:29 start W12_steps_plain sim steps plain
+18:37:29 start W13_rope_plain sim rope plain
+19:02:09 runner up, 8 workers, cpu=16
+19:02:09 requeued W11_ramp_plain.running
+19:02:09 requeued W11_steps_plain.running
+19:02:09 requeued W12_bridge_plain.running
+19:02:09 requeued W12_ramp_plain.running
+19:02:09 requeued W12_rope_plain.running
+19:02:09 requeued W12_steps_plain.running
+19:02:09 requeued W12_steps_plain_rec.running
+19:02:09 requeued W13_rope_plain.running
+19:02:09 start W11_ramp_plain sim ramp plain
+19:02:09 start W11_steps_plain sim steps plain
+19:02:09 start W12_ramp_plain sim ramp plain
+19:02:09 start W12_steps_plain sim steps plain
+19:02:09 start W12_bridge_plain sim bridge plain
+19:02:09 start W12_rope_plain sim rope plain
+19:02:09 start W12_steps_plain_rec sim steps plain
+19:02:09 start W13_rope_plain sim rope plain
+19:18:19 done  W12_bridge_plain: crossed=True failure=None t=3.17 prog=1.329 err=None
+19:18:22 start W13_rope_plain_rec sim rope plain
+19:21:34 done  W11_ramp_plain: crossed=True failure=None t=8.859 prog=1.36 err=None
+19:21:34 start W14_rope_plain sim rope plain
+19:22:21 done  W12_steps_plain: crossed=False failure=stuck t=9.08 prog=0.582 err=None
+19:22:22 start W8_rope_plain_rec sim rope plain
+19:22:27 done  W12_steps_plain_rec: crossed=False failure=stuck t=9.08 prog=0.582 err=None
+19:23:13 done  W12_ramp_plain: crossed=True failure=None t=9.35 prog=1.355 err=None
+19:23:29 done  W11_steps_plain: crossed=False failure=stuck t=11.23 prog=0.576 err=None
+19:23:43 done  W13_rope_plain: crossed=False failure=stuck t=9.81 prog=0.734 err=None
+19:30:01 done  W12_rope_plain: crossed=False failure=stuck t=17.19 prog=0.62 err=None
+19:30:05 start W15_bridge_plain sim bridge plain
+19:30:05 start W15_rope_plain sim rope plain
+19:30:05 start W15_steps_plain sim steps plain
+19:30:05 start W15_steps_plain_rec sim steps plain
+19:30:05 start W15_ramp_plain sim ramp plain
+19:39:14 done  W13_rope_plain_rec: crossed=False failure=stuck t=9.81 prog=0.734 err=None
+19:46:54 done  W15_steps_plain: crossed=False failure=stuck t=4.23 prog=0.081 err=None
+19:46:57 done  W15_steps_plain_rec: crossed=False failure=stuck t=4.23 prog=0.081 err=None
+19:47:21 done  W15_bridge_plain: crossed=True failure=None t=4.809 prog=1.32 err=None
+19:47:24 done  W8_rope_plain_rec: crossed=False failure=stuck t=16.16 prog=0.439 err=None
+19:48:48 done  W14_rope_plain: crossed=False failure=stuck t=16.94 prog=0.578 err=None
+19:49:00 start W16_rope_plain sim rope plain
+19:49:00 start W16_steps_plain sim steps plain
+19:49:00 start W16_ramp_plain sim ramp plain
+19:49:03 start W17_rope_plain sim rope plain
+19:49:03 start W16_rope_plain_rec sim rope plain
+19:49:03 start W16_bridge_plain sim bridge plain
+19:55:02 done  W15_ramp_plain: crossed=False failure=stuck t=16.28 prog=0.663 err=None
+19:55:04 start W18_rope_plain sim rope plain
+19:56:43 done  W15_rope_plain: crossed=False failure=stuck t=17.67 prog=0.447 err=None
+20:04:40 done  W16_bridge_plain: crossed=True failure=None t=3.09 prog=1.332 err=None
+20:09:47 done  W16_ramp_plain: crossed=True failure=None t=9.44 prog=1.364 err=None
+20:10:05 done  W16_steps_plain: crossed=False failure=stuck t=11.17 prog=0.582 err=None
+20:22:07 done  W16_rope_plain: crossed=False failure=stuck t=27.069 prog=0.73 err=None
+20:22:32 done  W16_rope_plain_rec: crossed=False failure=stuck t=27.069 prog=0.73 err=None
+20:26:38 done  W17_rope_plain: crossed=False failure=stuck t=33.369 prog=0.73 err=None
+20:27:50 done  W18_rope_plain: crossed=False failure=stuck t=25.819 prog=0.731 err=None
+20:29:31 start W19_rope_plain sim rope plain
+20:29:31 start W21_bridge_plain sim bridge plain
+20:29:31 start W20_rope_plain sim rope plain
+20:29:31 start W21_rope_plain sim rope plain
+20:29:31 start W21_ramp_plain sim ramp plain
+20:29:31 start W21_steps_plain sim steps plain
+20:29:31 start W21_rope_plain_rec sim rope plain
+20:45:15 done  W21_bridge_plain: crossed=True failure=None t=2.98 prog=1.33 err=None
+20:48:10 done  W21_steps_plain: crossed=False failure=stuck t=8.069 prog=0.529 err=None
+20:49:23 done  W21_ramp_plain: crossed=True failure=None t=9.07 prog=1.363 err=None
+20:51:10 done  W20_rope_plain: crossed=False failure=stuck t=10.52 prog=0.725 err=None
+20:58:15 done  W19_rope_plain: crossed=False failure=stuck t=21.469 prog=0.731 err=None
+21:05:33 done  W21_rope_plain: crossed=False failure=stuck t=24.509 prog=0.73 err=None
+21:05:37 done  W21_rope_plain_rec: crossed=False failure=stuck t=24.509 prog=0.73 err=None
+21:09:22 start W22_ramp_plain sim ramp plain
+21:09:22 start W22_bridge_plain sim bridge plain
+21:09:22 start W22_rope_plain_rec sim rope plain
+21:09:22 start W22_rope_plain sim rope plain
+21:09:22 start W22_steps_plain sim steps plain
+21:24:25 done  W22_bridge_plain: crossed=True failure=None t=3.17 prog=1.331 err=None
+21:27:25 done  W22_steps_plain: crossed=False failure=stuck t=7.849 prog=0.576 err=None
+21:28:09 done  W22_ramp_plain: crossed=True failure=None t=8.309 prog=1.361 err=None
+21:32:33 done  W22_rope_plain: crossed=False failure=stuck t=11.71 prog=0.735 err=None
+21:32:49 done  W22_rope_plain_rec: crossed=False failure=stuck t=11.71 prog=0.735 err=None
+21:39:48 start W25_rope_plain sim rope plain
+21:39:48 start W24_rope_plain_rec sim rope plain
+21:39:48 start W24_rope_plain sim rope plain
+22:00:29 done  W24_rope_plain: crossed=False failure=stuck t=10.55 prog=0.727 err=None
+22:00:41 done  W24_rope_plain_rec: crossed=False failure=stuck t=10.55 prog=0.727 err=None
+22:00:42 done  W25_rope_plain: crossed=False failure=stuck t=10.55 prog=0.727 err=None
+22:08:29 start W27_rope_plain sim rope plain
+22:08:29 start W26_rope_plain sim rope plain
+22:08:29 start W26_rope_plain_rec sim rope plain
+22:25:16 done  W26_rope_plain: crossed=False failure=stuck t=5.479 prog=0.275 err=None
+22:25:30 done  W26_rope_plain_rec: crossed=False failure=stuck t=5.479 prog=0.275 err=None
+22:31:45 done  W27_rope_plain: crossed=False failure=stuck t=12.08 prog=0.733 err=None
+05:48:57 start R6_rope_plain sim rope plain
+05:48:57 start R5_rope_plain sim rope plain
+05:49:00 start R6_ramp_plain sim ramp plain
+05:49:00 start R6_rope_plain_rec sim rope plain
+05:49:00 start R6_bridge_plain sim bridge plain
+05:49:00 start S1_steps_plain sim steps plain
+05:49:00 start S1_steps_plain_rec sim steps plain
+05:49:00 start R6_steps_plain sim steps plain
+05:55:53 done  R6_bridge_plain: crossed=False failure=broke (wrL) t=1.619 prog=0.196 err=None
+05:55:53 done  R6_rope_plain: crossed=False failure=broke (axrL, grL, wrL) t=1.599 prog=0.158 err=None
+05:55:54 start S2_ramp_plain sim ramp plain
+05:55:54 start S2_steps_plain sim steps plain
+05:55:55 done  R6_rope_plain_rec: crossed=False failure=broke (axrL, grL, wrL) t=1.599 prog=0.158 err=None
+05:56:09 done  R5_rope_plain: crossed=False failure=broke (wrL) t=1.559 prog=0.19 err=None
+05:57:39 done  R6_steps_plain: crossed=False failure=stuck t=4.539 prog=0.144 err=None
+06:04:40 done  R6_ramp_plain: crossed=False failure=stuck t=14.39 prog=0.272 err=None
+06:06:58 start R5_rope_plain_b sim rope plain
+06:06:58 start R6_bridge_plain_b sim bridge plain
+06:06:58 start R6_rope_plain_b sim rope plain
+06:06:58 start R6_steps_plain_b sim steps plain
+06:07:55 done  S1_steps_plain: crossed=False failure=stuck t=7.639 prog=0.518 err=None
+06:07:57 done  S1_steps_plain_rec: crossed=False failure=stuck t=7.639 prog=0.518 err=None
+06:07:58 start R6_rope_plain_brec sim rope plain
+06:11:52 done  S2_steps_plain: crossed=False failure=stuck t=4.27 prog=0.082 err=None
+06:14:35 done  S2_ramp_plain: crossed=False failure=broke (axrL, grL, wrL) t=7.309 prog=0.345 err=None
+06:15:19 done  R6_steps_plain_b: crossed=False failure=stuck t=4.699 prog=0.143 err=None
+06:17:20 done  R6_bridge_plain_b: crossed=False failure=touched chasm floor (motr) t=6.859 prog=0.42 err=None
+06:17:40 done  R5_rope_plain_b: crossed=False failure=stuck t=7.469 prog=0.209 err=None
+06:21:20 done  R6_rope_plain_b: crossed=False failure=stuck t=13.97 prog=0.936 err=None
+06:21:35 done  R6_rope_plain_brec: crossed=False failure=stuck t=13.97 prog=0.936 err=None
+06:25:42 start R7_rope_plain sim rope plain
+06:25:45 start R8_rope_plain sim rope plain
+06:25:45 start R9_rope_plain sim rope plain
+06:26:09 start RS3_steps_plain sim steps plain
+06:26:09 start RS1_rope_plain sim rope plain
+06:26:09 start RS1_steps_plain_rec sim steps plain
+06:26:09 start RS1_steps_plain sim steps plain
+06:36:02 done  R8_rope_plain: crossed=False failure=stuck t=7.639 prog=0.222 err=None
+06:40:11 done  R7_rope_plain: crossed=False failure=stuck t=13.78 prog=0.235 err=None
+06:40:16 done  RS1_steps_plain: crossed=False failure=stuck t=4.779 prog=0.227 err=None
+06:40:20 done  RS1_steps_plain_rec: crossed=False failure=stuck t=4.779 prog=0.227 err=None
+06:40:26 done  RS3_steps_plain: crossed=False failure=stuck t=4.659 prog=0.226 err=None
+06:41:39 done  R9_rope_plain: crossed=False failure=stuck t=16.37 prog=0.799 err=None
+06:42:16 start R11_rope_plain sim rope plain
+06:42:16 start R12_rope_plain sim rope plain
+06:42:16 start R11_rope_plain_rec sim rope plain
+06:45:52 start SC2_rope_plain sim rope plain
+06:45:52 start SC2_bridge_plain sim bridge plain
+06:45:52 start SC2_ramp_plain sim ramp plain
+06:45:52 start SC2_steps_plain sim steps plain
+06:52:13 done  R12_rope_plain: crossed=False failure=stuck t=7.349 prog=0.239 err=None
+06:52:14 start SC2_steps_plain_rec sim steps plain
+06:52:15 done  R11_rope_plain: crossed=False failure=stuck t=7.409 prog=0.239 err=None
+06:52:16 done  R11_rope_plain_rec: crossed=False failure=stuck t=7.409 prog=0.239 err=None
+06:55:24 done  RS1_rope_plain: crossed=False failure=stuck t=18.07 prog=0.574 err=None
+06:56:56 start R13_ramp_plain sim ramp plain
+06:56:56 start R13_bridge_plain sim bridge plain
+06:56:56 start R13_rope_plain sim rope plain
+06:57:53 done  SC2_bridge_plain: crossed=False failure=touched chasm floor (motr) t=4.27 prog=0.395 err=None
+06:57:53 start R13_rope_plain_rec sim rope plain
+07:01:05 done  SC2_steps_plain: crossed=False failure=stuck t=7.239 prog=0.219 err=None
+07:01:05 start R13_steps_plain sim steps plain
+07:02:55 done  SC2_ramp_plain: crossed=False failure=stuck t=9.68 prog=0.319 err=None
+07:02:57 start R14_rope_plain sim rope plain
+07:05:59 done  SC2_steps_plain_rec: crossed=False failure=stuck t=7.239 prog=0.219 err=None
+07:06:00 start R15_rope_plain sim rope plain
+07:08:52 done  R13_steps_plain: crossed=False failure=stuck t=4.689 prog=0.151 err=None
+07:10:22 done  R13_rope_plain: crossed=False failure=stuck t=11.65 prog=0.218 err=None
+07:11:22 done  R13_rope_plain_rec: crossed=False failure=stuck t=11.65 prog=0.218 err=None
+07:11:38 done  R14_rope_plain: crossed=False failure=stuck t=5.889 prog=0.079 err=None
+07:13:25 done  SC2_rope_plain: crossed=False failure=stuck t=17.56 prog=0.747 err=None
+07:15:37 start R16_bridge_plain sim bridge plain
+07:15:37 start R18_bridge_plain sim bridge plain
+07:15:37 start R17_rope_plain sim rope plain
+07:15:37 start R17_bridge_plain sim bridge plain
+07:15:37 start R16_rope_plain sim rope plain
+07:15:45 done  R13_ramp_plain: crossed=False failure=stuck t=21.369 prog=0.268 err=None
+07:15:46 start R18_rope_plain sim rope plain
+07:16:47 done  R13_bridge_plain: crossed=True failure=None t=17.24 prog=1.285 err=None
+07:16:49 start R6b_bridge_plain sim bridge plain
+07:18:50 done  R15_rope_plain: crossed=False failure=stuck t=11.46 prog=0.218 err=None
+07:18:52 start R6b_ramp_plain sim ramp plain
+07:25:47 done  R17_bridge_plain: crossed=False failure=touched chasm floor (motr) t=6.559 prog=0.414 err=None
+07:25:50 start R6b_rope_plain sim rope plain
+07:27:51 done  R17_rope_plain: crossed=False failure=stuck t=9.66 prog=0.569 err=None
+07:27:53 start R6b_steps_plain sim steps plain
+07:28:31 done  R6b_bridge_plain: crossed=False failure=touched chasm floor (motr) t=9.8 prog=0.524 err=None
+07:28:32 start RS1b_rope_plain sim rope plain
+07:28:57 done  R18_rope_plain: crossed=False failure=stuck t=11.82 prog=0.218 err=None
+07:28:59 start RS1b_steps_plain sim steps plain
+07:31:43 done  R6b_ramp_plain: crossed=False failure=stuck t=11.23 prog=0.278 err=None
+07:31:44 start RS1b_steps_plain_rec sim steps plain
+07:34:50 done  R16_rope_plain: crossed=False failure=stuck t=19.669 prog=0.566 err=None
+07:34:50 start SC2b_steps_plain sim steps plain
+07:35:56 done  R6b_steps_plain: crossed=False failure=stuck t=4.719 prog=0.144 err=None
+07:36:09 done  R16_bridge_plain: crossed=True failure=None t=17.54 prog=1.283 err=None
+07:36:09 done  R18_bridge_plain: crossed=True failure=None t=17.26 prog=1.285 err=None
+07:38:48 done  R6b_rope_plain: crossed=False failure=stuck t=11.42 prog=0.8 err=None
+07:44:00 start R13b_steps_plain sim steps plain
+07:44:00 start R13b_bridge_plain sim bridge plain
+07:44:00 start R13b_ramp_plain sim ramp plain
+07:44:00 start R13b_rope_plain sim rope plain
+07:46:21 done  RS1b_steps_plain: crossed=False failure=stuck t=8.269 prog=0.412 err=None
+07:46:21 start R16b_bridge_plain sim bridge plain
+07:48:49 done  RS1b_steps_plain_rec: crossed=False failure=stuck t=8.269 prog=0.412 err=None
+07:48:51 start R16b_ramp_plain sim ramp plain
+07:49:25 done  SC2b_steps_plain: crossed=False failure=stuck t=7.699 prog=0.219 err=None
+07:49:27 start R16b_rope_plain sim rope plain
+07:51:57 done  R13b_steps_plain: crossed=False failure=stuck t=4.689 prog=0.151 err=None
+07:51:58 start R16b_steps_plain sim steps plain
+07:57:24 done  R13b_rope_plain: crossed=False failure=stuck t=11.65 prog=0.218 err=None
+07:57:25 start S1b_steps_plain sim steps plain
+07:57:39 done  RS1b_rope_plain: crossed=False failure=stuck t=18.14 prog=0.574 err=None
+07:57:40 start S1c_ramp_plain sim ramp plain
+07:59:36 done  R16b_steps_plain: crossed=False failure=stuck t=4.709 prog=0.15 err=None
+07:59:37 start S1c_steps_plain sim steps plain
+08:03:29 done  R13b_ramp_plain: crossed=False failure=stuck t=21.369 prog=0.268 err=None
+08:03:32 start ST1_steps_plain sim steps plain
+08:04:22 done  R13b_bridge_plain: crossed=True failure=None t=17.24 prog=1.285 err=None
+08:04:23 start ST1_steps_plain_rec sim steps plain
+08:06:26 done  R16b_bridge_plain: crossed=True failure=None t=17.54 prog=1.283 err=None
+08:08:57 done  R16b_ramp_plain: crossed=False failure=stuck t=23.529 prog=0.271 err=None
+08:08:58 done  R16b_rope_plain: crossed=False failure=stuck t=20.229 prog=0.572 err=None
+08:10:53 start R19_ramp_plain sim ramp plain
+08:10:53 start R19_bridge_plain sim bridge plain
+08:10:53 start R19_rope_plain sim rope plain
+08:14:48 done  S1c_steps_plain: crossed=False failure=stuck t=4.27 prog=0.081 err=None
+08:14:51 start R19_rope_plain_rec sim rope plain
+08:15:27 done  S1c_ramp_plain: crossed=False failure=stuck t=7.289 prog=0.337 err=None
+08:15:27 start R19_steps_plain sim steps plain
+08:16:00 done  S1b_steps_plain: crossed=False failure=stuck t=7.389 prog=0.516 err=None
+08:16:03 start R20_bridge_plain sim bridge plain
+08:16:33 done  ST1_steps_plain: crossed=False failure=stuck t=4.21 prog=0.087 err=None
+08:16:36 start R20_ramp_plain sim ramp plain
+08:17:34 done  ST1_steps_plain_rec: crossed=False failure=stuck t=4.21 prog=0.087 err=None
+08:17:36 start R20_rope_plain sim rope plain
+08:20:48 done  R19_rope_plain: crossed=False failure=stuck t=7.119 prog=0.223 err=None
+08:20:51 start R20_steps_plain sim steps plain
+08:23:00 done  R19_steps_plain: crossed=False failure=stuck t=4.489 prog=0.152 err=None
+08:24:33 done  R19_rope_plain_rec: crossed=False failure=stuck t=7.119 prog=0.223 err=None
+08:24:37 done  R19_bridge_plain: crossed=True failure=None t=9.41 prog=1.375 err=None
+08:25:40 done  R19_ramp_plain: crossed=False failure=stuck t=15.76 prog=0.281 err=None
+08:28:13 done  R20_steps_plain: crossed=False failure=stuck t=4.489 prog=0.151 err=None
+08:29:28 done  R20_bridge_plain: crossed=True failure=None t=9.33 prog=1.377 err=None
+08:30:08 done  R20_rope_plain: crossed=False failure=stuck t=12.2 prog=0.579 err=None
+08:31:06 done  R20_ramp_plain: crossed=False failure=stuck t=17.34 prog=0.283 err=None
+08:33:19 start R20_ramp_plain_rec sim ramp plain
+08:33:19 start R20_rope_plain_rec sim rope plain
+08:33:34 start R6f_rope_plain sim rope plain
+08:33:34 start R6e_rope_plain sim rope plain
+08:33:34 start R6d_rope_plain sim rope plain
+08:45:20 done  R6d_rope_plain: crossed=False failure=stuck t=9.66 prog=0.57 err=None
+08:45:56 done  R20_rope_plain_rec: crossed=False failure=stuck t=12.2 prog=0.579 err=None
+08:47:33 done  R6f_rope_plain: crossed=True failure=None t=7.779 prog=1.311 err=None
+08:48:36 done  R20_ramp_plain_rec: crossed=False failure=stuck t=17.34 prog=0.283 err=None
+08:50:01 done  R6e_rope_plain: crossed=False failure=stuck t=16.8 prog=0.798 err=None
+08:50:26 start R6f_ramp_plain sim ramp plain
+08:50:26 start R6f_bridge_plain sim bridge plain
+08:50:26 start R6f_rope_offset_1mm sim rope offset_1mm
+08:50:26 start R6f_rope_commands_50ms_late sim rope commands_50ms_late
+08:50:26 start R6f_steps_plain sim steps plain
+08:50:26 start R6f_rope_plain_rec sim rope plain
+08:57:45 start T1_ramp_plain sim ramp plain
+08:57:45 start T1_bridge_plain sim bridge plain
+08:58:49 done  R6f_steps_plain: crossed=False failure=stuck t=4.679 prog=0.144 err=None
+08:58:51 start T1_rope_plain sim rope plain
+09:00:16 done  R6f_bridge_plain: crossed=False failure=touched chasm floor (motr) t=6.099 prog=0.394 err=None
+09:00:18 start T1_steps_plain sim steps plain
+09:03:06 done  R6f_ramp_plain: crossed=False failure=stuck t=10.47 prog=0.282 err=None
+09:03:06 start T1_steps_plain_rec sim steps plain
+09:04:27 done  R6f_rope_commands_50ms_late: crossed=True failure=None t=7.779 prog=1.311 err=None
+09:04:28 start T2_bridge_plain sim bridge plain
+09:05:02 done  R6f_rope_plain_rec: crossed=True failure=None t=7.779 prog=1.311 err=None
+09:05:04 start T2_ramp_plain sim ramp plain
+09:08:53 done  R6f_rope_offset_1mm: crossed=True failure=None t=7.409 prog=1.289 err=None
+09:08:55 start R6f_bridge_plain_rec sim bridge plain
+09:09:33 done  T1_bridge_plain: crossed=True failure=None t=2.36 prog=1.368 err=None
+09:09:34 start R6f_ramp_plain_rec sim ramp plain
+09:11:29 done  T1_ramp_plain: crossed=False failure=stuck t=5.139 prog=0.338 err=None
+09:11:31 start T2_rope_plain sim rope plain
+09:13:13 done  T1_steps_plain: crossed=False failure=stuck t=4.419 prog=0.227 err=None
+09:13:13 start T2_steps_plain sim steps plain
+09:14:15 done  T1_rope_plain: crossed=False failure=flipped t=6.359 prog=0.751 err=None
+09:14:16 start T3_bridge_plain sim bridge plain
+09:16:01 done  T1_steps_plain_rec: crossed=False failure=stuck t=4.419 prog=0.227 err=None
+09:16:02 start T3_ramp_plain sim ramp plain
+09:16:13 done  T2_bridge_plain: crossed=True failure=None t=2.29 prog=1.359 err=None
+09:16:14 start T3_rope_plain sim rope plain
+09:18:41 done  R6f_bridge_plain_rec: crossed=False failure=touched chasm floor (motr) t=6.099 prog=0.394 err=None
+09:18:44 start T3_steps_plain sim steps plain
+09:18:58 done  T2_ramp_plain: crossed=False failure=stuck t=5.339 prog=0.343 err=None
+09:20:34 done  T3_bridge_plain: crossed=False failure=fell t=1.989 prog=0.843 err=None
+09:22:08 done  R6f_ramp_plain_rec: crossed=False failure=stuck t=10.47 prog=0.282 err=None
+09:22:28 done  T3_ramp_plain: crossed=False failure=broke (aburR, axrR, sp8rR, sprR) t=2.56 prog=0.325 err=None
+09:23:17 start T1_ramp_plain_rec sim ramp plain
+09:23:52 done  T3_rope_plain: crossed=True failure=None t=3.42 prog=1.858 err=None
+09:24:29 done  T2_rope_plain: crossed=False failure=broke (wrR) t=3.76 prog=0.747 err=None
+09:24:56 start T4_steps_plain sim steps plain
+09:24:56 start T4_bridge_plain sim bridge plain
+09:24:56 start T4_ramp_plain sim ramp plain
+09:24:59 start T4_rope_plain sim rope plain
+09:24:59 start T4_ramp_plain_rec sim ramp plain
+09:26:18 done  T2_steps_plain: crossed=False failure=stuck t=4.18 prog=0.091 err=None
+09:26:20 start T4_steps_plain_rec sim steps plain
+09:27:06 done  T3_steps_plain: crossed=False failure=stuck t=6.189 prog=0.42 err=None
+09:27:08 start T5_bridge_plain sim bridge plain
+09:36:30 done  T4_bridge_plain: crossed=True failure=None t=2.28 prog=1.373 err=None
+09:36:30 done  T1_ramp_plain_rec: crossed=False failure=stuck t=5.139 prog=0.338 err=None
+09:36:30 start T5_ramp_plain sim ramp plain
+09:36:33 start T5_rope_plain sim rope plain
+09:38:33 done  T5_bridge_plain: crossed=True failure=None t=2.22 prog=1.365 err=None
+09:38:33 start T5_steps_plain sim steps plain
+09:39:25 done  T4_ramp_plain_rec: crossed=True failure=None t=7.329 prog=1.414 err=None
+09:39:27 done  T4_rope_plain: crossed=False failure=stuck t=6.499 prog=0.81 err=None
+09:39:27 start T6_bridge_plain sim bridge plain
+09:39:27 start T6_ramp_plain sim ramp plain
+09:39:33 done  T4_ramp_plain: crossed=True failure=None t=7.329 prog=1.414 err=None
+09:39:34 start T6_rope_plain sim rope plain
+09:42:37 done  T4_steps_plain: crossed=False failure=stuck t=13.23 prog=0.491 err=None
+09:42:40 start T6_steps_plain sim steps plain
+09:43:58 done  T4_steps_plain_rec: crossed=False failure=stuck t=13.23 prog=0.491 err=None
+09:45:48 done  T6_bridge_plain: crossed=True failure=None t=1.559 prog=1.402 err=None
+09:46:52 done  T6_ramp_plain: crossed=True failure=None t=3.92 prog=1.464 err=None
+09:48:12 done  T6_rope_plain: crossed=False failure=stuck t=6.089 prog=0.803 err=None
+09:48:24 done  T5_steps_plain: crossed=False failure=broke (stud joint released: bplL/bbrL) t=0.199 prog=0.091 err=None
+09:49:55 done  T6_steps_plain: crossed=False failure=stuck t=4.21 prog=0.161 err=None
+09:50:52 start T6_rope_plain_rec sim rope plain
+09:50:52 start T7_rope_plain sim rope plain
+09:50:52 start T9_rope_plain sim rope plain
+09:50:52 start T8_rope_plain sim rope plain
+09:52:15 done  T5_rope_plain: crossed=False failure=stuck t=7.549 prog=0.816 err=None
+09:52:22 done  T5_ramp_plain: crossed=True failure=None t=9.22 prog=1.404 err=None
+09:59:00 done  T8_rope_plain: crossed=False failure=stuck t=4.679 prog=0.219 err=None
+09:59:22 done  T9_rope_plain: crossed=False failure=stuck t=6.689 prog=0.809 err=None
+09:59:39 done  T6_rope_plain_rec: crossed=False failure=stuck t=6.089 prog=0.803 err=None
+09:59:48 done  T7_rope_plain: crossed=False failure=stuck t=6.879 prog=0.805 err=None
+10:01:05 start T10_rope_plain sim rope plain
+10:01:05 start T10_ramp_plain sim ramp plain
+10:01:08 start T11_rope_plain sim rope plain
+10:01:08 start T10_bridge_plain sim bridge plain
+10:01:08 start T11_ramp_plain sim ramp plain
+10:01:08 start T11_bridge_plain sim bridge plain
+10:07:02 done  T11_bridge_plain: crossed=True failure=None t=1.649 prog=1.404 err=None
+10:07:26 done  T10_bridge_plain: crossed=True failure=None t=1.699 prog=1.401 err=None
+10:08:56 done  T10_rope_plain: crossed=True failure=None t=3.79 prog=1.858 err=None
+10:09:12 done  T10_ramp_plain: crossed=True failure=None t=5.269 prog=1.452 err=None
+10:09:12 done  T11_ramp_plain: crossed=True failure=None t=5.359 prog=1.458 err=None
+10:09:40 done  T11_rope_plain: crossed=False failure=left_lane after crossing t=4.959 prog=1.634 err=None
+10:16:21 start T10_rope_commands_50ms_late sim rope commands_50ms_late
+10:16:21 start T14_ramp_plain sim ramp plain
+10:16:21 start T14_bridge_plain sim bridge plain
+10:16:21 start T10_rope_offset_1mm sim rope offset_1mm
+10:16:21 start T10_ramp_offset_1mm sim ramp offset_1mm
+10:16:21 start T10_ramp_commands_50ms_late sim ramp commands_50ms_late
+10:16:21 start T14_steps_plain sim steps plain
+10:16:21 start T14_rope_plain sim rope plain
+10:23:53 done  T10_rope_commands_50ms_late: crossed=True failure=None t=3.79 prog=1.858 err=None
+10:23:55 start T10_bridge_commands_50ms_late sim bridge commands_50ms_late
+10:24:30 done  T10_ramp_commands_50ms_late: crossed=True failure=None t=5.269 prog=1.452 err=None
+10:24:31 start T10_bridge_offset_1mm sim bridge offset_1mm
+10:25:55 done  T14_steps_plain: crossed=False failure=broke (stud joint released: bplL/bbqL) t=0.219 prog=0.091 err=None
+10:25:55 start T10_steps_plain sim steps plain
+10:27:47 done  T14_bridge_plain: crossed=True failure=None t=2.38 prog=1.365 err=None
+10:27:49 start T15_bridge_plain sim bridge plain
+10:28:18 done  T10_rope_offset_1mm: crossed=False failure=left_lane after crossing t=3.85 prog=1.735 err=None
+10:28:19 start T15_ramp_plain sim ramp plain
+10:28:29 done  T10_ramp_offset_1mm: crossed=True failure=None t=5.279 prog=1.453 err=None
+10:28:31 start T15_rope_plain sim rope plain
+10:29:42 done  T10_bridge_commands_50ms_late: crossed=True failure=None t=1.699 prog=1.401 err=None
+10:29:44 start T15_steps_plain sim steps plain
+10:33:02 done  T10_steps_plain: crossed=False failure=stuck t=4.22 prog=0.156 err=None
+10:33:05 start T16_bridge_plain sim bridge plain
+10:33:28 done  T14_rope_plain: crossed=False failure=stuck t=10.09 prog=0.772 err=None
+10:33:29 start T16_ramp_plain sim ramp plain
+10:33:57 done  T14_ramp_plain: crossed=True failure=None t=12.0 prog=1.403 err=None
+10:33:59 start T16_rope_plain sim rope plain
+10:34:44 done  T10_bridge_offset_1mm: crossed=True failure=None t=1.689 prog=1.398 err=None
+10:34:44 start T16_steps_plain sim steps plain
+10:35:08 done  T15_bridge_plain: crossed=True failure=None t=1.689 prog=1.398 err=None
+10:35:08 start T16_steps_plain_rec sim steps plain
+10:37:23 done  T15_rope_plain: crossed=True failure=None t=3.31 prog=1.845 err=None
+10:37:45 done  T15_ramp_plain: crossed=True failure=None t=5.319 prog=1.453 err=None
+10:38:35 done  T15_steps_plain: crossed=False failure=stuck t=4.22 prog=0.154 err=None
+10:44:36 start T15_rope_offset_1mm sim rope offset_1mm
+10:44:39 start T15_bridge_offset_1mm sim bridge offset_1mm
+10:44:39 start T15_bridge_commands_50ms_late sim bridge commands_50ms_late
+10:46:35 done  T16_bridge_plain: crossed=True failure=None t=2.39 prog=1.364 err=None
+10:46:36 start T15_ramp_commands_50ms_late sim ramp commands_50ms_late
+10:49:24 done  T16_steps_plain: crossed=False failure=stuck t=4.19 prog=0.091 err=None
+10:49:24 start T15_ramp_offset_1mm sim ramp offset_1mm
+10:49:33 done  T16_steps_plain_rec: crossed=False failure=stuck t=4.19 prog=0.091 err=None
+10:49:33 start T15_rope_commands_50ms_late sim rope commands_50ms_late
+10:50:43 done  T16_rope_plain: crossed=False failure=stuck t=6.539 prog=0.747 err=None
+10:50:45 start T17_bridge_plain sim bridge plain
+10:52:18 done  T15_bridge_commands_50ms_late: crossed=True failure=None t=1.689 prog=1.398 err=None
+10:52:18 start T17_ramp_plain sim ramp plain
+10:56:14 done  T15_ramp_commands_50ms_late: crossed=True failure=None t=5.319 prog=1.453 err=None
+10:56:16 start T17_rope_plain sim rope plain
+10:58:10 done  T15_bridge_offset_1mm: crossed=True failure=None t=1.679 prog=1.395 err=None
+10:58:13 start T17_steps_plain sim steps plain
+10:58:43 done  T15_rope_commands_50ms_late: crossed=True failure=None t=3.31 prog=1.845 err=None
+10:58:46 start T17_steps_plain_rec sim steps plain
+11:00:28 done  T15_rope_offset_1mm: crossed=True failure=None t=4.31 prog=1.869 err=None
+11:00:28 start T18_bridge_plain sim bridge plain
+11:00:43 done  T16_ramp_plain: crossed=True failure=None t=20.749 prog=1.404 err=None
+11:00:43 start T18_ramp_plain sim ramp plain
+11:04:36 done  T17_bridge_plain: crossed=True failure=None t=2.44 prog=1.371 err=None
+11:04:37 start T18_rope_plain sim rope plain
+11:05:20 done  T15_ramp_offset_1mm: crossed=True failure=None t=5.309 prog=1.452 err=None
+11:05:23 start T18_steps_plain sim steps plain
+11:11:58 done  T17_ramp_plain: crossed=True failure=None t=10.03 prog=1.414 err=None
+11:11:59 start T20_bridge_plain sim bridge plain
+11:13:08 done  T17_steps_plain: crossed=False failure=stuck t=4.469 prog=0.23 err=None
+11:13:08 start T20_ramp_plain sim ramp plain
+11:14:07 done  T17_steps_plain_rec: crossed=False failure=stuck t=4.469 prog=0.23 err=None
+11:14:08 start T20_rope_plain sim rope plain
+11:14:47 done  T17_rope_plain: crossed=False failure=stuck t=7.879 prog=0.772 err=None
+11:14:50 start T20_steps_plain sim steps plain
+11:16:05 done  T18_bridge_plain: crossed=True failure=None t=2.45 prog=1.368 err=None
+11:20:53 done  T20_bridge_plain: crossed=True failure=None t=1.689 prog=1.398 err=None
+11:21:30 done  T18_ramp_plain: crossed=True failure=None t=9.35 prog=1.409 err=None
+11:21:51 done  T18_steps_plain: crossed=False failure=stuck t=4.429 prog=0.23 err=None
+11:23:58 done  T20_ramp_plain: crossed=True failure=None t=4.919 prog=1.456 err=None
+11:24:30 done  T20_rope_plain: crossed=True failure=None t=3.38 prog=1.863 err=None
+11:24:49 done  T18_rope_plain: crossed=False failure=stuck t=7.849 prog=0.771 err=None
+11:25:01 done  T20_steps_plain: crossed=False failure=stuck t=4.22 prog=0.153 err=None
+11:25:12 start T22_steps_plain sim steps plain
+11:25:12 start T21_steps_plain sim steps plain
+11:25:12 start T23_steps_plain sim steps plain
+11:25:12 start T22_steps_plain_rec sim steps plain
+11:39:47 done  T21_steps_plain: crossed=False failure=stuck t=4.39 prog=0.231 err=None
+11:41:12 done  T22_steps_plain: crossed=False failure=stuck t=4.4 prog=0.23 err=None
+11:41:13 done  T22_steps_plain_rec: crossed=False failure=stuck t=4.4 prog=0.23 err=None
+11:41:20 done  T23_steps_plain: crossed=False failure=stuck t=4.4 prog=0.23 err=None
+11:49:05 start T26_ramp_plain sim ramp plain
+11:49:05 start T26_steps_plain sim steps plain
+11:49:05 start T26_rope_plain sim rope plain
+11:49:08 start T26_bridge_plain sim bridge plain
+11:49:08 start T27_ramp_plain sim ramp plain
+11:49:08 start T27_bridge_plain sim bridge plain
+11:49:08 start T27_steps_plain sim steps plain
+11:49:08 start T27_rope_plain sim rope plain
+12:02:18 done  T26_bridge_plain: crossed=True failure=None t=2.29 prog=1.372 err=None
+12:02:18 start T28_bridge_plain sim bridge plain
+12:03:40 done  T26_steps_plain: crossed=False failure=stuck t=5.239 prog=0.495 err=None
+12:03:42 start T28_ramp_plain sim ramp plain
+12:03:49 done  T27_bridge_plain: crossed=True failure=None t=2.3 prog=1.369 err=None
+12:03:51 start T28_rope_plain sim rope plain
+12:05:19 done  T27_steps_plain: crossed=False failure=stuck t=4.909 prog=0.423 err=None
+12:05:20 done  T26_ramp_plain: crossed=True failure=None t=7.119 prog=1.416 err=None
+12:05:21 start T28_steps_plain sim steps plain
+12:05:32 done  T27_rope_plain: crossed=False failure=flipped t=4.34 prog=0.753 err=None
+12:05:36 done  T26_rope_plain: crossed=False failure=stuck t=6.229 prog=0.772 err=None
+12:06:55 done  T27_ramp_plain: crossed=True failure=None t=6.889 prog=1.416 err=None
+12:07:00 start T26_steps_plain_rec sim steps plain
+12:07:15 start T30_steps_plain sim steps plain
+12:07:18 start T32_steps_plain sim steps plain
+12:07:18 start T31_steps_plain sim steps plain
+12:10:07 done  T28_bridge_plain: crossed=True failure=None t=1.689 prog=1.398 err=None
+12:12:15 done  T28_ramp_plain: crossed=True failure=None t=2.94 prog=1.453 err=None
+12:12:45 done  T28_rope_plain: crossed=False failure=left_lane after crossing t=2.86 prog=1.713 err=None
+12:14:50 done  T28_steps_plain: crossed=False failure=stuck t=5.049 prog=0.449 err=None
+12:20:33 done  T32_steps_plain: crossed=True failure=None t=2.86 prog=1.706 err=None
+12:21:59 done  T26_steps_plain_rec: crossed=False failure=stuck t=5.239 prog=0.495 err=None
+12:22:34 done  T31_steps_plain: crossed=False failure=stuck t=5.719 prog=0.496 err=None
+12:22:35 done  T30_steps_plain: crossed=False failure=stuck t=5.249 prog=0.494 err=None
+12:23:35 start T32_rope_plain sim rope plain
+12:23:35 start T32_ramp_plain sim ramp plain
+12:23:35 start T32_bridge_plain sim bridge plain
+12:23:38 start T32_steps_offset_1mm sim steps offset_1mm
+12:23:38 start T32_steps_commands_50ms_late sim steps commands_50ms_late
+12:24:08 start T34_ramp_plain sim ramp plain
+12:24:08 start T34_rope_plain sim rope plain
+12:24:08 start T34_bridge_plain sim bridge plain
+12:36:27 done  T32_bridge_plain: crossed=True failure=None t=2.24 prog=1.374 err=None
+12:36:27 start T34_steps_plain sim steps plain
+12:36:37 done  T32_steps_commands_50ms_late: crossed=True failure=None t=2.86 prog=1.706 err=None
+12:36:39 start T35_bridge_plain sim bridge plain
+12:37:23 done  T34_bridge_plain: crossed=True failure=None t=2.37 prog=1.372 err=None
+12:37:24 start T35_ramp_plain sim ramp plain
+12:37:29 done  T32_ramp_plain: crossed=True failure=None t=4.38 prog=1.415 err=None
+12:37:30 start T35_rope_plain sim rope plain
+12:39:01 done  T34_ramp_plain: crossed=True failure=None t=5.369 prog=1.412 err=None
+12:39:03 start T35_steps_plain sim steps plain
+12:39:28 done  T32_rope_plain: crossed=False failure=stuck t=7.109 prog=0.811 err=None
+12:42:16 done  T34_rope_plain: crossed=False failure=broke (stud joint released: dbRb/tbR) t=8.799 prog=0.812 err=None
+12:43:40 done  T35_bridge_plain: crossed=True failure=None t=1.629 prog=1.408 err=None
+12:45:02 done  T35_ramp_plain: crossed=True failure=None t=2.79 prog=1.466 err=None
+12:45:33 done  T35_rope_plain: crossed=True failure=None t=3.05 prog=1.874 err=None
+12:46:52 done  T32_steps_offset_1mm: crossed=True failure=None t=2.86 prog=1.708 err=None
+12:47:09 done  T35_steps_plain: crossed=False failure=stuck t=4.21 prog=0.153 err=None
+12:49:08 done  T34_steps_plain: crossed=True failure=None t=3.06 prog=1.711 err=None
+12:49:13 start T32_rope_plain_rec sim rope plain
+12:49:28 start T38_steps_plain sim steps plain
+12:49:28 start T38_rope_plain sim rope plain
+13:02:21 done  T38_steps_plain: crossed=True failure=None t=3.14 prog=1.706 err=None
+13:04:16 done  T32_rope_plain_rec: crossed=False failure=stuck t=7.109 prog=0.811 err=None
+13:04:47 done  T38_rope_plain: crossed=False failure=stuck t=6.679 prog=0.746 err=None
+13:09:54 start U6_rope_plain sim rope plain
+13:09:54 start U10_rope_plain sim rope plain
+13:09:54 start U10_steps_plain sim steps plain
+13:09:54 start U8_rope_plain sim rope plain
+13:09:54 start U6_steps_plain sim steps plain
+13:09:54 start U8_steps_plain sim steps plain
+13:22:43 done  U6_steps_plain: crossed=True failure=None t=3.07 prog=1.704 err=None
+13:23:04 done  U10_steps_plain: crossed=True failure=None t=3.19 prog=1.705 err=None
+13:23:07 done  U8_steps_plain: crossed=True failure=None t=2.81 prog=1.712 err=None
+13:26:22 done  U6_rope_plain: crossed=False failure=stuck t=7.989 prog=0.813 err=None
+13:26:54 done  U8_rope_plain: crossed=False failure=stuck t=8.459 prog=0.812 err=None
+13:27:03 done  U10_rope_plain: crossed=False failure=stuck t=7.489 prog=0.771 err=None
+13:30:22 start U11_rope_plain sim rope plain
+13:30:22 start U11_steps_plain sim steps plain
+13:30:25 start U12_steps_plain sim steps plain
+13:30:25 start U13_rope_plain sim rope plain
+13:30:25 start U13_steps_plain sim steps plain
+13:30:25 start U12_rope_plain sim rope plain
+13:30:37 start T35_rope_plain_rec sim rope plain
+13:39:02 done  T35_rope_plain_rec: crossed=True failure=None t=3.05 prog=1.874 err=None
+13:41:14 start U14_rope_plain sim rope plain
+13:41:17 start U14_steps_plain sim steps plain
+13:42:50 done  U11_steps_plain: crossed=True failure=None t=2.75 prog=1.702 err=None
+13:42:50 start U15_rope_plain sim rope plain
+13:43:42 done  U12_steps_plain: crossed=True failure=None t=3.06 prog=1.705 err=None
+13:43:44 start U15_steps_plain sim steps plain
+13:43:51 done  U13_steps_plain: crossed=True failure=None t=2.99 prog=1.707 err=None
+13:44:44 done  U12_rope_plain: crossed=True failure=None t=3.62 prog=1.785 err=None
+13:44:47 done  U11_rope_plain: crossed=False failure=stuck t=6.109 prog=0.771 err=None
+13:46:07 done  U13_rope_plain: crossed=True failure=None t=4.939 prog=1.779 err=None
+13:51:00 start U12_bridge_plain sim bridge plain
+13:51:00 start U12_ramp_plain sim ramp plain
+13:51:03 start U12_bridge_offset_1mm sim bridge offset_1mm
+13:51:03 start U12_bridge_commands_50ms_late sim bridge commands_50ms_late
+13:54:26 done  U14_steps_plain: crossed=True failure=None t=2.85 prog=1.705 err=None
+13:54:27 start U12_ramp_commands_50ms_late sim ramp commands_50ms_late
+13:56:23 done  U14_rope_plain: crossed=False failure=stuck t=6.249 prog=0.81 err=None
+13:56:24 start U12_ramp_offset_1mm sim ramp offset_1mm
+13:57:20 done  U15_steps_plain: crossed=True failure=None t=3.07 prog=1.701 err=None
+13:57:21 start U12_rope_commands_50ms_late sim rope commands_50ms_late
+14:00:05 done  U15_rope_plain: crossed=False failure=stuck t=6.479 prog=0.747 err=None
+14:00:07 start U12_rope_offset_1mm sim rope offset_1mm
+14:03:19 done  U12_bridge_plain: crossed=True failure=None t=2.38 prog=1.369 err=None
+14:03:22 start U12_steps_commands_50ms_late sim steps commands_50ms_late
+14:03:27 done  U12_bridge_commands_50ms_late: crossed=True failure=None t=2.38 prog=1.369 err=None
+14:03:28 start U12_steps_offset_1mm sim steps offset_1mm
+14:04:49 done  U12_ramp_plain: crossed=True failure=None t=5.349 prog=1.418 err=None
+14:04:52 start U13_bridge_plain sim bridge plain
+14:08:24 done  U12_ramp_commands_50ms_late: crossed=True failure=None t=5.349 prog=1.418 err=None
+14:08:25 start U13_ramp_plain sim ramp plain
+14:11:30 done  U12_rope_commands_50ms_late: crossed=True failure=None t=3.62 prog=1.785 err=None
+14:11:32 start U12_ramp_plain_rec sim ramp plain
+14:14:21 done  U12_bridge_offset_1mm: crossed=True failure=None t=2.38 prog=1.37 err=None
+14:14:23 start V4_ramp_plain sim ramp plain
+14:16:36 done  U12_steps_commands_50ms_late: crossed=True failure=None t=3.06 prog=1.705 err=None
+14:16:38 start V4_rope_plain sim rope plain
+14:18:16 done  U13_bridge_plain: crossed=True failure=None t=2.38 prog=1.37 err=None
+14:18:17 start V4_steps_plain sim steps plain
+14:21:18 done  U12_ramp_offset_1mm: crossed=True failure=None t=5.359 prog=1.416 err=None
+14:22:54 done  U13_ramp_plain: crossed=True failure=None t=5.389 prog=1.411 err=None
+14:25:39 done  U12_ramp_plain_rec: crossed=True failure=None t=5.349 prog=1.418 err=None
+14:27:12 done  U12_rope_offset_1mm: crossed=True failure=None t=6.129 prog=1.785 err=None
+14:27:21 done  U12_steps_offset_1mm: crossed=True failure=None t=3.05 prog=1.71 err=None
+14:28:29 done  V4_ramp_plain: crossed=True failure=None t=5.369 prog=1.412 err=None
+14:31:05 done  V4_steps_plain: crossed=True failure=None t=3.06 prog=1.711 err=None
+14:31:33 start U12_check_steps check steps 
+14:31:33 start U12_check_rope check rope 
+14:31:36 start U12_check_bridge check bridge 
+14:31:36 start U12_check_ramp check ramp 
+14:33:33 start Z3_ramp_plain sim ramp plain
+14:33:33 start Z1_ramp_plain sim ramp plain
+14:33:33 start Z1_steps_plain sim steps plain
+14:34:34 done  V4_rope_plain: crossed=False failure=broke (stud joint released: dbRb/tbR) t=8.799 prog=0.812 err=None
+14:43:00 done  Z3_ramp_plain: crossed=True failure=None t=2.81 prog=1.464 err=None
+14:48:18 done  Z1_steps_plain: crossed=True failure=None t=2.42 prog=1.738 err=None
+14:48:47 done  Z1_ramp_plain: crossed=True failure=None t=3.46 prog=1.431 err=None
+14:54:24 start Z4_bridge_plain sim bridge plain
+14:54:24 start Z4_ramp_plain sim ramp plain
+14:54:24 start Z1_rope_plain sim rope plain
+14:54:24 start Z1_bridge_plain sim bridge plain
+14:57:39 done  U12_check_bridge: crossed=None failure=None t=None prog=None err=None
+14:57:42 start Z4_rope_plain sim rope plain
+14:58:04 done  U12_check_steps: crossed=None failure=None t=None prog=None err=None
+14:58:06 start Z4_steps_plain sim steps plain
+14:59:06 done  U12_check_ramp: crossed=None failure=None t=None prog=None err=None
+15:01:04 done  U12_check_rope: crossed=None failure=None t=None prog=None err=None
+15:05:50 done  Z4_bridge_plain: crossed=True failure=None t=1.699 prog=1.385 err=None
+15:06:16 done  Z1_bridge_plain: crossed=True failure=None t=1.699 prog=1.382 err=None
+15:06:35 done  Z4_ramp_plain: crossed=True failure=None t=3.37 prog=1.432 err=None
+15:07:44 done  Z1_rope_plain: crossed=True failure=None t=3.12 prog=1.802 err=None
+15:09:20 done  Z4_rope_plain: crossed=False failure=left_lane after crossing t=2.56 prog=1.773 err=None
+15:09:39 done  Z4_steps_plain: crossed=True failure=None t=2.28 prog=1.725 err=None
+15:14:37 start Z1_check_ramp check ramp 
+15:14:37 start Z1_check_rope check rope 
+15:14:37 start Z1_check_steps check steps 
+15:14:37 start Z4_rope_plain_rec sim rope plain
+15:14:37 start Z1_check_bridge check bridge 
+15:28:13 done  Z4_rope_plain_rec: crossed=False failure=left_lane after crossing t=2.56 prog=1.773 err=None
+15:35:54 start Z4c_rope_plain sim rope plain
+15:35:54 start Z4c_bridge_plain sim bridge plain
+15:35:54 start Z4c_ramp_plain sim ramp plain
+15:35:54 start Z4c_steps_plain sim steps plain
+15:39:12 done  Z1_check_bridge: crossed=None failure=None t=None prog=None err=None
+15:39:15 done  Z1_check_steps: crossed=None failure=None t=None prog=None err=None
+15:39:44 done  Z1_check_ramp: crossed=None failure=None t=None prog=None err=None
+15:43:03 done  Z1_check_rope: crossed=None failure=None t=None prog=None err=None
+15:47:50 done  Z4c_bridge_plain: crossed=True failure=None t=1.699 prog=1.385 err=None
+15:47:58 done  Z4c_steps_plain: crossed=True failure=None t=2.28 prog=1.725 err=None
+15:48:28 done  Z4c_ramp_plain: crossed=True failure=None t=3.37 prog=1.432 err=None
+15:48:35 done  Z4c_rope_plain: crossed=True failure=None t=2.56 prog=1.795 err=None

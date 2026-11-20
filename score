@@ -1,0 +1,359 @@
+#!/usr/bin/env python3
+"""score: check a design on every course and build a results dashboard (results.html).
+
+With the environment active (see README.md), run one of:
+
+    python score design.json                       check the design on all four courses
+    python score design.json --open                ... and open the dashboard when done
+    python score design.json --courses rope        re-check some courses; the others keep their last result
+    python score submissions/alice/                a folder: uses the design.json inside it
+    python score rank a/results.json b/results.json ...   rank several results files (used by the staff)
+
+It writes results.json and results.html next to the design (or into --out DIR). Open results.html in a browser.
+One design, with one motor program, runs on all four courses.
+
+Scoring. A course counts as crossed when `brick check` accepts the design on it: the plain run, the run 1 mm off
+the centreline and the run with every command 50 ms late all reach the goal, and the design review has no critical
+finding. Results are ranked by the number of courses crossed, then by the total time to goal over those courses
+(the plain run's time_s), lower first. Designs that cross the same number of courses with the same total time (for
+example, none) are tied. A result whose design file has changed since it was checked does not count.
+
+This is your own preview. The staff re-run `brick check` on every submitted design on their own machine, and that
+independent result is the official score.
+"""
+import argparse, csv, hashlib, json, os, shutil, subprocess, sys, time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+H = os.path.dirname(os.path.abspath(__file__))
+BRICK = os.path.join(H, "brick")
+# The scored courses.
+COURSES = ["steps", "rope", "ramp", "bridge"]
+RUN_NAMES = {"plain": "Plain run", "offset_1mm": "1 mm off-centre", "commands_50ms_late": "Commands 50 ms late"}
+WHY = {  # first word of the simulator's failure reason -> plain-English explanation and a first thing to try
+    "stuck": "The car stopped making progress for several seconds. Common causes: the motor program brakes or stops "
+             "too early, the wheels slip or lack torque, or a part catches on the obstacle. Watch the video to see which.",
+    "timeout": "The car was still moving but did not reach the goal within the time limit. Make it faster (gearing, "
+               "motor level) or make sure it keeps driving until it is past the goal.",
+    "fell": "The car fell off the course (off an edge, the plank or the rope).",
+    "touched": "A part touched the floor of the chasm (rope and bridge). Every part must stay above it, even for an "
+               "instant: watch the video to see which part dips and when.",
+    "flipped": "The car tipped over and stayed on its side or roof. A lower centre of mass or a wider wheel track helps.",
+    "broke": "Part of the car came apart (a stud joint released or a mechanism separated). Strengthen that joint with "
+             "more studs or pins.",
+    "left_lane": "The car left the course lane, or a part went around the obstacle instead of over it. Check that it "
+                 "drives straight.",
+    "simulation": "The physics became unstable. This usually means overlapping parts or extreme forces; read the "
+                  "validate warnings.",
+    "wall-clock": "The simulation took too long on this computer and was stopped.",
+    "review": "Every run reached the goal, but the design review found a critical problem (listed below), so the "
+              "check does not accept the design.",
+    "error": "The simulator did not produce a result. The log below shows why.",
+}
+
+
+def sha(path):
+    return hashlib.sha256(open(path, "rb").read()).hexdigest()[:12]
+
+
+def task(c):
+    return json.load(open(os.path.join(H, "tasks", c + ".json")))
+
+
+def design_for(target, course):
+    if os.path.isdir(target):  # one design for every course: the folder's design.json
+        p = os.path.join(target, "design.json")
+        return p if os.path.isfile(p) else None
+    return target
+
+
+def brick_check(path, course, env):
+    r = subprocess.run([sys.executable, BRICK, "check", path, course], capture_output=True, text=True, env=env)
+    try:
+        return json.loads(r.stdout)
+    except json.JSONDecodeError:
+        return {"error": "brick check did not return a result", "log_tail": (r.stdout + r.stderr)[-2000:]}
+
+
+def record(course, path, out, out_dir):
+    # links in results.html: relative to it, with forward slashes (Windows too)
+    rel = lambda p: os.path.relpath(p, out_dir).replace(os.sep, "/") if p and os.path.exists(p) else None  # noqa: E731
+    rec = {"course": course, "design": rel(path), "design_sha": sha(path),
+           "checked_at": time.strftime("%Y-%m-%d %H:%M"), "time_s": None, "max_progress": None, "runs": {},
+           "videos": [], "contact_sheet": None, "errors": [], "review_critical": [], "log_tail": None}
+    if "plain" not in out:  # did not validate, or brick itself failed
+        rec["status"] = "invalid" if out.get("errors") else "error"
+        rec["errors"] = out.get("errors") or [out.get("error") or "unknown error"]
+        rec["review_critical"] = (out.get("review") or {}).get("critical", [])
+        rec["log_tail"] = out.get("log_tail")
+        return rec
+    p = out["plain"]
+    for n, x in {"plain": p, **(out.get("nudges") or {})}.items():
+        rec["runs"][n] = {"passed": bool(x.get("passed")), "failure": None if x.get("passed") else
+                          (x.get("failure") or x.get("error") or "no result"), "time_s": x.get("time_s"),
+                          "max_progress": x.get("max_progress")}
+        if x.get("error") and not rec["log_tail"]:
+            rec["log_tail"] = x.get("log_tail")
+    rec["accepted"] = bool(out.get("accepted"))
+    rec["status"] = "crossed" if rec["accepted"] else "not_crossed"
+    rec["time_s"] = p.get("time_s") if p.get("passed") else None
+    rec["max_progress"] = p.get("max_progress")
+    rec["review_critical"] = out.get("review_critical") or []
+    rec["videos"] = [v for v in (rel(v) for v in p.get("videos") or []) if v]
+    sheets = [s for s in (rel(s) for s in p.get("contact_sheets") or []) if s]
+    rec["contact_sheet"] = sheets[-1] if sheets else None
+    return rec
+
+
+def why_key(rec):
+    if rec["status"] == "error":
+        return "error"
+    for n in ("plain", "offset_1mm", "commands_50ms_late"):
+        f = (rec["runs"].get(n) or {}).get("failure")
+        if f:
+            k = f.split()[0].split("(")[0]
+            k = "timeout" if k == "time" else k  # the simulator's own "time limit"
+            return k if k in WHY else "error"
+    return "review" if rec["status"] == "not_crossed" else None
+
+
+def summarize(results, target, courses):
+    rows = []
+    for c in courses:
+        path = design_for(target, c)
+        r = results.get(c)
+        if path is None:
+            rows.append({"course": c, "status": "missing"})
+            continue
+        if r is None:
+            rows.append({"course": c, "status": "not_run", "design": path})
+            continue
+        r = dict(r)
+        if r.get("design_sha") != sha(path):
+            r["stale"] = True
+        r["why"] = why_key(r)
+        rows.append(r)
+    crossed = [r for r in rows if r["status"] == "crossed" and not r.get("stale")]
+    return rows, {"crossed": len(crossed), "of": len(courses),
+                  "total_time_s": round(sum(r["time_s"] for r in crossed), 2)}
+
+
+def main_score(a):
+    target = os.path.abspath(a.design)
+    if not os.path.exists(target):
+        sys.exit(f"score: {a.design} does not exist")
+    if os.path.isdir(target) and not os.path.isfile(os.path.join(target, "design.json")):
+        sys.exit(f"score: {a.design} is a folder without a design.json in it")
+    if not os.path.isfile(BRICK):
+        sys.exit("score: put this file in the same folder as `brick`")
+    if not shutil.which("ffmpeg"):
+        sys.exit("score: ffmpeg is not installed. Without it the simulator returns no result.\n"
+                 "  macOS: brew install ffmpeg    Linux: sudo apt install ffmpeg    Windows: winget install --id=Gyan.FFmpeg -e\n"
+                 "Then open a new terminal so that ffmpeg is on PATH.")
+    courses = COURSES if not a.courses else [c.strip() for c in a.courses.split(",") if c.strip()]
+    bad = [c for c in courses if c not in COURSES]
+    if bad:
+        sys.exit(f"score: unknown course(s) {', '.join(bad)}; the courses are {', '.join(COURSES)}")
+    out_dir = os.path.abspath(a.out or (target if os.path.isdir(target) else os.path.dirname(target)))
+    os.makedirs(out_dir, exist_ok=True)
+    rpath = os.path.join(out_dir, "results.json")
+    old = json.load(open(rpath)) if os.path.exists(rpath) else {}
+    results = {r["course"]: r for r in old.get("courses", []) if r.get("design_sha")}
+    todo = [(c, design_for(target, c)) for c in courses]
+    todo = [(c, p) for c, p in todo if p]
+    env = dict(os.environ)
+    if not sys.platform.startswith("linux"):
+        env.setdefault("MUJOCO_GL", "glfw")  # EGL exists only on Linux; glfw renders on macOS and Windows
+    jobs = a.jobs or max(1, min(4, (os.cpu_count() or 3) // 3))
+    print(f"Checking {len(todo)} course(s), 3 simulations each, {jobs} course(s) at a time. "
+          f"This takes roughly {max(1, round(len(todo) / jobs + 0.5))}-{max(2, round(len(todo) * 3 / jobs + 0.5))} min.")
+    t0 = time.time()
+    with ThreadPoolExecutor(jobs) as ex:
+        futs = {ex.submit(brick_check, p, c, env): (c, p) for c, p in todo}
+        for f in as_completed(futs):
+            c, p = futs[f]
+            r = results[c] = record(c, p, f.result(), out_dir)
+            t = f"{r['time_s']:.1f} s" if r["time_s"] is not None else "-"
+            reason = "" if r["status"] == "crossed" else (why_key(r) or "")
+            print(f"  {c:8s} {r['status'].replace('_', ' '):12s} {t:>8s}  {reason}   ({time.time() - t0:.0f} s elapsed)")
+    name = a.name or old.get("name") or (os.path.basename(target) if os.path.isdir(target)
+                                         else os.path.splitext(os.path.basename(target))[0])
+    rows, score = summarize(results, target, COURSES)
+    data = {"name": name, "generated": time.strftime("%Y-%m-%d %H:%M"), "target": a.design,
+            "score": score, "courses": rows, "why": WHY, "run_names": RUN_NAMES,
+            "tasks": {c: {"description": task(c)["description"], "time_limit_s": task(c)["time_limit_s"]} for c in COURSES}}
+    json.dump(data, open(rpath, "w"), indent=1)
+    html_path = os.path.join(out_dir, "results.html")
+    open(html_path, "w", encoding="utf-8").write(PAGE.replace("__DATA__", json.dumps(data).replace("</", "<\\/")))
+    print(f"\nScore: {score['crossed']} of {score['of']} courses crossed, total time {score['total_time_s']} s")
+    print(f"Dashboard: {html_path}")
+    if a.open:
+        import webbrowser
+        import pathlib
+        webbrowser.open(pathlib.Path(html_path).as_uri())
+
+
+def main_rank(a):
+    rows = []
+    for f in a.files:
+        d = json.load(open(f))
+        times = {r["course"]: (r.get("time_s") if r.get("status") == "crossed" and not r.get("stale") else None)
+                 for r in d["courses"]}
+        rows.append({"name": d.get("name") or os.path.basename(os.path.dirname(os.path.abspath(f))), "file": f,
+                     "crossed": d["score"]["crossed"], "total_time_s": d["score"]["total_time_s"], "times": times})
+    rows.sort(key=lambda r: (-r["crossed"], r["total_time_s"]))
+    for i, r in enumerate(rows):
+        same = i and (r["crossed"], r["total_time_s"]) == (rows[i - 1]["crossed"], rows[i - 1]["total_time_s"])
+        r["rank"] = rows[i - 1]["rank"] if same else i + 1
+    out = os.path.abspath(a.out or "leaderboard.html")
+    with open(os.path.splitext(out)[0] + ".csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["rank", "name", "courses_crossed", "total_time_s"] + COURSES)
+        for r in rows:
+            w.writerow([r["rank"], r["name"], r["crossed"], r["total_time_s"]] + [r["times"].get(c) or "" for c in COURSES])
+    data = {"generated": time.strftime("%Y-%m-%d %H:%M"), "courses": COURSES, "rows": rows}
+    open(out, "w", encoding="utf-8").write(RANK_PAGE.replace("__DATA__", json.dumps(data).replace("</", "<\\/")))
+    for r in rows:
+        print(f"{r['rank']:>3}  {r['name']:24s} {r['crossed']:>2} crossed  {r['total_time_s']:>8} s")
+    print(f"\nLeaderboard: {out} (and {os.path.splitext(out)[0]}.csv)")
+
+
+CSS = """
+:root{--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;
+--ring:rgba(11,11,11,.10);--good:#0ca30c;--good-text:#006300;--crit:#d03b3b;--warn:#fab219;--bar:#2a78d6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;
+--ink2:#c3c2b7;--grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);--good-text:#0ca30c;--bar:#3987e5;color-scheme:dark}}
+:root[data-theme=dark]{--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#2c2c2a;--axis:#383835;
+--ring:rgba(255,255,255,.10);--good-text:#0ca30c;--bar:#3987e5;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 12px}h3{font-size:16px;margin:0}
+.sub,.desc,.note{color:var(--ink2)}.sub{margin:0}.desc{font-size:13px;margin:4px 0 12px}.note{font-size:13px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:12px;margin-top:20px}
+.tile,.card,.tablewrap{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:16px}
+.hero{font-size:44px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.hero small{font-size:18px;font-weight:500;color:var(--ink2)}
+.tablewrap{padding:0;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--grid);vertical-align:top}
+th{color:var(--ink2);font-weight:600;font-size:13px}tr:last-child td{border-bottom:0}
+td a{color:inherit}.num{text-align:right}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:1px 9px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.b-crossed{background:var(--good);color:#fff}.b-not_crossed,.b-error,.b-invalid{background:var(--crit);color:#fff}
+.b-stale{background:var(--warn);color:#0b0b0b}.b-missing,.b-not_run{border:1px solid var(--axis);color:var(--ink2)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:12px}
+.card{display:flex;flex-direction:column;min-width:0}.head{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.metric{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.metric b{font-size:22px;font-variant-numeric:tabular-nums}
+.track{height:8px;border-radius:4px;background:var(--grid);margin:10px 0 4px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:0 4px 4px 0}
+.runs{list-style:none;padding:0;margin:12px 0;font-size:14px}.runs li{padding:2px 0}
+.ok{color:var(--good-text);font-weight:700}.no{color:var(--crit);font-weight:700}
+.why{font-size:14px;background:var(--page);border-radius:8px;padding:10px 12px;margin:0 0 12px}
+video,.sheet{width:100%;border-radius:8px;background:#000;display:block}
+.links{font-size:13px;margin-top:6px;display:flex;gap:12px;flex-wrap:wrap}.links a{color:var(--bar)}
+details{font-size:13px;margin-top:8px}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;color:var(--ink2)}
+ul.err{margin:6px 0;padding-left:18px;font-size:13px}
+.bad{color:var(--crit)}
+"""
+
+PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrickBench results</title><style>""" + CSS + """</style></head><body><main id="app"></main>
+<script>
+const D = __DATA__;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LABEL = {crossed:"\\u2713 Crossed", not_crossed:"\\u2717 Not crossed", invalid:"\\u2717 Invalid design",
+  error:"\\u2717 Simulator error", missing:"\\u2013 No design", not_run:"\\u2013 Not checked yet", stale:"\\u27f3 Outdated"};
+const st = r => r.stale ? "stale" : r.status;
+const badge = r => `<span class="badge b-${st(r)}">${LABEL[st(r)]}</span>`;
+const secs = x => x == null ? "\\u2013" : x.toFixed(1) + " s";
+const pct = x => x == null ? "\\u2013" : Math.round(Math.min(1, Math.max(0, x)) * 100) + "%";
+function reason(r) {
+  if (r.stale) return "Design changed since this check";
+  if (r.status === "missing") return "No design.json in the folder";
+  if (r.status === "not_run") return "Run python score with --courses " + r.course;
+  if (r.status === "invalid") return "Does not validate";
+  if (r.status === "crossed") return "";
+  for (const n of ["plain", "offset_1mm", "commands_50ms_late"]) {
+    const x = (r.runs || {})[n]; if (x && !x.passed) return (n === "plain" ? "" : D.run_names[n] + ": ") + x.failure;
+  }
+  return r.status === "error" ? "Simulator error" : "Design review: critical finding";
+}
+function card(r) {
+  const t = D.tasks[r.course];
+  let h = `<article class="card" id="c-${r.course}"><div class="head"><h3>${r.course}</h3>${badge(r)}</div>
+    <p class="desc">${esc(t.description)}</p>`;
+  if (r.status === "crossed" || r.status === "not_crossed") {
+    h += `<div class="metric"><span>Time to goal</span><b>${secs(r.time_s)}</b><span class="note">limit ${secs(t.time_limit_s)}</span></div>
+      <div class="track" title="Furthest point reached in the plain run: ${pct(r.max_progress)} of the course">
+      <div class="fill" style="width:${pct(r.max_progress)}"></div></div>
+      <div class="note">Furthest point (plain run): ${pct(r.max_progress)} of the course</div><ul class="runs">`;
+    for (const n of ["plain", "offset_1mm", "commands_50ms_late"]) {
+      const x = r.runs[n]; if (!x) continue;
+      h += `<li>${x.passed ? '<span class="ok">\\u2713</span>' : '<span class="no">\\u2717</span>'} ${D.run_names[n]}${x.passed ? "" : " \\u2014 " + esc(x.failure)}</li>`;
+    }
+    h += "</ul>";
+  }
+  if (r.stale) h += `<p class="why"><b>Outdated.</b> The design file changed after this check, so it does not count. Re-run: <code>python score ${esc(D.target)} --courses ${r.course}</code></p>`;
+  if (r.why && D.why[r.why]) h += `<p class="why"><b>What went wrong:</b> ${esc(D.why[r.why])}</p>`;
+  if (r.status === "missing") h += `<p class="why">Add <code>design.json</code> to the design folder.</p>`;
+  if (r.status === "not_run") h += `<p class="why">Not checked yet. Run <code>python score ${esc(D.target)} --courses ${r.course}</code>.</p>`;
+  if (r.errors && r.errors.length) h += `<p class="note bad">What validate reports:</p><ul class="err">${r.errors.map(e => `<li>${esc(e)}</li>`).join("")}</ul>`;
+  if (r.review_critical && r.review_critical.length) h += `<p class="note bad">Critical review findings:</p><ul class="err">${r.review_critical.map(e => `<li>${esc(e)}</li>`).join("")}</ul>`;
+  if (r.videos && r.videos.length) {
+    h += `<video controls preload="metadata" src="${esc(r.videos[0])}"></video><div class="links">`;
+    r.videos.forEach(v => h += `<a href="${esc(v)}" target="_blank">${v.includes("overview") ? "Overview" : "Follow"} video</a>`);
+    if (r.contact_sheet) h += `<a href="${esc(r.contact_sheet)}" target="_blank">Contact sheet</a>`;
+    h += "</div>";
+  }
+  if (r.log_tail) h += `<details><summary>Simulator log</summary><pre>${esc(r.log_tail)}</pre></details>`;
+  if (r.checked_at) h += `<p class="note" style="margin:10px 0 0">Checked ${esc(r.checked_at)} \\u00b7 ${esc(r.design)}</p>`;
+  return h + "</article>";
+}
+const S = D.score;
+let h = `<h1>BrickBench results: ${esc(D.name)}</h1><p class="sub">${esc(D.target)} \\u00b7 generated ${esc(D.generated)}</p>
+<div class="tiles"><div class="tile"><div class="hero">${S.crossed}<small> of ${S.of} courses crossed</small></div></div>
+<div class="tile"><div class="hero">${S.total_time_s.toFixed(1)}<small> s total time</small></div><div class="note">time to goal, summed over the crossed courses</div></div></div>
+<p class="note">Ranking: most courses crossed first, then the lowest total time. A course is crossed when <code>brick check</code>
+accepts it: the plain run, the run 1 mm off-centre and the run with commands 50 ms late all reach the goal.
+This page is your own preview: the staff re-run every submitted design independently, and that result is the official score.</p>
+<h2>All courses</h2><div class="tablewrap"><table><thead><tr><th>Course</th><th>Result</th><th class="num">Time to goal</th>
+<th class="num">Limit</th><th class="num">Furthest</th><th>Why not crossed</th></tr></thead><tbody>`;
+for (const r of D.courses) h += `<tr><td><a href="#c-${r.course}">${r.course}</a></td><td>${badge(r)}</td>
+  <td class="num">${r.status === "crossed" && !r.stale ? secs(r.time_s) : "\\u2013"}</td><td class="num">${secs(D.tasks[r.course].time_limit_s)}</td>
+  <td class="num">${pct(r.max_progress)}</td><td>${esc(reason(r))}</td></tr>`;
+h += `</tbody></table></div><h2>Course details</h2><div class="cards">${D.courses.map(card).join("")}</div>`;
+document.getElementById("app").innerHTML = h;
+</script></body></html>"""
+
+RANK_PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrickBench leaderboard</title><style>""" + CSS + """</style></head><body><main id="app"></main>
+<script>
+const D = __DATA__;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let h = `<h1>BrickBench leaderboard</h1><p class="sub">${D.rows.length} entries \\u00b7 generated ${esc(D.generated)}</p>
+<p class="note">Ranked by courses crossed (accepted by <code>brick check</code>), then by total time to goal over those courses.
+Each course cell shows that course's time to goal; \\u2013 means not crossed.</p>
+<div class="tablewrap"><table><thead><tr><th class="num">Rank</th><th>Name</th><th class="num">Crossed</th><th class="num">Total time</th>
+${D.courses.map(c => `<th class="num">${c}</th>`).join("")}</tr></thead><tbody>`;
+for (const r of D.rows) h += `<tr><td class="num">${r.rank}</td><td><a href="${esc(r.file.replace(/results\\.json$/, "results.html"))}">${esc(r.name)}</a></td>
+  <td class="num"><b>${r.crossed}</b></td><td class="num">${r.total_time_s.toFixed(1)} s</td>
+  ${D.courses.map(c => { const t = r.times[c]; return `<td class="num">${t == null ? "\\u2013" : '<span class="ok">\\u2713</span> ' + t.toFixed(1)}</td>`; }).join("")}</tr>`;
+document.getElementById("app").innerHTML = h + "</tbody></table></div>";
+</script></body></html>"""
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "rank":
+        ap = argparse.ArgumentParser(prog="score rank", description="Rank several results.json files.")
+        ap.add_argument("files", nargs="+", help="results.json files written by score")
+        ap.add_argument("--out", help="leaderboard HTML path (default leaderboard.html; a .csv is written beside it)")
+        main_rank(ap.parse_args(sys.argv[2:]))
+    else:
+        ap = argparse.ArgumentParser(prog="score", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+        ap.add_argument("design", help="a design .json file, or a folder that contains design.json")
+        ap.add_argument("--courses", help="comma-separated courses to (re)check; default: all scored courses")
+        ap.add_argument("--jobs", type=int, help="courses checked at the same time (default: based on CPU count)")
+        ap.add_argument("--name", help="name shown on the dashboard and leaderboard (default: the file or folder name)")
+        ap.add_argument("--out", help="folder for results.json and results.html (default: next to the design)")
+        ap.add_argument("--open", action="store_true", help="open the dashboard in the browser when done")
+        main_score(ap.parse_args())

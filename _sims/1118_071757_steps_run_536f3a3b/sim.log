@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Tate Murphy\Desktop\CP3\simulator\run_csim.py", line 116, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Tate Murphy\Desktop\CP3\simulator\run_csim.py", line 39, in main
+    from csim import CrossSim
+  File "C:\Users\Tate Murphy\Desktop\CP3\simulator\csim.py", line 45, in <module>
+    import mujoco  # noqa: E402
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'mujoco'

@@ -1,0 +1,163 @@
+{
+ "id": "G1_bridge_plain",
+ "job": {
+  "id": "G1_bridge_plain",
+  "kind": "sim",
+  "design": "agent_designs/G1.json",
+  "bench": "bridge",
+  "nudge": "plain",
+  "video": true,
+  "record": false
+ },
+ "result": {
+  "obstacle": "bridge",
+  "level": 1,
+  "crossed": true,
+  "time_s": 1.969,
+  "reached_goal_s": 1.969,
+  "max_progress": 1.328,
+  "max_progress_m": 1.1457,
+  "failure": null,
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.77,
+    "engaged": 0.95,
+    "state": "locked"
+   },
+   "igaL-igmL": {
+    "slips": 0,
+    "peak_n": 4.43,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igmL-igbL": {
+    "slips": 0,
+    "peak_n": 5.23,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igbL-grL": {
+    "slips": 0,
+    "peak_n": 4.94,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.73,
+    "engaged": 0.94,
+    "state": "locked"
+   },
+   "igaR-igmR": {
+    "slips": 0,
+    "peak_n": 4.99,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igmR-igbR": {
+    "slips": 0,
+    "peak_n": 5.2,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "igbR-grR": {
+    "slips": 0,
+    "peak_n": 3.42,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.66,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 3.1,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 2.39,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 2.42,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.73,
+  "motor_program_log": [
+   "0.04 s motL: 7",
+   "0.04 s motR: 7"
+  ],
+  "valid": true,
+  "wall_s": 801.4,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\G1_bridge_plain",
+  "wall": 802.8,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "iamL (with igmL, ibbL, ibumL30) can slide 16.6 mm (-axis -y) until igmL touches rflfL; after 3.3 mm it comes out of the motor motL's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "igmL (on iamL) can slide 16.6 mm (-axis -y) until igmL touches rflfL; after 7.0 mm it is out of mesh with igaL and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "igmL (on iamL) can slide 16.6 mm (-axis -y) until igmL touches rflfL; after 7.0 mm it is out of mesh with igbL and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "iamR (with igmR, ibbR, ibumR30) can slide 16.6 mm (+axis +y) until igmR touches rflfR; after 3.3 mm it comes out of the motor motR's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "igmR (on iamR) can slide 16.6 mm (+axis +y) until igmR touches rflfR; after 7.0 mm it is out of mesh with igaR and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "igmR (on iamR) can slide 16.6 mm (+axis +y) until igmR touches rflfR; after 7.0 mm it is out of mesh with igbR and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "spfL0, spfL1, spxfL0, spxfL1, wfL and 6 more parts hangs on the axle axfL, axfR alone (axis +y): it is free to rock about it while carrying wheels; gear gfL meshing outside it. Fine for a deliberate rocker or bogie; otherwise fix it with a second pin or a stud joint off that axis.",
+    "spfR0, spfR1, spxfR0, spxfR1, wfR and 6 more parts hangs on the axle axfL, axfR alone (axis +y): it is free to rock about it while carrying wheels; gear gfR meshing outside it. Fine for a deliberate rocker or bogie; otherwise fix it with a second pin or a stud joint off that axis.",
+    "sprL0, sprL1, spxrL0, spxrL1, wrL and 6 more parts hangs on the axle axrL, axrR alone (axis +y): it is free to rock about it while carrying wheels; gear grL meshing outside it. Fine for a deliberate rocker or bogie; otherwise fix it with a second pin or a stud joint off that axis.",
+    "sprR0, sprR1, spxrR0, spxrR1, wrR and 6 more parts hangs on the axle axrL, axrR alone (axis +y): it is free to rock about it while carrying wheels; gear grR meshing outside it. Fine for a deliberate rocker or bogie; otherwise fix it with a second pin or a stud joint off that axis."
+   ]
+  },
+  "stats": {
+   "n_parts": 137,
+   "mass_g": 518.71,
+   "length_mm": 199.2,
+   "width_mm": 224.0,
+   "height_mm": 179.32,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\G1_bridge_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\G1_bridge_plain\\contact_overview.jpg"
+  ]
+ }
+}

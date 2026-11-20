@@ -1,0 +1,164 @@
+{
+ "id": "T20_ramp_plain",
+ "job": {
+  "id": "T20_ramp_plain",
+  "kind": "sim",
+  "design": "agent_designs/T20.json",
+  "bench": "ramp",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "ramp",
+  "level": 1,
+  "crossed": true,
+  "time_s": 4.919,
+  "reached_goal_s": 4.919,
+  "max_progress": 1.456,
+  "max_progress_m": 0.9022,
+  "failure": null,
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.32,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 0.49,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 1.65,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 0.65,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.7,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 0.71,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 0.36,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfL-sprL": {
+    "slips": 0,
+    "peak_n": 13.12,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfR-sprR": {
+    "slips": 0,
+    "peak_n": 10.7,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "chL",
+    "sprockets": [
+     "spfL",
+     "sprL"
+    ],
+    "peak_n": 13.12,
+    "gap_min_mm": -0.0,
+    "gap_max_mm": -0.0,
+    "axial_max_mm": 0.11,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "chR",
+    "sprockets": [
+     "spfR",
+     "sprR"
+    ],
+    "peak_n": 10.7,
+    "gap_min_mm": -0.0,
+    "gap_max_mm": -0.0,
+    "axial_max_mm": 0.11,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.24,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7"
+  ],
+  "valid": true,
+  "wall_s": 646.1,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T20_ramp_plain",
+  "wall": 647.2,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "raxr cluster has 4.2 mm of axial play (free +0.1 / -4.0 mm): gears and wheels on it wander and rub"
+   ]
+  },
+  "stats": {
+   "n_parts": 213,
+   "mass_g": 696.22,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T20_ramp_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T20_ramp_plain\\contact_overview.jpg"
+  ]
+ }
+}

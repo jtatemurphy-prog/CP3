@@ -1,0 +1,132 @@
+{
+ "obstacle": "steps",
+ "level": 1,
+ "crossed": false,
+ "time_s": 6.239,
+ "reached_goal_s": null,
+ "max_progress": 0.489,
+ "max_progress_m": 0.1864,
+ "failure": "stuck",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 5.33,
+   "engaged": 0.81,
+   "state": "locked"
+  },
+  "grL-igbL": {
+   "slips": 0,
+   "peak_n": 3.15,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 2.46,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "grR-igbR": {
+   "slips": 0,
+   "peak_n": 4.38,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfL-hcgL": {
+   "slips": 0,
+   "peak_n": 3.39,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-hcgR": {
+   "slips": 0,
+   "peak_n": 3.36,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "cgL-igbL": {
+   "slips": 0,
+   "peak_n": 3.44,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "cgR-igbR": {
+   "slips": 0,
+   "peak_n": 3.55,
+   "engaged": 0.94,
+   "state": "locked"
+  },
+  "h8gL-igaL": {
+   "slips": 1,
+   "peak_n": 4.0,
+   "engaged": 0.15,
+   "state": "free"
+  },
+  "hcgL-h8gL": {
+   "slips": 0,
+   "peak_n": 3.69,
+   "engaged": 0.97,
+   "state": "locked"
+  },
+  "hhgL-hcgL": {
+   "slips": 0,
+   "peak_n": 0.9,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "h8gR-igaR": {
+   "slips": 0,
+   "peak_n": 2.92,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgR-h8gR": {
+   "slips": 0,
+   "peak_n": 3.07,
+   "engaged": 0.98,
+   "state": "locked"
+  },
+  "hhgR-hcgR": {
+   "slips": 0,
+   "peak_n": 0.87,
+   "engaged": 1.0,
+   "state": "locked"
+  }
+ },
+ "chains": [],
+ "mesh_events_dropped": 0,
+ "leads": [
+  {
+   "dev": "motf",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motr",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 0.3,
+ "motor_program_log": [
+  "0.04 s motf: 7",
+  "0.04 s motr: 7",
+  "5.13 s mesh h8gL-igaL locked -> slipping (centre distance +0.08 mm, axial offset 7.5 mm, sliding 0.00 m/s)",
+  "6.21 s mesh h8gL-igaL slipping -> free (centre distance +0.06 mm, axial offset 7.7 mm, sliding -0.21 m/s)"
+ ],
+ "valid": true,
+ "wall_s": 1104.9
+}

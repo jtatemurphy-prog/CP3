@@ -1,0 +1,215 @@
+{
+ "id": "W16_steps_plain",
+ "job": {
+  "id": "W16_steps_plain",
+  "kind": "sim",
+  "design": "agent_designs/W16.json",
+  "bench": "steps",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "steps",
+  "level": 1,
+  "crossed": false,
+  "time_s": 11.17,
+  "reached_goal_s": null,
+  "max_progress": 0.582,
+  "max_progress_m": 0.2362,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 5.48,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 5.05,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.4,
+    "engaged": 0.98,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 5.81,
+    "engaged": 0.94,
+    "state": "locked"
+   },
+   "rgfL-ra8L": {
+    "slips": 0,
+    "peak_n": 14.18,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-ra8R": {
+    "slips": 0,
+    "peak_n": 14.17,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "cgL-igbL": {
+    "slips": 0,
+    "peak_n": 5.32,
+    "engaged": 0.87,
+    "state": "locked"
+   },
+   "cgR-igbR": {
+    "slips": 0,
+    "peak_n": 5.52,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gL-igaL": {
+    "slips": 0,
+    "peak_n": 5.25,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgL-h8gL": {
+    "slips": 0,
+    "peak_n": 4.81,
+    "engaged": 0.87,
+    "state": "locked"
+   },
+   "hhgL-hcgL": {
+    "slips": 0,
+    "peak_n": 1.6,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gR-igaR": {
+    "slips": 0,
+    "peak_n": 4.41,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgR-h8gR": {
+    "slips": 0,
+    "peak_n": 4.66,
+    "engaged": 0.89,
+    "state": "locked"
+   },
+   "hhgR-hcgR": {
+    "slips": 0,
+    "peak_n": 1.54,
+    "engaged": 0.0,
+    "state": "free"
+   },
+   "rcsL-rbsL": {
+    "slips": 0,
+    "peak_n": 0.4,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rcsR-rbsR": {
+    "slips": 0,
+    "peak_n": 0.4,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "rchL",
+    "sprockets": [
+     "rcsL",
+     "rbsL"
+    ],
+    "peak_n": 0.4,
+    "gap_min_mm": -0.05,
+    "gap_max_mm": 0.01,
+    "axial_max_mm": 0.49,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "rchR",
+    "sprockets": [
+     "rcsR",
+     "rbsR"
+    ],
+    "peak_n": 0.4,
+    "gap_min_mm": -0.15,
+    "gap_max_mm": 0.05,
+    "axial_max_mm": 0.49,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 1.28,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7",
+   "7.82 s mesh hhgR-hcgR locked -> free (centre distance +0.00 mm, axial offset 7.4 mm, sliding 0.00 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 1259.2,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W16_steps_plain",
+  "wall": 1260.6,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "iaaL cluster has 4.0 mm of axial play (free +0.0 / -4.0 mm): gears and wheels on it wander and rub",
+    "iaaR cluster has 4.0 mm of axial play (free +4.0 / -0.0 mm): gears and wheels on it wander and rub",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 7.0 mm it is out of mesh with igaL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 6.9 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgL (on hhaL) can slide 8.0 mm (-axis -y) until hhbL66 touches hvL; after 6.7 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 6.9 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgR (on hhaR) can slide 8.0 mm (+axis +y) until hhbR66 touches hvR; after 6.7 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hvL, hvR, hxL55, hxL71, hxR55 and 1 more parts form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints."
+   ]
+  },
+  "stats": {
+   "n_parts": 194,
+   "mass_g": 650.21,
+   "length_mm": 244.92,
+   "width_mm": 240.0,
+   "height_mm": 136.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W16_steps_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W16_steps_plain\\contact_overview.jpg"
+  ]
+ }
+}

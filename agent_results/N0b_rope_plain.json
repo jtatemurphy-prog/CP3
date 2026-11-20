@@ -1,0 +1,179 @@
+{
+ "id": "N0b_rope_plain",
+ "job": {
+  "id": "N0b_rope_plain",
+  "kind": "sim",
+  "design": "agent_designs/N0b.json",
+  "bench": "rope",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "rope",
+  "level": 1,
+  "crossed": false,
+  "time_s": 6.789,
+  "reached_goal_s": null,
+  "max_progress": 0.21,
+  "max_progress_m": 0.1744,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 4.66,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 5.59,
+    "engaged": 0.57,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.66,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 5.22,
+    "engaged": 0.8,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 4.58,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.59,
+    "engaged": 0.99,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 1.91,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 2.17,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfL-sprL": {
+    "slips": 0,
+    "peak_n": 11.92,
+    "engaged": 0.0,
+    "state": "free"
+   },
+   "spfR-sprR": {
+    "slips": 0,
+    "peak_n": 11.02,
+    "engaged": 0.0,
+    "state": "free"
+   }
+  },
+  "chains": [
+   {
+    "name": "chL",
+    "sprockets": [
+     "spfL",
+     "sprL"
+    ],
+    "peak_n": 11.92,
+    "gap_min_mm": -2.79,
+    "gap_max_mm": 2.76,
+    "axial_max_mm": 5.02,
+    "skips": 0,
+    "state": "free"
+   },
+   {
+    "name": "chR",
+    "sprockets": [
+     "spfR",
+     "sprR"
+    ],
+    "peak_n": 11.02,
+    "gap_min_mm": -2.7,
+    "gap_max_mm": 1.94,
+    "axial_max_mm": 3.55,
+    "skips": 0,
+    "state": "free"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.34,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7",
+   "2.69 s mesh spfL-sprL locked -> free (centre distance +1.02 mm, axial offset 1.5 mm, sliding -0.00 m/s)",
+   "2.69 s mesh spfR-sprR locked -> free (centre distance +1.02 mm, axial offset 2.2 mm, sliding 0.00 m/s)",
+   "2.75 s mesh spfR-sprR free -> locked (centre distance +1.00 mm, axial offset 1.7 mm, sliding 0.00 m/s)",
+   "2.76 s mesh spfR-sprR locked -> free (centre distance +1.00 mm, axial offset 1.6 mm, sliding 0.00 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 778.9,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\N0b_rope_plain",
+  "wall": 780.3,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "axfL (with wfL, gfL, spfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 9.4 mm it comes out of the motor motfL's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "gfL (on axfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 7.0 mm it is out of mesh with igaL and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "spfL (on axfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 2.0 mm it is off the line of the chain to sprL (it throws the chain) and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "axfR (with wfR, gfR, spfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 9.4 mm it comes out of the motor motfR's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "gfR (on axfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 7.0 mm it is out of mesh with igaR and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "spfR (on axfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 2.0 mm it is off the line of the chain to sprR (it throws the chain) and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster."
+   ]
+  },
+  "stats": {
+   "n_parts": 201,
+   "mass_g": 506.31,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 136.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\N0b_rope_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\N0b_rope_plain\\contact_overview.jpg"
+  ]
+ }
+}

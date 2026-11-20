@@ -1,0 +1,169 @@
+{
+ "obstacle": "steps",
+ "level": 1,
+ "crossed": false,
+ "time_s": 8.069,
+ "reached_goal_s": null,
+ "max_progress": 0.529,
+ "max_progress_m": 0.2144,
+ "failure": "stuck",
+ "simulator": "crossbot-mujoco",
+ "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+ "diverged": false,
+ "broken_joints": [],
+ "gear_meshes": {
+  "gfL-igaL": {
+   "slips": 0,
+   "peak_n": 5.47,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "grL-igbL": {
+   "slips": 0,
+   "peak_n": 5.11,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "gfR-igaR": {
+   "slips": 0,
+   "peak_n": 4.6,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "grR-igbR": {
+   "slips": 0,
+   "peak_n": 5.84,
+   "engaged": 0.94,
+   "state": "locked"
+  },
+  "rgfL-ra8L": {
+   "slips": 0,
+   "peak_n": 14.21,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rgfR-ra8R": {
+   "slips": 0,
+   "peak_n": 14.2,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "cgL-igbL": {
+   "slips": 0,
+   "peak_n": 5.39,
+   "engaged": 0.98,
+   "state": "locked"
+  },
+  "cgR-igbR": {
+   "slips": 0,
+   "peak_n": 5.54,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "h8gL-igaL": {
+   "slips": 0,
+   "peak_n": 5.26,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgL-h8gL": {
+   "slips": 0,
+   "peak_n": 4.81,
+   "engaged": 0.86,
+   "state": "locked"
+  },
+  "hhgL-hcgL": {
+   "slips": 0,
+   "peak_n": 1.58,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "h8gR-igaR": {
+   "slips": 0,
+   "peak_n": 4.59,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "hcgR-h8gR": {
+   "slips": 0,
+   "peak_n": 4.69,
+   "engaged": 0.89,
+   "state": "locked"
+  },
+  "hhgR-hcgR": {
+   "slips": 0,
+   "peak_n": 1.33,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rcsL-rbsL": {
+   "slips": 0,
+   "peak_n": 0.42,
+   "engaged": 1.0,
+   "state": "locked"
+  },
+  "rcsR-rbsR": {
+   "slips": 0,
+   "peak_n": 0.42,
+   "engaged": 1.0,
+   "state": "locked"
+  }
+ },
+ "chains": [
+  {
+   "name": "rchL",
+   "sprockets": [
+    "rcsL",
+    "rbsL"
+   ],
+   "peak_n": 0.42,
+   "gap_min_mm": -0.04,
+   "gap_max_mm": 0.01,
+   "axial_max_mm": 0.47,
+   "skips": 0,
+   "state": "locked"
+  },
+  {
+   "name": "rchR",
+   "sprockets": [
+    "rcsR",
+    "rbsR"
+   ],
+   "peak_n": 0.42,
+   "gap_min_mm": -0.13,
+   "gap_max_mm": 0.05,
+   "axial_max_mm": 0.47,
+   "skips": 0,
+   "state": "locked"
+  }
+ ],
+ "mesh_events_dropped": 0,
+ "leads": [
+  {
+   "dev": "motf",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "motr",
+   "to": "receiver",
+   "peak_n": 0.0,
+   "unplugged": false
+  },
+  {
+   "dev": "receiver",
+   "to": "battery",
+   "peak_n": 0.0,
+   "unplugged": false
+  }
+ ],
+ "mechanisms": {},
+ "stud_peak_load_ratio": 1.3,
+ "motor_program_log": [
+  "0.04 s motf: 7",
+  "0.04 s motr: 7"
+ ],
+ "valid": true,
+ "wall_s": 1112.5
+}

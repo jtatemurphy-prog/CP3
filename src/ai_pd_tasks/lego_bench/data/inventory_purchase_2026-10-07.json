@@ -1,0 +1,12 @@
+{
+ "note": "Planned purchase (user, 2026-10-07): more Technic bricks with holes and a second genuine LEGO 8884 IR receiver. Added to the owned inventory by parts.owned_inventory() unless LEGO_BENCH_NO_PURCHASE=1. The final shopping list is what the designs actually use beyond the owned counts.",
+ "parts": {
+  "3703": 35,
+  "32018": 25,
+  "3895": 25,
+  "3702": 20,
+  "3894": 20,
+  "3701": 10,
+  "58123c01": 1
+ }
+}

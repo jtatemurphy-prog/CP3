@@ -1,0 +1,135 @@
+{
+ "id": "R6_rope_plain",
+ "job": {
+  "id": "R6_rope_plain",
+  "kind": "sim",
+  "design": "agent_designs/R6.json",
+  "bench": "rope",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "rope",
+  "level": 1,
+  "crossed": false,
+  "time_s": 1.599,
+  "reached_goal_s": null,
+  "max_progress": 0.158,
+  "max_progress_m": 0.1324,
+  "failure": "broke (axrL, grL, wrL)",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 4.05,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 2.53,
+    "engaged": 0.0,
+    "state": "free"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 1.9,
+    "engaged": 0.61,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 7.52,
+    "engaged": 0.75,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.92,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 2.95,
+    "engaged": 0.99,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 2.97,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 4.94,
+    "engaged": 0.89,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery2",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.27,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7",
+   "0.99 s mesh grL-igbL locked -> free (centre distance +0.04 mm, axial offset 7.7 mm, sliding 0.00 m/s)"
+  ],
+  "valid": true,
+  "wall_s": 406.7,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R6_rope_plain",
+  "wall": 409.1,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "grL (on axrL) can slide 16.0 mm (-axis -y) until wrL touches wrR; after 7.0 mm it is out of mesh with igbL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "gfR (on axfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "battery, bplL is held to bbrL by a single row of 6 studs, which works like a hinge: bending about the row peels the studs one by one (worst design load 0.87 x strength). Use a wider joint (two rows) or brace it.",
+    "battery2, bplR is held to bbrR by a single row of 6 studs, which works like a hinge: bending about the row peels the studs one by one (worst design load 0.87 x strength). Use a wider joint (two rows) or brace it."
+   ]
+  },
+  "stats": {
+   "n_parts": 111,
+   "mass_g": 677.2,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R6_rope_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\R6_rope_plain\\contact_overview.jpg"
+  ]
+ }
+}

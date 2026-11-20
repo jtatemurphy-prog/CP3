@@ -1,0 +1,111 @@
+{
+ "id": "S3_000_steps_plain",
+ "job": {
+  "id": "S3_000_steps_plain",
+  "kind": "sim",
+  "design": "agent_designs/S3_000.json",
+  "bench": "steps",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "steps",
+  "level": 1,
+  "crossed": false,
+  "time_s": 4.21,
+  "reached_goal_s": null,
+  "max_progress": 0.154,
+  "max_progress_m": 0.0542,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 3.78,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 4.74,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 2.14,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 2.09,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.45,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7"
+  ],
+  "valid": true,
+  "wall_s": 539.2,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S3_000_steps_plain",
+  "wall": 540.4,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "axfL (with wfL, gfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 9.4 mm it comes out of the motor motfL's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "gfL (on axfL) can slide 16.0 mm (-axis -y) until wfL touches wfR; after 7.0 mm it is out of mesh with igaL and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "axfR (with wfR, gfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 9.4 mm it comes out of the motor motfR's output (the drive is lost). Only the friction of the cross fit holds it there. Add a bush or stop so it cannot travel that far.",
+    "gfR (on axfR) can slide 16.0 mm (+axis +y) until wfR touches wfL; after 7.0 mm it is out of mesh with igaR and the drive stops. Only the friction of the cross fit holds it. Close the gap with a bush or move a part so it stops the cluster.",
+    "raxr cluster has 8.0 mm of axial play (free +4.0 / -4.0 mm): gears and wheels on it wander and rub"
+   ]
+  },
+  "stats": {
+   "n_parts": 91,
+   "mass_g": 478.01,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 144.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "FWD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S3_000_steps_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\S3_000_steps_plain\\contact_overview.jpg"
+  ]
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "id": "W7_rope_plain",
+ "job": {
+  "id": "W7_rope_plain",
+  "kind": "sim",
+  "design": "agent_designs/W7.json",
+  "bench": "rope",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "rope",
+  "level": 1,
+  "crossed": false,
+  "time_s": 16.58,
+  "reached_goal_s": null,
+  "max_progress": 0.732,
+  "max_progress_m": 0.6492,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 5.87,
+    "engaged": 0.96,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 1.65,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 1.4,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 4.03,
+    "engaged": 0.99,
+    "state": "locked"
+   },
+   "rgfL-hcgL": {
+    "slips": 0,
+    "peak_n": 5.11,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-hcgR": {
+    "slips": 0,
+    "peak_n": 2.02,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "cgL-igbL": {
+    "slips": 0,
+    "peak_n": 3.83,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "cgR-igbR": {
+    "slips": 0,
+    "peak_n": 2.59,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gL-igaL": {
+    "slips": 0,
+    "peak_n": 5.7,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgL-h8gL": {
+    "slips": 0,
+    "peak_n": 5.14,
+    "engaged": 0.9,
+    "state": "locked"
+   },
+   "hhgL-hcgL": {
+    "slips": 0,
+    "peak_n": 2.69,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gR-igaR": {
+    "slips": 0,
+    "peak_n": 0.59,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgR-h8gR": {
+    "slips": 0,
+    "peak_n": 1.12,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hhgR-hcgR": {
+    "slips": 0,
+    "peak_n": 0.46,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rcsL-rbsL": {
+    "slips": 0,
+    "peak_n": 0.54,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rcsR-rbsR": {
+    "slips": 0,
+    "peak_n": 0.54,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "rchL",
+    "sprockets": [
+     "rcsL",
+     "rbsL"
+    ],
+    "peak_n": 0.54,
+    "gap_min_mm": -0.04,
+    "gap_max_mm": 0.01,
+    "axial_max_mm": 0.53,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "rchR",
+    "sprockets": [
+     "rcsR",
+     "rbsR"
+    ],
+    "peak_n": 0.54,
+    "gap_min_mm": -0.07,
+    "gap_max_mm": 0.02,
+    "axial_max_mm": 0.53,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 1.11,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7"
+  ],
+  "valid": true,
+  "wall_s": 1563.4,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W7_rope_plain",
+  "wall": 1564.8,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "igaL (on iaaL) can slide 8.0 mm (-axis -y) until ibuaL38 touches wfL; after 7.0 mm it is out of mesh with gfL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaL (on iaaL) can slide 8.0 mm (-axis -y) until ibuaL38 touches wfL; after 7.0 mm it is out of mesh with h8gL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaR (on iaaR) can slide 8.0 mm (+axis +y) until ibuaR38 touches wfR; after 7.0 mm it is out of mesh with gfR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaR (on iaaR) can slide 8.0 mm (+axis +y) until ibuaR38 touches wfR; after 7.0 mm it is out of mesh with h8gR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 7.0 mm it is out of mesh with igaL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 6.9 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgL (on hcaL) can slide 8.2 mm (-axis -y) until hcbL touches hwL; after 6.7 mm it is out of mesh with rgfL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgL (on hcaL) can slide 8.2 mm (-axis -y) until hcbL touches hwL; after 6.9 mm it is out of mesh with h8gL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgL (on hcaL) can slide 8.2 mm (-axis -y) until hcbL touches hwL; after 6.7 mm it is out of mesh with hhgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgL (on hhaL) can slide 8.0 mm (-axis -y) until hhbL66 touches hvL; after 6.7 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 6.9 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgR (on hcaR) can slide 8.2 mm (+axis +y) until hcbR touches hwR; after 6.7 mm it is out of mesh with rgfR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgR (on hcaR) can slide 8.2 mm (+axis +y) until hcbR touches hwR; after 6.9 mm it is out of mesh with h8gR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcgR (on hcaR) can slide 8.2 mm (+axis +y) until hcbR touches hwR; after 6.7 mm it is out of mesh with hhgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hhgR (on hhaR) can slide 8.0 mm (+axis +y) until hhbR66 touches hvR; after 6.7 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hvL, hvR, hxL55, hxL71, hxR55 and 1 more parts form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints."
+   ]
+  },
+  "stats": {
+   "n_parts": 197,
+   "mass_g": 659.84,
+   "length_mm": 244.92,
+   "width_mm": 240.0,
+   "height_mm": 136.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W7_rope_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\W7_rope_plain\\contact_overview.jpg"
+  ]
+ }
+}

@@ -1,0 +1,1 @@
+"""The brick design library: bricks.design (Design, DesignPart, DesignConnection, validate, Budget, place), bricks.parts (bench_parts, inventory_part_set), bricks.obstacles, bricks.racks, bricks.treads."""

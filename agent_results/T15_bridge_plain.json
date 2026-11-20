@@ -1,0 +1,164 @@
+{
+ "id": "T15_bridge_plain",
+ "job": {
+  "id": "T15_bridge_plain",
+  "kind": "sim",
+  "design": "agent_designs/T15.json",
+  "bench": "bridge",
+  "nudge": "plain",
+  "video": true,
+  "record": false,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "bridge",
+  "level": 1,
+  "crossed": true,
+  "time_s": 1.689,
+  "reached_goal_s": 1.689,
+  "max_progress": 1.398,
+  "max_progress_m": 1.1748,
+  "failure": null,
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.35,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 0.3,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 0.98,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 0.63,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 0.4,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 0.42,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 0.11,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfL-sprL": {
+    "slips": 0,
+    "peak_n": 8.25,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "spfR-sprR": {
+    "slips": 0,
+    "peak_n": 7.26,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [
+   {
+    "name": "chL",
+    "sprockets": [
+     "spfL",
+     "sprL"
+    ],
+    "peak_n": 8.25,
+    "gap_min_mm": -0.0,
+    "gap_max_mm": -0.0,
+    "axial_max_mm": 0.11,
+    "skips": 0,
+    "state": "locked"
+   },
+   {
+    "name": "chR",
+    "sprockets": [
+     "spfR",
+     "sprR"
+    ],
+    "peak_n": 7.26,
+    "gap_min_mm": -0.0,
+    "gap_max_mm": -0.0,
+    "axial_max_mm": 0.11,
+    "skips": 0,
+    "state": "locked"
+   }
+  ],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motfL",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motfR",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.1,
+  "motor_program_log": [
+   "0.04 s motfL: 7",
+   "0.04 s motfR: 7"
+  ],
+  "valid": true,
+  "wall_s": 434.5,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T15_bridge_plain",
+  "wall": 435.6,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "raxr cluster has 4.2 mm of axial play (free +0.1 / -4.0 mm): gears and wheels on it wander and rub"
+   ]
+  },
+  "stats": {
+   "n_parts": 213,
+   "mass_g": 696.22,
+   "length_mm": 188.26,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T15_bridge_plain\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\T15_bridge_plain\\contact_overview.jpg"
+  ]
+ }
+}

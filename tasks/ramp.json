@@ -1,0 +1,174 @@
+{
+ "id": "ramp_L1",
+ "bench": "ramp",
+ "level": 1,
+ "cap": 400,
+ "description": "sharp ramp 30.02 deg (a 460 mm foam-core board hinged at the plateau edge, its foot resting on the floor) up to a plateau 233.6 mm high",
+ "params": {
+  "slope_deg": 30.02,
+  "rise_m": 0.2336,
+  "seat_m": 0.2208,
+  "stop_x_m": -0.001849,
+  "seat_x_m": 0.382151,
+  "plateau_x_m": 0.406151,
+  "stop_to_seat_studs": 48,
+  "seat_studs": 3,
+  "crest_step_mm": -0.69,
+  "crest_notch_mm": 10.3,
+  "foot_lip_mm": 4.16,
+  "panel_top_corner_m": [
+   0.395896,
+   0.234285
+  ],
+  "slope_nominal_deg": 30,
+  "surface": "foam_board",
+  "panel_mm": [
+   460.0,
+   304.0,
+   4.8
+  ],
+  "ramp_length_m": 0.406151,
+  "slope_length_m": 0.46,
+  "ladder": "final",
+  "panel_hinge_m": [
+   0.397097,
+   0.232207
+  ],
+  "panel_kg": 0.15,
+  "start_board_mm": 500.0
+ },
+ "start": {
+  "front_x": -0.037849,
+  "rear_x": null,
+  "y": 0.0,
+  "surface_z": 0.0,
+  "surface_x": 0.0,
+  "pitch_deg": 0.0,
+  "align": "track",
+  "approach_board_mm": 500.0
+ },
+ "goal": {
+  "x_min": 0.416151,
+  "x_max": 1000000000.0,
+  "y_half": 1000000000.0,
+  "z_min": 0.2296,
+  "z_max": 1.0,
+  "ref": "rear",
+  "hold_s": 0.0
+ },
+ "fail_z_m": -0.05,
+ "floor_z_m": 0.0,
+ "floor_surface": "abs",
+ "time_limit_s": 36.7,
+ "lane_half_width_m": 0.152,
+ "stuck_window_s": 4.0,
+ "footprint": {
+  "min": [
+   -0.0024,
+   -0.152,
+   0.0
+  ],
+  "max": [
+   0.75815,
+   0.152,
+   0.23429
+  ],
+  "size": [
+   0.76055,
+   0.304,
+   0.23429
+  ],
+  "top_above_floor": 0.23429
+ },
+ "shapes": [
+  {
+   "name": "ramp",
+   "kind": "box",
+   "size": [
+    0.46,
+    0.304,
+    0.0048
+   ],
+   "pos": [
+    0.197948,
+    0.0,
+    0.117143
+   ],
+   "quat": [
+    0.0,
+    -0.2589753707012506,
+    0.0,
+    0.9658839254124431
+   ],
+   "axis": "X",
+   "surface": "foam_board",
+   "color": [
+    0.12,
+    0.12,
+    0.12
+   ],
+   "dynamic": true,
+   "mass_kg": 0.15
+  },
+  {
+   "name": "seat",
+   "kind": "box",
+   "size": [
+    0.023999999999999966,
+    0.304,
+    0.2208
+   ],
+   "pos": [
+    0.39415100000000003,
+    0.0,
+    0.1104
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": "X",
+   "surface": "abs",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ],
+   "dynamic": false,
+   "mass_kg": 0.0
+  },
+  {
+   "name": "plateau",
+   "kind": "box",
+   "size": [
+    0.35200000000000004,
+    0.304,
+    0.2336
+   ],
+   "pos": [
+    0.582151,
+    0.0,
+    0.1168
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": "X",
+   "surface": "abs",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ],
+   "dynamic": false,
+   "mass_kg": 0.0
+  }
+ ],
+ "units": "m",
+ "frame": "x = travel, z up, start surface z = 0"
+}

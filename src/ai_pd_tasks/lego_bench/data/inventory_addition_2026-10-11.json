@@ -1,0 +1,14 @@
+{
+ "note": "Benchmark library addition (user, 2026-10-11): 10 more of every Technic brick 1xN with holes, on top of the owned inventory and the 2026-10-07 purchase. Added by parts.owned_inventory() unless LEGO_BENCH_NO_PURCHASE=1.",
+ "parts": {
+  "6541": 10,
+  "3700": 10,
+  "3701": 10,
+  "3894": 10,
+  "3702": 10,
+  "2730": 10,
+  "3895": 10,
+  "32018": 10,
+  "3703": 10
+ }
+}

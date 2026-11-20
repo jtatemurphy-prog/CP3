@@ -1,0 +1,51 @@
+{
+ "id": "C1g250_steps_plain",
+ "job": {
+  "id": "C1g250_steps_plain_skipped",
+  "kind": "validate",
+  "design": "agent_designs/C1.json",
+  "bench": "steps"
+ },
+ "result": {
+  "ok": true,
+  "errors": [],
+  "warnings": [
+   "cross ibuaL30->iaaL: ibuaL30 overhangs the axle end by 0.20 mm",
+   "cross ibumL30->iamL: ibumL30 overhangs the axle end by 0.20 mm",
+   "cross ibumL58->iamL: ibumL58 overhangs the axle end by 0.20 mm",
+   "cross ibubL30->iabL: ibubL30 overhangs the axle end by 0.20 mm",
+   "cross ibubL58->iabL: ibubL58 overhangs the axle end by 0.20 mm",
+   "cross ibuaR30->iaaR: ibuaR30 overhangs the axle end by 0.20 mm",
+   "cross ibumR30->iamR: ibumR30 overhangs the axle end by 0.20 mm",
+   "cross ibumR58->iamR: ibumR58 overhangs the axle end by 0.20 mm",
+   "cross ibubR30->iabR: ibubR30 overhangs the axle end by 0.20 mm",
+   "cross ibubR58->iabR: ibubR58 overhangs the axle end by 0.20 mm",
+   "stud receiver->battery: declares 8 studs, geometry engages 10 (break force uses 8)",
+   "postfL0 and tbL are joined by a single pin (free to turn about it in reality)",
+   "postfL0 and segfL are joined by a single pin (free to turn about it in reality)",
+   "postfL1 and ubL are joined by a single pin (free to turn about it in reality)",
+   "postrL0 and tbL are joined by a single pin (free to turn about it in reality)",
+   "postrL0 and segrL are joined by a single pin (free to turn about it in reality)",
+   "postrL0 and ubL are joined by a single pin (free to turn about it in reality)",
+   "postrL1 and ubL are joined by a single pin (free to turn about it in reality)",
+   "motL and ubL are joined by a single pin (free to turn about it in reality)",
+   "postfR0 and tbR are joined by a single pin (free to turn about it in reality)"
+  ],
+  "stats": {
+   "n_parts": 101,
+   "mass_g": 484.77,
+   "length_mm": 190.64,
+   "width_mm": 224.0,
+   "height_mm": 176.12,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 1.2791,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "review": {
+   "critical": [],
+   "warnings": []
+  }
+ }
+}

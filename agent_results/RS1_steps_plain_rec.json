@@ -1,0 +1,186 @@
+{
+ "id": "RS1_steps_plain_rec",
+ "job": {
+  "id": "RS1_steps_plain_rec",
+  "kind": "sim",
+  "design": "agent_designs/RS1.json",
+  "bench": "steps",
+  "nudge": "plain",
+  "video": true,
+  "record": true,
+  "wall": 2400
+ },
+ "result": {
+  "obstacle": "steps",
+  "level": 1,
+  "crossed": false,
+  "time_s": 4.779,
+  "reached_goal_s": null,
+  "max_progress": 0.227,
+  "max_progress_m": 0.0884,
+  "failure": "stuck",
+  "simulator": "crossbot-mujoco",
+  "params_file": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\simulator\\params_v14.json",
+  "diverged": false,
+  "broken_joints": [],
+  "gear_meshes": {
+   "gfL-igaL": {
+    "slips": 0,
+    "peak_n": 5.25,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grL-igbL": {
+    "slips": 0,
+    "peak_n": 2.18,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "gfR-igaR": {
+    "slips": 0,
+    "peak_n": 2.37,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "grR-igbR": {
+    "slips": 0,
+    "peak_n": 6.43,
+    "engaged": 0.98,
+    "state": "locked"
+   },
+   "rgfL-igaL": {
+    "slips": 0,
+    "peak_n": 3.0,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgfR-igaR": {
+    "slips": 0,
+    "peak_n": 2.98,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrL-igbL": {
+    "slips": 0,
+    "peak_n": 4.34,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "rgrR-igbR": {
+    "slips": 0,
+    "peak_n": 4.35,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gL-igaL": {
+    "slips": 0,
+    "peak_n": 1.47,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgL-h8gL": {
+    "slips": 0,
+    "peak_n": 1.19,
+    "engaged": 0.96,
+    "state": "locked"
+   },
+   "hhgL-hcgL": {
+    "slips": 0,
+    "peak_n": 1.05,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "h8gR-igaR": {
+    "slips": 0,
+    "peak_n": 1.48,
+    "engaged": 1.0,
+    "state": "locked"
+   },
+   "hcgR-h8gR": {
+    "slips": 0,
+    "peak_n": 1.21,
+    "engaged": 0.96,
+    "state": "locked"
+   },
+   "hhgR-hcgR": {
+    "slips": 0,
+    "peak_n": 1.03,
+    "engaged": 1.0,
+    "state": "locked"
+   }
+  },
+  "chains": [],
+  "mesh_events_dropped": 0,
+  "leads": [
+   {
+    "dev": "motf",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "motr",
+    "to": "receiver",
+    "peak_n": 0.0,
+    "unplugged": false
+   },
+   {
+    "dev": "receiver",
+    "to": "battery2",
+    "peak_n": 0.0,
+    "unplugged": false
+   }
+  ],
+  "mechanisms": {},
+  "stud_peak_load_ratio": 0.26,
+  "motor_program_log": [
+   "0.04 s motf: 7",
+   "0.04 s motr: 7"
+  ],
+  "valid": true,
+  "wall_s": 846.3,
+  "dir": "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\RS1_steps_plain_rec",
+  "wall": 847.5,
+  "review": {
+   "critical": [],
+   "warnings": [
+    "axrL cluster has 2.0 mm of axial play (free +0.0 / -2.0 mm): gears and wheels on it wander and rub",
+    "igaL (on iaaL) can slide 7.2 mm (-axis -y) until igaL touches hwL; after 7.0 mm it is out of mesh with gfL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaL (on iaaL) can slide 7.2 mm (-axis -y) until igaL touches hwL; after 6.9 mm it is out of mesh with rgfL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaL (on iaaL) can slide 7.2 mm (-axis -y) until igaL touches hwL; after 7.0 mm it is out of mesh with h8gL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "axfR cluster has 2.0 mm of axial play (free +2.0 / -0.0 mm): gears and wheels on it wander and rub",
+    "igaR (on iaaR) can slide 7.2 mm (+axis +y) until igaR touches hwR; after 7.0 mm it is out of mesh with gfR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaR (on iaaR) can slide 7.2 mm (+axis +y) until igaR touches hwR; after 6.9 mm it is out of mesh with rgfR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "igaR (on iaaR) can slide 7.2 mm (+axis +y) until igaR touches hwR; after 7.0 mm it is out of mesh with h8gR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 7.0 mm it is out of mesh with igaL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gL (on h8aL) can slide 8.0 mm (+axis +y) until h8gL touches hxL71; after 6.9 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcaL cluster has 3.4 mm of axial play (free +0.1 / -3.2 mm): gears and wheels on it wander and rub",
+    "hhgL (on hhaL) can slide 8.0 mm (-axis -y) until hhbL66 touches hvL; after 6.7 mm it is out of mesh with hcgL and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 7.0 mm it is out of mesh with igaR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "h8gR (on h8aR) can slide 8.0 mm (-axis -y) until h8gR touches hxR71; after 6.9 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "hcaR cluster has 3.4 mm of axial play (free +3.2 / -0.1 mm): gears and wheels on it wander and rub",
+    "hhgR (on hhaR) can slide 8.0 mm (+axis +y) until hhbR66 touches hvR; after 6.7 mm it is out of mesh with hcgR and the drive stops. Nothing holds it there; straight teeth do not push it, but side loads on the wheels can walk it along the axle. Close the gap with a bush or move a part so it stops the cluster.",
+    "battery, bplL is held to bbrL by a single row of 6 studs, which works like a hinge: bending about the row peels the studs one by one (worst design load 0.87 x strength). Use a wider joint (two rows) or brace it.",
+    "battery2, bplR is held to bbrR by a single row of 6 studs, which works like a hinge: bending about the row peels the studs one by one (worst design load 0.87 x strength). Use a wider joint (two rows) or brace it.",
+    "hxL55, hxL71, hvL form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints.",
+    "hxR55, hxR71, hvR form a linkage of single-pin joints that can rack (e.g. a pinned parallelogram): only pin friction keeps the shape. Add a diagonal brace or a second pin in one of the joints."
+   ]
+  },
+  "stats": {
+   "n_parts": 151,
+   "mass_g": 738.0,
+   "length_mm": 228.92,
+   "width_mm": 240.0,
+   "height_mm": 137.72,
+   "ground_clearance_mm": 10.38,
+   "wheel_radius_mm": 31.32,
+   "expected_speed_m_s": 0.7216,
+   "drive": "4WD",
+   "n_motors": 2
+  },
+  "contact_sheets": [
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\RS1_steps_plain_rec\\contact_follow.jpg",
+   "C:\\Users\\Tate Murphy\\Desktop\\CP3\\_sims\\RS1_steps_plain_rec\\contact_overview.jpg"
+  ]
+ }
+}

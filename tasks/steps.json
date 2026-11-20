@@ -1,0 +1,149 @@
+{
+ "id": "steps_L1",
+ "bench": "steps",
+ "level": 1,
+ "cap": 400,
+ "description": "3 brick steps of 28.8 mm, 72 mm treads",
+ "params": {
+  "step_mm": 28.8,
+  "count": 3,
+  "tread_m": 0.072,
+  "riser_plates": 9,
+  "ladder": "final",
+  "start_board_mm": 500.0
+ },
+ "start": {
+  "front_x": -0.03,
+  "rear_x": null,
+  "y": 0.0,
+  "surface_z": 0.0,
+  "surface_x": 0.0,
+  "pitch_deg": 0.0,
+  "align": "track",
+  "approach_board_mm": 500.0
+ },
+ "goal": {
+  "x_min": 0.154,
+  "x_max": 1000000000.0,
+  "y_half": 1000000000.0,
+  "z_min": 0.0834,
+  "z_max": 1.0,
+  "ref": "rear",
+  "hold_s": 0.0
+ },
+ "fail_z_m": -0.05,
+ "floor_z_m": 0.0,
+ "floor_surface": "abs",
+ "time_limit_s": 64.3,
+ "lane_half_width_m": 0.152,
+ "stuck_window_s": 4.0,
+ "footprint": {
+  "min": [
+   0.0,
+   -0.152,
+   0.0
+  ],
+  "max": [
+   0.496,
+   0.152,
+   0.0864
+  ],
+  "size": [
+   0.496,
+   0.304,
+   0.0864
+  ],
+  "top_above_floor": 0.0864
+ },
+ "shapes": [
+  {
+   "name": "step0",
+   "kind": "box",
+   "size": [
+    0.072,
+    0.304,
+    0.0288
+   ],
+   "pos": [
+    0.036,
+    0.0,
+    0.0144
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": "X",
+   "surface": "abs",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ],
+   "dynamic": false,
+   "mass_kg": 0.0
+  },
+  {
+   "name": "step1",
+   "kind": "box",
+   "size": [
+    0.072,
+    0.304,
+    0.0576
+   ],
+   "pos": [
+    0.10799999999999998,
+    0.0,
+    0.0288
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": "X",
+   "surface": "abs",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ],
+   "dynamic": false,
+   "mass_kg": 0.0
+  },
+  {
+   "name": "step2",
+   "kind": "box",
+   "size": [
+    0.352,
+    0.304,
+    0.0864
+   ],
+   "pos": [
+    0.32,
+    0.0,
+    0.0432
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": "X",
+   "surface": "abs",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ],
+   "dynamic": false,
+   "mass_kg": 0.0
+  }
+ ],
+ "units": "m",
+ "frame": "x = travel, z up, start surface z = 0"
+}

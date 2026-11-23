@@ -1,0 +1,204 @@
+{
+ "name": "Ev1",
+ "generated": "2026-11-22 23:32",
+ "target": "Ev3.json",
+ "score": {
+  "crossed": 4,
+  "of": 4,
+  "total_time_s": 7.18
+ },
+ "courses": [
+  {
+   "course": "steps",
+   "design": "Ev3.json",
+   "design_sha": "71f7b5d463c5",
+   "checked_at": "2026-11-22 23:30",
+   "time_s": 1.729,
+   "max_progress": 1.806,
+   "runs": {
+    "plain": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.729,
+     "max_progress": 1.806
+    },
+    "offset_1mm": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.669,
+     "max_progress": 1.823
+    },
+    "commands_50ms_late": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.669,
+     "max_progress": 1.8
+    }
+   },
+   "videos": [
+    "_sims/1122_232739_steps_run_71f7b5d4/video/follow.mp4",
+    "_sims/1122_232739_steps_run_71f7b5d4/video/overview.mp4"
+   ],
+   "contact_sheet": "_sims/1122_232739_steps_run_71f7b5d4/contact_overview.jpg",
+   "errors": [],
+   "review_critical": [],
+   "log_tail": null,
+   "accepted": true,
+   "status": "crossed",
+   "why": null
+  },
+  {
+   "course": "rope",
+   "design": "Ev3.json",
+   "design_sha": "71f7b5d463c5",
+   "checked_at": "2026-11-22 23:30",
+   "time_s": 2.28,
+   "max_progress": 1.865,
+   "runs": {
+    "plain": {
+     "passed": true,
+     "failure": null,
+     "time_s": 2.28,
+     "max_progress": 1.865
+    },
+    "offset_1mm": {
+     "passed": true,
+     "failure": null,
+     "time_s": 2.34,
+     "max_progress": 1.864
+    },
+    "commands_50ms_late": {
+     "passed": true,
+     "failure": null,
+     "time_s": 2.25,
+     "max_progress": 1.865
+    }
+   },
+   "videos": [
+    "_sims/1122_232739_rope_run_71f7b5d4/video/follow.mp4",
+    "_sims/1122_232739_rope_run_71f7b5d4/video/overview.mp4"
+   ],
+   "contact_sheet": "_sims/1122_232739_rope_run_71f7b5d4/contact_overview.jpg",
+   "errors": [],
+   "review_critical": [],
+   "log_tail": null,
+   "accepted": true,
+   "status": "crossed",
+   "why": null
+  },
+  {
+   "course": "ramp",
+   "design": "Ev3.json",
+   "design_sha": "71f7b5d463c5",
+   "checked_at": "2026-11-22 23:30",
+   "time_s": 1.739,
+   "max_progress": 1.479,
+   "runs": {
+    "plain": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.739,
+     "max_progress": 1.479
+    },
+    "offset_1mm": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.739,
+     "max_progress": 1.477
+    },
+    "commands_50ms_late": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.749,
+     "max_progress": 1.472
+    }
+   },
+   "videos": [
+    "_sims/1122_232739_ramp_run_71f7b5d4/video/follow.mp4",
+    "_sims/1122_232739_ramp_run_71f7b5d4/video/overview.mp4"
+   ],
+   "contact_sheet": "_sims/1122_232739_ramp_run_71f7b5d4/contact_overview.jpg",
+   "errors": [],
+   "review_critical": [],
+   "log_tail": null,
+   "accepted": true,
+   "status": "crossed",
+   "why": null
+  },
+  {
+   "course": "bridge",
+   "design": "Ev3.json",
+   "design_sha": "71f7b5d463c5",
+   "checked_at": "2026-11-22 23:32",
+   "time_s": 1.429,
+   "max_progress": 1.407,
+   "runs": {
+    "plain": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.429,
+     "max_progress": 1.407
+    },
+    "offset_1mm": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.429,
+     "max_progress": 1.412
+    },
+    "commands_50ms_late": {
+     "passed": true,
+     "failure": null,
+     "time_s": 1.439,
+     "max_progress": 1.408
+    }
+   },
+   "videos": [
+    "_sims/1122_233036_bridge_run_71f7b5d4/video/follow.mp4",
+    "_sims/1122_233036_bridge_run_71f7b5d4/video/overview.mp4"
+   ],
+   "contact_sheet": "_sims/1122_233036_bridge_run_71f7b5d4/contact_overview.jpg",
+   "errors": [],
+   "review_critical": [],
+   "log_tail": null,
+   "accepted": true,
+   "status": "crossed",
+   "why": null
+  }
+ ],
+ "why": {
+  "stuck": "The car stopped making progress for several seconds. Common causes: the motor program brakes or stops too early, the wheels slip or lack torque, or a part catches on the obstacle. Watch the video to see which.",
+  "timeout": "The car was still moving but did not reach the goal within the time limit. Make it faster (gearing, motor level) or make sure it keeps driving until it is past the goal.",
+  "fell": "The car fell off the course (off an edge, the plank or the rope).",
+  "touched": "A part touched the floor of the chasm (rope and bridge). Every part must stay above it, even for an instant: watch the video to see which part dips and when.",
+  "flipped": "The car tipped over and stayed on its side or roof. A lower centre of mass or a wider wheel track helps.",
+  "broke": "Part of the car came apart (a stud joint released or a mechanism separated). Strengthen that joint with more studs or pins.",
+  "left_lane": "The car left the course lane, or a part went around the obstacle instead of over it. Check that it drives straight.",
+  "simulation": "The physics became unstable. This usually means overlapping parts or extreme forces; read the validate warnings.",
+  "wall-clock": "The simulation took too long on this computer and was stopped.",
+  "review": "Every run reached the goal, but the design review found a critical problem (listed below), so the check does not accept the design.",
+  "error": "The simulator did not produce a result. The log below shows why."
+ },
+ "run_names": {
+  "plain": "Plain run",
+  "offset_1mm": "1 mm off-centre",
+  "commands_50ms_late": "Commands 50 ms late"
+ },
+ "tasks": {
+  "steps": {
+   "description": "3 brick steps of 28.8 mm, 72 mm treads",
+   "time_limit_s": 64.3
+  },
+  "rope": {
+   "description": "rope 600 mm span between two brick decks, 0.00 deg incline (goal deck 0.0 mm higher), 12.5 mm sag, 3.0 mm cord",
+   "time_limit_s": 37.2
+  },
+  "ramp": {
+   "description": "sharp ramp 30.02 deg (a 460 mm foam-core board hinged at the plateau edge, its foot resting on the floor) up to a plateau 233.6 mm high",
+   "time_limit_s": 36.7
+  },
+  "bridge": {
+   "description": "printed plank 40 mm wide, 640 mm long over a 99.2 mm drop",
+   "time_limit_s": 31.0
+  }
+ }
+}

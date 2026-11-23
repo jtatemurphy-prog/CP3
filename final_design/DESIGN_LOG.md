@@ -197,3 +197,59 @@ W1/W2 (fr XL, wb 128 via an upper-beam extension, pair / flanged rope wheels).
 - Rope: Q9 2.94 / off 3.34; **Q10 2.77 / off 3.29**. Q10 brick check x4 queued.
 - **Q10 brick check: ACCEPTED on all 4.** steps 2.45 (off 2.43, late 2.45), rope 2.77 (off 3.29, late 2.91), ramp 3.46 (off 3.43, late 3.37), bridge 1.779 (all). **Total 10.46 s** — new best accepted (U12 14.41).
   Q10 = Z4c hardware + motor_program [{t:0, all, level 6}, {t:0.7, all, level 7}].
+
+## 2026-11-22: Ev1 = Q10 + start_gap_mm 0 (final_design/Ev1.json)
+- Q10 had no `start_gap_mm`, so each course used its default gap (steps 30, rope 60, ramp 38, bridge 30 mm). The goal is
+  judged on the vehicle's REAR, so all of that is extra distance. Setting `start_gap_mm: 0` (allowed: 0 <= gap) cuts 158 mm.
+- Same machine (Linux VM), plain runs: Q10 1.779 + 2.44 + 3.48 + 2.92 = 10.62 s -> **Ev1 (gap 0): bridge 1.729, steps 2.36,
+  ramp 3.37, rope 2.67 = 10.13 s**. All 12 acceptance runs pass: steps off 2.42 / late 2.36, rope off 2.55 / late 2.74,
+  ramp off 3.33 / late 3.38, bridge off/late 1.729. Validate + review clean on all 4.
+- Rope robustness (the knife-edge course): gap 0 passes start offsets -0.5..+1.5 mm (incl. the official +1 mm), 0.2/0.5 mm
+  micro-offsets and 10/20/30 ms delays (6/6 micro-perturbations); fails at -0.8, -1 and +2 mm. Old Q10 (gap 60) passes
+  those, but nearly stalls (4.49 s at -0.5 mm, 5.19 s at -1 mm). Gaps 10 and 30 fail -1 mm / the official +1 mm run.
+- Failure mechanism (records): not roll but sideways creep along the cord while climbing the far side (lateral offset
+  grows to 10-18 mm, the cord climbs a 40T flange, stall at deck x ~455). Present in every run (plain drifts to -11 mm and
+  survives); root cause is the short hang depth (~14 mm). A real fix needs a lower CoG relative to the rope-wheel contact.
+- Tried and rejected: L motors (bridge 1.35 s but steps/ramp stuck), full power from t=0 (rope plain stuck), soft start
+  to 0.5 / 0.9 s (no rope robustness gain), removing the dead rear-right idler igbR/grR (-8 g, ramp -0.11 s, but the rope
+  official offset run fails: lateral balance), smaller 55982c01 helper wheels (-14 g, steps stuck).
+- Ramp analysis: on the 30 deg board the XL motors run at ~46 rpm (flat 170): shared-supply sag (supply_r 0.39) + 14%
+  motor friction leave them near stall. Mass is the main lever there (simulator models one global supply, so a second
+  battery box does not help).
+
+## 2026-11-22 evening: Ev2 = Ev1 + two pullback motors (final_design/Ev2.json), 7.11 s
+- Why: the ramp recording showed the XL motors near stall (46 rpm on the slope). The simulator's battery is one shared
+  supply (supply_r 0.39), so extra PF motors make the sag worse (2 XL + 2 L estimated to give LESS ramp torque) and
+  4 PF motors also need a 2nd battery box (max 3 per box). The 12787c01 pullback (spring) motors bypass the supply:
+  0.05 N m x (1 - turns used / 10) x (1 - w / 600 rpm), released at t = 0, ignore the program ("all" skips them).
+- Mount: one per rear wheel axle (axrL/axrR, the 8L axle 3707), body pointing forward (yaw 180) at y +-72..96. The axle
+  is the pullback's motor shaft, so its hinge declarations were removed (a motor shaft may not also be declared turning
+  in a hole; same as the front XL axles); bush 3713 at y +-68 between the 1x15 side beam and the pullback stops it
+  sliding; the rear stop bush aburL/R was removed. The pullback's bottom pin-hole row is 8 mm below the side beam's
+  holes, so two vertical 1x3 liftarms (32523, x -32 and -16, plane y +-68) bridge them with 2L pins. +66 g (684 g).
+  Generator: tools/pb.py (post-processes the Ev1 json).
+- PB1 (wind 10, Q10 program): plain steps 1.539 / rope 2.23 / ramp 1.749 / bridge 1.409 = 6.93 s, but rope 1 mm offset
+  stuck at 0.727 (the usual sideways creep).
+- PBw6 (wind 6) and PBl5 (XL level 5 for 0.7 s, then 7) pass the rope offset run; PBng (default gaps) fails it.
+- **Ev2 = PBl5: all 12 acceptance runs pass.** Plain steps 1.589, rope 2.20, ramp 1.849, bridge 1.469 = **7.11 s**;
+  offset 1.599 / 2.70 / 1.839 / 1.469; 50 ms late 1.599 / 2.21 / 1.859 / 1.479. Validate + review clean (no critical).
+- Rope robustness: passes offsets -2, -1, -0.5 (slow 4.66 s), -0.2, +0.2, +0.5, +1, +2 mm and 20 / 50 ms delays (11/11).
+  Ev1 failed -1, -0.8 and +2 mm.
+- Open: review warns that each pullback hangs on a single-pin linkage (the two 1x3s can rack); add a brace (e.g. a 1x5
+  at x -48 into the pullback's upper pin hole) if a real build is planned.
+
+## 2026-11-22 late: Ev3 (final_design/Ev3.json), 7.00 s, rope made robust
+- Ev2 scored 8.7 s on Evan's Mac: steps/ramp/bridge as here, but rope 3.8 s (2.20 s here) - the slow "stall then
+  recover" rope mode (seen here once, 4.66 s at -0.5 mm).
+- Slow-run record: car drifts ~12 mm sideways while climbing the far side of the cord and sits 2.5 s at deck x ~471.
+  The free helper wheels' inner faces were at |y| 11.2 and their axles reached |y| 7, vs a ~+-4 mm goal saddle post.
+  H26 (tools/hout.py): helper wheels to |y| 26, axles shifted 8 mm out (inner ends |y| 15) -> the -0.5 mm case 2.75 s.
+- Remaining failures (cord riding up a rope-wheel flange after a 10-12 mm drift with ~25 deg roll) came from the rear
+  rope wheel being driven from the LEFT only (mesh forces 44 mm off centre roll the car; larger with the pullbacks).
+  RB2 (tools/rb.py both): add 24T rgrR on the rear rope axle meshing the formerly idle igbR -> rope driven from both
+  sides. The 16T slip chains keep the new loop from binding.
+- Program: full power (L7) and L6->0.7 fail the rope offset / +0.8 mm runs; L5 start is needed. L5 for 0.5 s (RB2a)
+  is faster than 0.7 s and passes everything.
+- **Ev3 = RB2a**: plain steps 1.689 / rope 2.15 / ramp 1.729 / bridge 1.429 = **7.00 s**; offset 1.679 / 2.33 / 1.739
+  / 1.429; late 1.679 / 2.26 / 1.749 / 1.439. Rope passed 14/14 perturbations on two machines (offsets -2..+2 mm,
+  incl. 0.2/0.5/0.8 mm, 50 ms late), 2.14-2.68 s. Validate + review clean, 685 g.

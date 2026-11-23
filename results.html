@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrickBench results</title><style>
+:root{--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;
+--ring:rgba(11,11,11,.10);--good:#0ca30c;--good-text:#006300;--crit:#d03b3b;--warn:#fab219;--bar:#2a78d6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;
+--ink2:#c3c2b7;--grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);--good-text:#0ca30c;--bar:#3987e5;color-scheme:dark}}
+:root[data-theme=dark]{--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#2c2c2a;--axis:#383835;
+--ring:rgba(255,255,255,.10);--good-text:#0ca30c;--bar:#3987e5;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 12px}h3{font-size:16px;margin:0}
+.sub,.desc,.note{color:var(--ink2)}.sub{margin:0}.desc{font-size:13px;margin:4px 0 12px}.note{font-size:13px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:12px;margin-top:20px}
+.tile,.card,.tablewrap{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:16px}
+.hero{font-size:44px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.hero small{font-size:18px;font-weight:500;color:var(--ink2)}
+.tablewrap{padding:0;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--grid);vertical-align:top}
+th{color:var(--ink2);font-weight:600;font-size:13px}tr:last-child td{border-bottom:0}
+td a{color:inherit}.num{text-align:right}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:1px 9px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.b-crossed{background:var(--good);color:#fff}.b-not_crossed,.b-error,.b-invalid{background:var(--crit);color:#fff}
+.b-stale{background:var(--warn);color:#0b0b0b}.b-missing,.b-not_run{border:1px solid var(--axis);color:var(--ink2)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:12px}
+.card{display:flex;flex-direction:column;min-width:0}.head{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.metric{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.metric b{font-size:22px;font-variant-numeric:tabular-nums}
+.track{height:8px;border-radius:4px;background:var(--grid);margin:10px 0 4px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:0 4px 4px 0}
+.runs{list-style:none;padding:0;margin:12px 0;font-size:14px}.runs li{padding:2px 0}
+.ok{color:var(--good-text);font-weight:700}.no{color:var(--crit);font-weight:700}
+.why{font-size:14px;background:var(--page);border-radius:8px;padding:10px 12px;margin:0 0 12px}
+video,.sheet{width:100%;border-radius:8px;background:#000;display:block}
+.links{font-size:13px;margin-top:6px;display:flex;gap:12px;flex-wrap:wrap}.links a{color:var(--bar)}
+details{font-size:13px;margin-top:8px}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;color:var(--ink2)}
+ul.err{margin:6px 0;padding-left:18px;font-size:13px}
+.bad{color:var(--crit)}
+</style></head><body><main id="app"></main>
+<script>
+const D = {"name": "Ev1", "generated": "2026-11-22 23:32", "target": "Ev3.json", "score": {"crossed": 4, "of": 4, "total_time_s": 7.18}, "courses": [{"course": "steps", "design": "Ev3.json", "design_sha": "71f7b5d463c5", "checked_at": "2026-11-22 23:30", "time_s": 1.729, "max_progress": 1.806, "runs": {"plain": {"passed": true, "failure": null, "time_s": 1.729, "max_progress": 1.806}, "offset_1mm": {"passed": true, "failure": null, "time_s": 1.669, "max_progress": 1.823}, "commands_50ms_late": {"passed": true, "failure": null, "time_s": 1.669, "max_progress": 1.8}}, "videos": ["_sims/1122_232739_steps_run_71f7b5d4/video/follow.mp4", "_sims/1122_232739_steps_run_71f7b5d4/video/overview.mp4"], "contact_sheet": "_sims/1122_232739_steps_run_71f7b5d4/contact_overview.jpg", "errors": [], "review_critical": [], "log_tail": null, "accepted": true, "status": "crossed", "why": null}, {"course": "rope", "design": "Ev3.json", "design_sha": "71f7b5d463c5", "checked_at": "2026-11-22 23:30", "time_s": 2.28, "max_progress": 1.865, "runs": {"plain": {"passed": true, "failure": null, "time_s": 2.28, "max_progress": 1.865}, "offset_1mm": {"passed": true, "failure": null, "time_s": 2.34, "max_progress": 1.864}, "commands_50ms_late": {"passed": true, "failure": null, "time_s": 2.25, "max_progress": 1.865}}, "videos": ["_sims/1122_232739_rope_run_71f7b5d4/video/follow.mp4", "_sims/1122_232739_rope_run_71f7b5d4/video/overview.mp4"], "contact_sheet": "_sims/1122_232739_rope_run_71f7b5d4/contact_overview.jpg", "errors": [], "review_critical": [], "log_tail": null, "accepted": true, "status": "crossed", "why": null}, {"course": "ramp", "design": "Ev3.json", "design_sha": "71f7b5d463c5", "checked_at": "2026-11-22 23:30", "time_s": 1.739, "max_progress": 1.479, "runs": {"plain": {"passed": true, "failure": null, "time_s": 1.739, "max_progress": 1.479}, "offset_1mm": {"passed": true, "failure": null, "time_s": 1.739, "max_progress": 1.477}, "commands_50ms_late": {"passed": true, "failure": null, "time_s": 1.749, "max_progress": 1.472}}, "videos": ["_sims/1122_232739_ramp_run_71f7b5d4/video/follow.mp4", "_sims/1122_232739_ramp_run_71f7b5d4/video/overview.mp4"], "contact_sheet": "_sims/1122_232739_ramp_run_71f7b5d4/contact_overview.jpg", "errors": [], "review_critical": [], "log_tail": null, "accepted": true, "status": "crossed", "why": null}, {"course": "bridge", "design": "Ev3.json", "design_sha": "71f7b5d463c5", "checked_at": "2026-11-22 23:32", "time_s": 1.429, "max_progress": 1.407, "runs": {"plain": {"passed": true, "failure": null, "time_s": 1.429, "max_progress": 1.407}, "offset_1mm": {"passed": true, "failure": null, "time_s": 1.429, "max_progress": 1.412}, "commands_50ms_late": {"passed": true, "failure": null, "time_s": 1.439, "max_progress": 1.408}}, "videos": ["_sims/1122_233036_bridge_run_71f7b5d4/video/follow.mp4", "_sims/1122_233036_bridge_run_71f7b5d4/video/overview.mp4"], "contact_sheet": "_sims/1122_233036_bridge_run_71f7b5d4/contact_overview.jpg", "errors": [], "review_critical": [], "log_tail": null, "accepted": true, "status": "crossed", "why": null}], "why": {"stuck": "The car stopped making progress for several seconds. Common causes: the motor program brakes or stops too early, the wheels slip or lack torque, or a part catches on the obstacle. Watch the video to see which.", "timeout": "The car was still moving but did not reach the goal within the time limit. Make it faster (gearing, motor level) or make sure it keeps driving until it is past the goal.", "fell": "The car fell off the course (off an edge, the plank or the rope).", "touched": "A part touched the floor of the chasm (rope and bridge). Every part must stay above it, even for an instant: watch the video to see which part dips and when.", "flipped": "The car tipped over and stayed on its side or roof. A lower centre of mass or a wider wheel track helps.", "broke": "Part of the car came apart (a stud joint released or a mechanism separated). Strengthen that joint with more studs or pins.", "left_lane": "The car left the course lane, or a part went around the obstacle instead of over it. Check that it drives straight.", "simulation": "The physics became unstable. This usually means overlapping parts or extreme forces; read the validate warnings.", "wall-clock": "The simulation took too long on this computer and was stopped.", "review": "Every run reached the goal, but the design review found a critical problem (listed below), so the check does not accept the design.", "error": "The simulator did not produce a result. The log below shows why."}, "run_names": {"plain": "Plain run", "offset_1mm": "1 mm off-centre", "commands_50ms_late": "Commands 50 ms late"}, "tasks": {"steps": {"description": "3 brick steps of 28.8 mm, 72 mm treads", "time_limit_s": 64.3}, "rope": {"description": "rope 600 mm span between two brick decks, 0.00 deg incline (goal deck 0.0 mm higher), 12.5 mm sag, 3.0 mm cord", "time_limit_s": 37.2}, "ramp": {"description": "sharp ramp 30.02 deg (a 460 mm foam-core board hinged at the plateau edge, its foot resting on the floor) up to a plateau 233.6 mm high", "time_limit_s": 36.7}, "bridge": {"description": "printed plank 40 mm wide, 640 mm long over a 99.2 mm drop", "time_limit_s": 31.0}}};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LABEL = {crossed:"\u2713 Crossed", not_crossed:"\u2717 Not crossed", invalid:"\u2717 Invalid design",
+  error:"\u2717 Simulator error", missing:"\u2013 No design", not_run:"\u2013 Not checked yet", stale:"\u27f3 Outdated"};
+const st = r => r.stale ? "stale" : r.status;
+const badge = r => `<span class="badge b-${st(r)}">${LABEL[st(r)]}</span>`;
+const secs = x => x == null ? "\u2013" : x.toFixed(1) + " s";
+const pct = x => x == null ? "\u2013" : Math.round(Math.min(1, Math.max(0, x)) * 100) + "%";
+function reason(r) {
+  if (r.stale) return "Design changed since this check";
+  if (r.status === "missing") return "No design.json in the folder";
+  if (r.status === "not_run") return "Run python score with --courses " + r.course;
+  if (r.status === "invalid") return "Does not validate";
+  if (r.status === "crossed") return "";
+  for (const n of ["plain", "offset_1mm", "commands_50ms_late"]) {
+    const x = (r.runs || {})[n]; if (x && !x.passed) return (n === "plain" ? "" : D.run_names[n] + ": ") + x.failure;
+  }
+  return r.status === "error" ? "Simulator error" : "Design review: critical finding";
+}
+function card(r) {
+  const t = D.tasks[r.course];
+  let h = `<article class="card" id="c-${r.course}"><div class="head"><h3>${r.course}</h3>${badge(r)}</div>
+    <p class="desc">${esc(t.description)}</p>`;
+  if (r.status === "crossed" || r.status === "not_crossed") {
+    h += `<div class="metric"><span>Time to goal</span><b>${secs(r.time_s)}</b><span class="note">limit ${secs(t.time_limit_s)}</span></div>
+      <div class="track" title="Furthest point reached in the plain run: ${pct(r.max_progress)} of the course">
+      <div class="fill" style="width:${pct(r.max_progress)}"></div></div>
+      <div class="note">Furthest point (plain run): ${pct(r.max_progress)} of the course</div><ul class="runs">`;
+    for (const n of ["plain", "offset_1mm", "commands_50ms_late"]) {
+      const x = r.runs[n]; if (!x) continue;
+      h += `<li>${x.passed ? '<span class="ok">\u2713</span>' : '<span class="no">\u2717</span>'} ${D.run_names[n]}${x.passed ? "" : " \u2014 " + esc(x.failure)}</li>`;
+    }
+    h += "</ul>";
+  }
+  if (r.stale) h += `<p class="why"><b>Outdated.</b> The design file changed after this check, so it does not count. Re-run: <code>python score ${esc(D.target)} --courses ${r.course}</code></p>`;
+  if (r.why && D.why[r.why]) h += `<p class="why"><b>What went wrong:</b> ${esc(D.why[r.why])}</p>`;
+  if (r.status === "missing") h += `<p class="why">Add <code>design.json</code> to the design folder.</p>`;
+  if (r.status === "not_run") h += `<p class="why">Not checked yet. Run <code>python score ${esc(D.target)} --courses ${r.course}</code>.</p>`;
+  if (r.errors && r.errors.length) h += `<p class="note bad">What validate reports:</p><ul class="err">${r.errors.map(e => `<li>${esc(e)}</li>`).join("")}</ul>`;
+  if (r.review_critical && r.review_critical.length) h += `<p class="note bad">Critical review findings:</p><ul class="err">${r.review_critical.map(e => `<li>${esc(e)}</li>`).join("")}</ul>`;
+  if (r.videos && r.videos.length) {
+    h += `<video controls preload="metadata" src="${esc(r.videos[0])}"></video><div class="links">`;
+    r.videos.forEach(v => h += `<a href="${esc(v)}" target="_blank">${v.includes("overview") ? "Overview" : "Follow"} video</a>`);
+    if (r.contact_sheet) h += `<a href="${esc(r.contact_sheet)}" target="_blank">Contact sheet</a>`;
+    h += "</div>";
+  }
+  if (r.log_tail) h += `<details><summary>Simulator log</summary><pre>${esc(r.log_tail)}</pre></details>`;
+  if (r.checked_at) h += `<p class="note" style="margin:10px 0 0">Checked ${esc(r.checked_at)} \u00b7 ${esc(r.design)}</p>`;
+  return h + "</article>";
+}
+const S = D.score;
+let h = `<h1>BrickBench results: ${esc(D.name)}</h1><p class="sub">${esc(D.target)} \u00b7 generated ${esc(D.generated)}</p>
+<div class="tiles"><div class="tile"><div class="hero">${S.crossed}<small> of ${S.of} courses crossed</small></div></div>
+<div class="tile"><div class="hero">${S.total_time_s.toFixed(1)}<small> s total time</small></div><div class="note">time to goal, summed over the crossed courses</div></div></div>
+<p class="note">Ranking: most courses crossed first, then the lowest total time. A course is crossed when <code>brick check</code>
+accepts it: the plain run, the run 1 mm off-centre and the run with commands 50 ms late all reach the goal.
+This page is your own preview: the staff re-run every submitted design independently, and that result is the official score.</p>
+<h2>All courses</h2><div class="tablewrap"><table><thead><tr><th>Course</th><th>Result</th><th class="num">Time to goal</th>
+<th class="num">Limit</th><th class="num">Furthest</th><th>Why not crossed</th></tr></thead><tbody>`;
+for (const r of D.courses) h += `<tr><td><a href="#c-${r.course}">${r.course}</a></td><td>${badge(r)}</td>
+  <td class="num">${r.status === "crossed" && !r.stale ? secs(r.time_s) : "\u2013"}</td><td class="num">${secs(D.tasks[r.course].time_limit_s)}</td>
+  <td class="num">${pct(r.max_progress)}</td><td>${esc(reason(r))}</td></tr>`;
+h += `</tbody></table></div><h2>Course details</h2><div class="cards">${D.courses.map(card).join("")}</div>`;
+document.getElementById("app").innerHTML = h;
+</script></body></html>
